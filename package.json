@@ -1,0 +1,34 @@
+{
+  "name": "AltumData",
+  "version": "0.1.0",
+  "description": "AltumDataSite",
+  "main": "app.js",
+  "dependencies": {
+    "axios": "^0.16.1",
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.8",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "better-react-spinkit": "^2.0.0-4",
+    "css-loader": "^0.26.1",
+    "express": "^4.15.2",
+    "muicss": "^0.9.17",
+    "react": "^15.4.1",
+    "react-burger-menu": "^2.1.3",
+    "react-dom": "^15.4.1",
+    "webpack": "^1.14.0"
+  },
+  "devDependencies": {
+    "css-loader": "^0.26.1"
+  },
+  "scripts": {
+    "start": "webpack -d && node app.js",
+    "dev": "webpack -d --watch",
+    "build": "webpack -p"
+  },
+  "keywords": [
+    "AltumData"
+  ],
+  "author": "Martin Straka",
+  "license": "ISC"
+}
