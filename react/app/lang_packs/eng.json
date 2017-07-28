@@ -1,0 +1,38 @@
+{
+  "nav-links": {
+    "home": "HOME",
+    "about": "ABOUT US",
+    "expertises": "EXPERTISES",
+    "team": "TEAM"
+  },
+  "homepage-block-buttons": {
+    "corporate-enablement-program": "CORPORATE ENABLEMENT PROGRAM",
+    "big-data-analytics": "BIG DATA ANALYTICS",
+    "it-cognitive-transformation": "IT COGNITIVE TRANSFORMATION"
+  },
+  "homepage-quote": "ANY FOOL CAN KNOW. THE POINT IS TO UNDERSTAND",
+  "homepage-quote-author": "- Albert Einstein",
+  "global-warming-quote": "Approximately 287 000 000 000 tonnes of ice melt in Antarctica every year due to global warming.",
+  "it-cognitive-transformation-page": {
+    "description": "In 1800's humanity stood in front of industrial revolution driven by invention of the machine, today that machine is imbune with A/V Intelegance opening the door to adoptive robotics era.  Future is not far ahead as adoptive robotics already found it's applications within Comune,  Social and Corporate IT systems enabling them to acheave whole new levles of efficientcy & productivity.",
+    "description-note": "*Cognitive computing is the simulation of human thought processes in a computerized model.",
+    "offering-1": {
+      "name": "Cognitive (VI) Chatbots"
+    },
+    "offering-2": {
+      "name": "Smart Readers"
+    },
+    "offering-3": {
+      "name": "VI Business Process Automation"
+    },
+    "offering-4": {
+      "name": "MS Office Automation"
+    },
+    "offering-5": {
+      "name": "Workflow Tools"
+    },
+    "offering-6": {
+      "name": "Data Architecture"
+    }
+  }
+}

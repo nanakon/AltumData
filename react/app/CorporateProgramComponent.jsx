@@ -3,6 +3,7 @@ import React from 'react';
 import BlockButtonComponent from './BlockButtonComponent.jsx';
 import CustomButtonComponent from './CustomButtonComponent.jsx';
 
+import language_pack from './lang_packs/eng.json';
 
 class CorporateProgramComponent extends React.Component {
 	constructor(props) {
@@ -20,7 +21,7 @@ class CorporateProgramComponent extends React.Component {
 	  	return (
 	  		<div className="page" id="team-page">
 	  			<div style={{position:'relative'}}>
-	  				<div id="homepage-title">CORPORATE ENABLEMENT PROGRAM</div>
+	  				<div className="page-title">{language_pack["homepage-block-buttons"]["corporate-enablement-program"]}</div>
 	  				<div className="course-description-text">#Descriptory text of this course#</div>
 	  				<div className="offerings-buttons-wrapper">
 	  					<table id="offerings-buttons-table">

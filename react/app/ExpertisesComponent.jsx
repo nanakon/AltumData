@@ -19,7 +19,7 @@ class ExpertisesComponent extends React.Component {
 	  	return (
 	  		<div className="page" id="aboutus-page">
 	  			<div style={{position:'relative'}}>
-	  				<div id="homepage-title">Our Expertises</div>
+	  				<div className="page-title">Our Expertises</div>
 	  			</div>	
 	  		</div>
 	    );

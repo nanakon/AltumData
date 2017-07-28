@@ -3,7 +3,13 @@ import React from 'react';
 //PROPS
 //destination
 //label
-//go_to_page function
+//props for destination component
+
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom';
 
 class CustomButtonComponent extends React.Component {
 	constructor(props) {
@@ -19,7 +25,7 @@ class CustomButtonComponent extends React.Component {
 
 	render() {	
 	  	return (
-	  		<p className="button-link" onClick={()=>this.go_to_page(this.props.destination)}>{this.props.label}</p>
+	  		<Link to={this.props.destination} className="custom-link"><p className="button-link">{this.props.label}</p></Link>
 	    );
   	}
 

@@ -5,6 +5,12 @@ import axios from 'axios';
 
 import SideMenuComponent from './SideMenuComponent.jsx';
 
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom';
+
 class App extends React.Component {
 	constructor() {
 		super();
@@ -60,9 +66,14 @@ class App extends React.Component {
  	render () {
  		var side_menu = <SideMenuComponent setParentStateCallback={this.setParentStateCallback}/>	
  		return (	
+ 			<Router>
 			<div id="outer_container">
+				<div id="bar">
+					<Link to="/"><img id="logo-bar" src="/pics/logo_4.png"/></Link>
+				</div>
 				{side_menu}
 			</div>
+			</Router>
 		);
   	};
 };

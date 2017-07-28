@@ -2,6 +2,7 @@ import React from 'react';
 
 import BlockButtonComponent from './BlockButtonComponent.jsx';
 
+import language_pack from './lang_packs/eng.json';
 
 class HomePageComponent extends React.Component {
 	constructor(props) {
@@ -18,20 +19,25 @@ class HomePageComponent extends React.Component {
 	render() {	
 	  	return (
 	  		<div id="home-page">
+			
+	  		
+	  		<video id="background-video" width="1920" height="1080" loop autoPlay>
+			  <source src="/pics/background_vid.webm" type="video/webm"/>
+			Your browser does not support the video tag.
+			</video>
+
 	  			<div className="dark-tint" id="home-page-overlay">
 	  			<div style={{position:'relative'}}>
-	  				<div id="homepage-title">ALTUM DATA</div>
+	  				<div className="page-title" id="homepage-title">"{language_pack["homepage-quote"]}"<br/><span style={{fontSize:'10px'}}> {language_pack["homepage-quote-author"]}</span></div>
 	  			</div>	
 	  				<div id="homepage-button-wrapper">
-		  				<BlockButtonComponent text="BIG DATA" onClick={this.go_to_page} destination="big_data"/>
-		  				<BlockButtonComponent text="CORPORATE ENABLEMENT PROGRAM" onClick={this.go_to_page} destination="corporate_program"/>
-		  				<BlockButtonComponent text="IT COGNITIVE TRANSFORMATION" onClick={this.go_to_page} destination="cognitive_transformation"/>
+		  				<BlockButtonComponent text={language_pack["homepage-block-buttons"]["corporate-enablement-program"]} onClick={this.go_to_page} destination="corporate_program"/>
+		  				<BlockButtonComponent text={language_pack["homepage-block-buttons"]["big-data-analytics"]} onClick={this.go_to_page} destination="big_data"/>
+		  				<BlockButtonComponent text={language_pack["homepage-block-buttons"]["it-cognitive-transformation"]} onClick={this.go_to_page} destination="cognitive_transformation"/>
 	  				</div>
-	  				<div style={{backgroundColor:'rgba(0,0,0,.5)', padding:'10px', color: 'white', fontWeight:'bold', width:'100%', marginLeft:'auto', marginRight:'auto'}}>Developer Note:
-	  				<div style={{marginTop:'0%', color:'orange'}}>//This is the strawman for the AltumData and pathforward sites. All developer comments are written in this kind of orange writing. Things I want you to provide texts for are enclosed in '#' characters.</div>
-	  				<div style={{marginTop:'0%', color:'orange'}}>The design is not final. Also the application is being developed on a fullHD screen and for now is only optimized for fullHD, device optimization will come after all the content has been decided.</div>
-	  				<div style={{marginTop:'0%', color:'orange'}}>The picture on the background and all graphics found on this site ATM will change later (to be provided by Alan).</div>
-	  				</div>
+	  			<div id="global-warming-quote">
+	  				{language_pack["global-warming-quote"]} 
+	  			</div>
 	  			</div>
 	  		</div>
 	    );

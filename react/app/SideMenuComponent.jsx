@@ -12,15 +12,21 @@ import BioComponent from './BioComponent.jsx';
 
 import {scaleRotate as Menu} from 'react-burger-menu';
 
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom';
+
+import language_pack from './lang_packs/eng.json';
+
 class SideMenuComponent extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			side_menu_open: false,
-			active_page: "home"
+			side_menu_open: false
 		}
 		this.onToggle = this.onToggle.bind(this);
-		this.go_to_page = this.go_to_page.bind(this);
 	};
 
 	componentDidMount() {
@@ -29,13 +35,6 @@ class SideMenuComponent extends React.Component {
 
 	onToggle(which_column) {
 		this.setState({side_menu_open: true});
-	};
-
-	go_to_page(destination) {
-		history.pushState({wut:'dunno'}, "", '/'+destination);
-		//this.setState({active_page: destination});
-		console.log(window.location.pathname);
-		this.setState({active_page: window.location.pathname.substring(1)});
 	};
 
 	render() {	
@@ -48,7 +47,7 @@ class SideMenuComponent extends React.Component {
 		    top: '90px'
 		  },
 		  bmBurgerBars: {
-		    background: '#373a47'
+		    background: '#afafaf'
 		  },
 		  bmCrossButton: {
 		    height: '24px',
@@ -59,10 +58,10 @@ class SideMenuComponent extends React.Component {
 		  },
 		  bmMenu: {
 		  	textAlign: 'left',
-		    background: '#060606',
+		    background: 'rgba(0,0,0,1)',
 		    padding: '2.5em 1.5em 0',
 		    fontSize: '1.15em',
-		    height: '99%'
+		    height: '100vh'
 		  },
 		  bmMorphShape: {
 		    fill: '#373a47'
@@ -76,51 +75,15 @@ class SideMenuComponent extends React.Component {
 		  }
 		};	
 
-		var active_page;
-
-		switch (this.state.active_page) {
-			case "home":
-				active_page = <HomePageComponent go_to_page={this.go_to_page}/>;
-				break;	
-			case "about":
-				active_page = <AboutUsComponent go_to_page={this.go_to_page}/>;
-				break;
-			case "expertises":
-				active_page = <ExpertisesComponent go_to_page={this.go_to_page}/>;
-				break;
-			case "team":
-				active_page = <TeamComponent go_to_page={this.go_to_page}/>;
-				break;
-			case "bio":
-				active_page = <BioComponent go_to_page={this.go_to_page}/>;
-				break;
-			case "big_data":
-				active_page = <BigDataComponent go_to_page={this.go_to_page}/>;
-				break;
-			case "corporate_program":
-				active_page = <CorporateProgramComponent go_to_page={this.go_to_page}/>;
-				break;
-			case "cognitive_transformation":
-				active_page = <CognitiveTransformationComponent go_to_page={this.go_to_page}/>;
-				break;
-			case "dummy_offering":
-				active_page = <OfferingsComponent go_to_page={this.go_to_page}/>;
-				break;
-			default:
-				
-		};
-		//<div id="bar"></div>
-
 	  	return (
 	  		<div>
 	  		<Menu styles={styles} isOpen={this.state.side_menu_open} pageWrapId={"page-wrap"} outerContainerId={"outer_container"}>
 	  			<div id="nav-wrapper">
-		  			<h4 className="nav-link" onClick={()=>this.go_to_page("home")}>HOME</h4>
-		  			<h4 className="nav-link" onClick={()=>this.go_to_page("about")}>ABOUT US</h4>
-		  			<h4 className="nav-link" onClick={()=>this.go_to_page("expertises")}>EXPERTISES</h4>
-		  			<h4 className="nav-link" onClick={()=>this.go_to_page("team")}>TEAM</h4>
+		  			<Link to="/" className="nav-link"><h4>{language_pack["nav-links"]["home"]}</h4></Link>
+		  			<Link to="about" className="nav-link">{language_pack["nav-links"]["about"]}</Link>
+		  			<Link to="/expertises" className="nav-link"><h4>{language_pack["nav-links"]["expertises"]}</h4></Link>
+		  			<Link to="/team" className="nav-link"><h4>{language_pack["nav-links"]["team"]}</h4></Link>
 	  			</div>
-	  			<p style={{marginTop:'5%', color:'orange', float:'left'}}>//Anything else to add here?</p>
 	  			<div id="legal-in-sidebar">
 	  				<div id="legal-in-sidebar-absolute">
 		  				AltumData<br/>
@@ -130,7 +93,15 @@ class SideMenuComponent extends React.Component {
 	  		</Menu>
 
 	  		<main id="page-wrap">
-	  			{active_page}
+	  			<Route exact path="/" component={HomePageComponent}/>
+	  			<Route path="/about" component={AboutUsComponent}/>
+	  			<Route path="/expertises" component={ExpertisesComponent}/>
+	  			<Route path="/team" component={TeamComponent}/>
+	  			<Route path="/big_data" component={BigDataComponent}/>
+	  			<Route path="/corporate_program" component={CorporateProgramComponent}/>
+	  			<Route path="/cognitive_transformation" component={CognitiveTransformationComponent}/>
+	  			<Route path="/bio" component={BioComponent}/>
+	  			<Route path="/dummy_offering" component={OfferingsComponent}/>
 	  		</main>
 	  		</div>
 	    );

@@ -1,6 +1,12 @@
 import React from 'react';
 import Button from 'muicss/lib/react/button';
 
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom';
+
 
 class BlockButtonComponent extends React.Component {
 	constructor(props) {
@@ -17,7 +23,7 @@ class BlockButtonComponent extends React.Component {
 	render() {	
 	  	return (
 	  		<div className="block-button">
-	  				<Button className="homepage-button" onClick={this.button_click}>{this.props.text}</Button>
+	  				<Link to={this.props.destination}><Button className="homepage-button">{this.props.text}</Button></Link>
 	  		</div>
 	    );
   	}

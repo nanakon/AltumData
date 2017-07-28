@@ -1,18 +1,28 @@
+:root {
+	--mainColor: #1c1c1c;
+	--mainFont: "futura-pt", sans-serif;
+};
+
 html {
-	 background-color: #060606;
-	 font-family: "futura-pt";
+	 background-color: #060742;
+	 font-family: var(--mainFont);
 }
 
 body {
-	background-color: #060606;
+	background-color: var(--mainColor);
+	font-family: var(--mainFont);
 	width:100%;
 	min-height: 100vh;
 	text-align: center;
 }
 
+.custom-link {
+	text-decoration:none;
+}
+
 #app {
 	min-height: 100vh;
-	font-family: "futura-pt";
+	font-family: var(--mainFont);
 }
 
 #nav-wrapper {
@@ -21,20 +31,34 @@ body {
 }
 
 #bar {
-	position:relative;
-	float:left;
+	z-index: 1;
+	position:fixed;
+	left:0;
+	top:0;
 	width: 100px;
-	height:100%;
-	background-color: rgba(0,0,0,.5);
+	height: 100vh;
+	display:block;
+	text-align: center;
+	background-color: rgba(0,0,0,0.9);
 
+}
+
+#logo-bar {
+	width: 80px;
+	height:auto;
+	position:fixed;
+	top:45%;
+	left:10px;
 }
 
 .nav-link {
-	font-weight:bolder;
-	font-family: "futura-pt";
+	color: rgb(184, 183, 173);
+	font-weight:normal
+	font-family: var(--mainFont);
 }
 
 .nav-link:hover {
+	text-decoration: none;
 	color: #fff;
 	cursor: pointer;
 }
@@ -55,64 +79,96 @@ body {
 	color:white;
 }
 
+#background-video {
+	position: fixed;
+    top: 0%;
+    left: 0%;
+}
+
 #page-wrap {
 	min-height: 100vh;
 }
 
 #home-page {
 	min-height: 100vh;
-	background: url('/pics/iceberg.jpg');
+	background-color: var(--mainColor);
 }
 
-#homepage-title {
-	padding-top: 4%;
+.page-title {
+	position: relative;
+	padding-top:5%;
 	font-weight:bolder;
-	font-size: xx-large;
+	font-size: 3.45em;
 	-webkit-font-smoothing: antialiased;
 }
 
+#homepage-title {
+		padding-top: 12%;
+}
+
 #homepage-button-wrapper {
-	background-color: rgba(0,0,0,.5);
-  	background-blend-mode: multiply;
+	/*background-color: rgba(0,0,0,.5);
+  	background-blend-mode: multiply;*/
   	position:relative;
   	padding: 5% 0px 5% 0px;
-  	margin-top: 10%;
+  	margin-top: 5%;
   	margin-left:auto;
   	margin-right:auto;
 }
 
 .block-button {
 	display: inline-block;
-	padding: 10px;
+	width:30%;
+	text-align:center;
 	padding: 0% 5% 0% 5%;
 }
 
+.block-button:hover {
+	padding:;
+}
+
 .homepage-button {
-	color:black;
-	width: 220px;
-	height: 20%;
-	text-align:left;
+	color:rgba(255,255,255,0.9);
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 5%;
+	text-align:center;
+	vertical-align: middle;
 	white-space: normal;
 	font-weight: bold;
 	-webkit-font-smoothing: antialiased;
 }
 
 .homepage-button:hover {
-	background-color: rgba(0,0,0,.5);
+	background-color: rgba(0,0,0,.9);
   	background-blend-mode: multiply;
   	color: white;
+  	vertical-align: middle;
   	font-weight: bold;
 }
 
 .dark-tint {
 	min-height: 100vh;
-	background-color: rgba(0,0,0,.5);
-  	background-blend-mode: multiply;
+	background: -webkit-linear-gradient(left, rgba(0,0,0,0) , rgba(0,0,0,0.5)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, rgba(0,0,0,0) , rgba(0,0,0,1)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, rgba(0,0,0,0) , rgba(0,0,0,0.5)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, rgba(0,0,0,0) , rgba(0,0,0,0.5)); /* Standard syntax */
 }
 
 #home-page-overlay{
 	color: #fff;
+	z-index: 1;
 	
+}
+
+#global-warming-quote {
+	padding: 0 2% 2% 0;
+	text-align:right;
+	color: rgba(173, 173, 173, 0.5);
+	position:fixed;
+	bottom: 0;
+	right: 0;
+	z-index: 5000000;
 }
 
 #big-data-page {
@@ -140,8 +196,20 @@ body {
 }
 
 .course-description-text {
-	font-size: 2em;
+	background-color: rgba(0,0,0,0.1);
+	padding: 1.5%;
+	font-size: 1.5em;
+	line-height: 1.4;
 	margin-top: 5%;
+	width: 50%;
+	text-align:center;
+	position:relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.course-description-text-note {
+	color: rgba(255,255,255,0.3);
 }
 
 .offerings-buttons-wrapper {
@@ -160,6 +228,10 @@ body {
 	padding: 30px 20px 30px 20px;
 }
 
+.button-link:hover {
+	text-decoration: none;
+}
+
 #offerings-buttons-table {
 	text-align:center;
 	margin-left:auto;
@@ -174,11 +246,12 @@ body {
 
 #offerings-buttons-table td {
 	padding: 0px 5px 0px 5px;
-	width:250px;
+	width: 350px;
 
 }
 
 .button-link:hover {
+	text-decoration: none;
 	border: solid 1px orange;
 	cursor: pointer;
 }
@@ -193,8 +266,13 @@ body {
 	margin-top: 5%;
 }
 
-.team-name:hover {
+.team-name {
 	color: #e0e0e0;
+}
+
+.team-name:hover {
+	text-decoration: none;
+	color: #fff;
 	cursor: pointer;
 }
 

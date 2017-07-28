@@ -2,6 +2,7 @@ import React from 'react';
 
 import BlockButtonComponent from './BlockButtonComponent.jsx';
 
+import language_pack from './lang_packs/eng.json';
 
 class BigDataComponent extends React.Component {
 	constructor(props) {
@@ -19,7 +20,7 @@ class BigDataComponent extends React.Component {
 	  	return (
 	  		<div className="page" id="big-data-page">
 	  			<div style={{position:'relative'}}>
-	  				<div id="homepage-title">BIG DATA</div>
+	  				<div className="page-title">{language_pack["homepage-block-buttons"]["big-data-analytics"]}</div>
 	  			</div>	
 	  		</div>
 	    );

@@ -20,7 +20,7 @@ class OfferingsComponent extends React.Component {
 	  		<div className="page" id="team-page">
 	  			<div style={{position:'relative'}}>
 	  				<div className="left-column">
-	  					<div id="homepage-title">#OFFERING NAME#</div>
+	  					<div className="page-title">#OFFERING NAME#</div>
 
 	  					<div style={{marginTop:'20%', color:'orange'}}>//There will be a picture on the backround of this side of the page. Something with a feel that would resemble what is being offered.</div>
 	  				</div>

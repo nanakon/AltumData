@@ -19,7 +19,7 @@ class AboutUsComponent extends React.Component {
 	  	return (
 	  		<div className="page" id="aboutus-page">
 	  			<div style={{position:'relative'}}>
-	  				<div id="homepage-title">ABOUT ALTUM DATA</div>
+	  				<div className="page-title">ABOUT ALTUM DATA</div>
 	  			</div>	
 	  			<div id="aboutus-content">
 	  				#Who we are what we do why we do that or whatever else that people should know about this project#
