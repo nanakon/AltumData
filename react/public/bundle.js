@@ -24659,7 +24659,8 @@
 						_react2.default.createElement(_reactRouterDom.Route, { path: '/team', component: _TeamComponent2.default }),
 						_react2.default.createElement(_reactRouterDom.Route, { path: '/big_data', component: _BigDataComponent2.default }),
 						_react2.default.createElement(_reactRouterDom.Route, { path: '/corporate_program', component: _CorporateProgramComponent2.default }),
-						_react2.default.createElement(_reactRouterDom.Route, { path: '/cognitive_transformation', component: _CognitiveTransformationComponent2.default }),
+						_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/cognitive_transformation', component: _CognitiveTransformationComponent2.default }),
+						_react2.default.createElement(_reactRouterDom.Route, { path: '/cognitive_transformation/:offering_id', component: _OfferingsComponent2.default }),
 						_react2.default.createElement(_reactRouterDom.Route, { path: '/bio', component: _BioComponent2.default }),
 						_react2.default.createElement(_reactRouterDom.Route, { path: '/dummy_offering', component: _OfferingsComponent2.default })
 					)
@@ -29553,7 +29554,7 @@
 
 	"use strict";
 	
-	module.exports = { "nav-links": { "home": "HOME", "about": "ABOUT US", "expertises": "EXPERTISES", "team": "TEAM" }, "homepage-block-buttons": { "corporate-enablement-program": "CORPORATE ENABLEMENT PROGRAM", "big-data-analytics": "BIG DATA ANALYTICS", "it-cognitive-transformation": "IT COGNITIVE TRANSFORMATION" }, "homepage-quote": "ANY FOOL CAN KNOW. THE POINT IS TO UNDERSTAND", "homepage-quote-author": "- Albert Einstein", "global-warming-quote": "Approximately 287 000 000 000 tonnes of ice melt in Antarctica every year due to global warming.", "it-cognitive-transformation-page": { "description": "In 1800's humanity stood in front of industrial revolution driven by invention of the machine, today that machine is imbune with A/V Intelegance opening the door to adoptive robotics era.  Future is not far ahead as adoptive robotics already found it's applications within Comune,  Social and Corporate IT systems enabling them to acheave whole new levles of efficientcy & productivity.", "description-note": "*Cognitive computing is the simulation of human thought processes in a computerized model.", "offering-1": { "name": "Cognitive (VI) Chatbots" }, "offering-2": { "name": "Smart Readers" }, "offering-3": { "name": "VI Business Process Automation" }, "offering-4": { "name": "MS Office Automation" }, "offering-5": { "name": "Workflow Tools" }, "offering-6": { "name": "Data Architecture" } } };
+	module.exports = { "nav-links": { "home": "HOME", "about": "ABOUT US", "expertises": "EXPERTISES", "team": "TEAM" }, "homepage-block-buttons": { "corporate-enablement-program": "CORPORATE ENABLEMENT PROGRAM", "big-data-analytics": "BIG DATA ANALYTICS", "it-cognitive-transformation": "IT COGNITIVE TRANSFORMATION" }, "homepage-quote": "ANY FOOL CAN KNOW. THE POINT IS TO UNDERSTAND", "homepage-quote-author": "- Albert Einstein", "global-warming-quote": "Approximately 287 000 000 000 tonnes of ice melt in Antarctica every year due to global warming.", "it-cognitive-transformation-page": { "description": "In 1800's humanity stood in front of industrial rev olution driven by invention of the machine, today that machine is imbune with A/V Intelegance opening the door to adoptive robotics era.  Future is not far ahead as adoptive robotics already found it's applications within Comune,  Social and Corporate IT systems enabling them to acheave whole new levles of efficientcy & productivity.", "description-note": "*Cognitive computing is the simulation of human thought processes in a computerized model.", "offering-1": { "name": "Cognitive (VI) Chatbots", "div1-title": "VI Chatbots", "div1-text": "The main mission of chatbots is to understand what the user is saying through natural language processing and collect enough information to take appropriate action or simply answer their questions.", "div2-title": "", "div2-text": "In addition to the chatbot, custom made application is integrated in order to control interface with the user. Once the chatbot collects enough information from the users, it delivers such knowledge to the application which then executes respective actions. The action could simply be looking up an answer from a database, pay the bill or it could be more complicated involving a physical action such as turning on/off the light.", "div3-title": "", "div3-text": "Technology is based on Watson Conversation service hosted on IBM bluemix platform on top of which we develop related applications.", "div4-title": "Practical Applications", "div4-text": "Chatbots are designed based on intents, entities and dialog flow. Intents are actions that users are intending to perform: e.g. get account balance, scheduled a doctor appointment. ", "div5-title": "", "div5-text": "Entities are the specific pieces of information we want to extract from the user response: e.g. account number, doctor name. Dialog flow is the conversation logic.", "div6-title": "What do we need", "div6-text": "This sums up as following requirements for the creation of the VI chatbot:", "div7-title": "", "div7-text": "- General purpose of chatbot", "div8-title": "", "div8-text": "- Examples of current user stories and conversations (as many as possible)", "div9-title": "", "div9-text": "- Bluemix Watson Conversation credentials (or we will handle this for you)", "div10-title": "", "div10-text": "" }, "offering-2": { "name": "Smart Readers", "div1-title": "Cognitive Smart Readers", "div1-text": "Integrated cognitive systems capable of reading and processing thousands of documents in various formats (eg. PDF, JPG…) by using artificial intelligence. Acquired data can serve as an input or output in line with the organization's policies.", "div2-title": "", "div2-text": "Cognitive readers analyze text to extract meta-data from content such as concepts, entities, keywords, categories, sentiment, emotion, relations and semantic roles. Applications combine multiple services such as Document conversion (scan, pdf, doc, HTML ..), Visual recognition or Natural language understanding.", "div3-title": "", "div3-text": "The goal of such applications is to extract data from unstructured texts or picture and process it in parallel with other organization applications.", "div4-title": "Practical applications:", "div4-text": "Reading contract PDF (or other formats) in order to extract data for finance, HR, Procurement, Sales or other organizations and signify key drivers, feed related systems or present recommendations.", "div5-title": "", "div5-text": "Example :Read applicants CV and feed appropriate HR system. Read sales contracts and feed appropriate systems, also understanding key drivers such as GP of the existing project. ", "div6-title": "What do we need", "div6-text": "This sums up as following requirements for the creation of the VI chatbot:", "div7-title": "", "div7-text": "- General purpose of Cognitive reader", "div8-title": "", "div8-text": "- Examples of inputs (documents) and information which should be extracted (as many as possible) ", "div9-title": "", "div9-text": "- Bluemix Service credentials (or we will handle this for you)", "div10-title": "", "div10-text": "" }, "offering-3": { "name": "VI Business Process Automation", "div1-title": "VI Lean Processes", "div1-text": "Our Business Process optimization solutions are based on advanced analytical methods to help organizations make better decisions. ", "div2-title": "", "div2-text": "Optimization applications are often concerned with determining the option which will drive maximum(profit, performance or yield) or minimum (loss, risk or cost) related to real-world objective e.g. business case. So far these optimization methods require 3rd party software to be installed on user’s machine what makes integration into existing application quite difficult. Our Business Process optimization solutions focus on the implementation of Linear programming / Nonlinear programming into existing Organization's workflow applications (Web, Mobile) and calculate the optimal solution in real time (based on API).", "div3-title": "", "div3-text": "", "div4-title": "", "div4-text": "", "div5-title": "", "div5-text": "", "div6-title": "", "div6-text": "", "div7-title": "", "div7-text": "", "div8-title": "", "div8-text": "", "div9-title": "", "div9-text": "", "div10-title": "", "div10-text": "" }, "offering-4": { "name": "MS Office Automation", "div1-title": "VBA MACRO Solutions", "div1-text": "MS Office tools like MS Excel are highly popular and easy to use within a corporate environment. Our MS Office automation solutions help to get the maximum benefit from your Office applications by automating: repetitive tasks, dashboard or report creation, a collection of data from various sources, document creation, print and much more.", "div2-title": "", "div2-text": "Automation is done via Visual Basic for Application (sometimes called Macros) and such an Office tools can integrate with other Windows applications as well.", "div3-title": "", "div3-text": "We know that our clients love MACs, therefore we extended our support for MS Office on MAC OS.", "div4-title": "", "div4-text": "", "div5-title": "", "div5-text": "", "div6-title": "", "div6-text": "", "div7-title": "", "div7-text": "", "div8-title": "", "div8-text": "", "div9-title": "", "div9-text": "", "div10-title": "", "div10-text": "" }, "offering-5": { "name": "Workflow Tools", "div1-title": "VBA MACRO Solutions", "div1-text": "Web/Cloud based applications (desktop and mobile) focused on supporting Organization's internal processes by a collection of the inputs and delivering them to different segments of the organization.", "div2-title": "Practical Applications:", "div2-text": "HR hiring and leaving forms", "div3-title": "", "div3-text": "Hospital reception forms", "div4-title": "", "div4-text": "Request forms with approval chain (Budget approvals, vacation, expense reimbursement.. )", "div5-title": "", "div5-text": "Workflow tools between two or more departments Internal/external surveys", "div6-title": "", "div6-text": "", "div7-title": "", "div7-text": "", "div8-title": "", "div8-text": "", "div9-title": "", "div9-text": "", "div10-title": "", "div10-text": "" }, "offering-6": { "name": "Data Architecture", "div1-title": "Data Bases (Information Warehouse / Data Mart / Data Lake)", "div1-text": "Creation and maintenance of Relational or Multidimensional (aka data cubes) databases in pair with on top application layer which serves to extract data in the meanigful format for the requestion organization.", "div2-title": "Practical Applications:", "div2-text": "Creation of data warehouse of revenue, cost & expense data capable of being queried in a form with flexibly structured dashboards.", "div3-title": "", "div3-text": "Creation of debt tracking data base with the capability to query results in an appropriate format.", "div4-title": "", "div4-text": "All our applications are compatible with cognitive solutions which will provide organization with richer data, key drivers, and base for SMART decision making (predictive, behavior or sentiment modeling).", "div5-title": "Data Mining", "div5-text": "In many cases, data is not easily attainable to serve organization needs. Data needed for key decision making can be both structured or unstructured thus increasing the complexity of its extractions. Our experts can serve you required BIG DATA on demand using advanced extraction techniques. Contact us to learn more.", "div6-title": "", "div6-text": "", "div7-title": "", "div7-text": "", "div8-title": "", "div8-text": "", "div9-title": "", "div9-text": "", "div10-title": "", "div10-text": "" } }, "big-data-analytics": { "description": { "div1": "In midst of the digital age, Organizations are faced with ever increasing operational dynamics which demands effective and qualitative decision making. In practice, this is timely and complicated process urging the organizations to use expensive methods such as ''opinions'' or develop Data Science capability within its own mists.", "div2": "Data Science approach in correlation with Big Data enables the organization to see the environment through exact data and understand near future with very high certainty power.", "div3": "Data sets are most commonly analyzed as Predictions, Sentiment Analytics or Behaviour Analytics. Each of those capabilities is arming the organization with the ability to understand future on the empiric level and base its actions accordingly.", "div4": "Building Data Science capabilities are the timely and costly process, which you can skip and get your key points today by using our BIG DATA Modeling on Demand expertise." }, "description-note": "*Cognitive computing is the simulation of human thought processes in a computerized model.", "offering-1": { "name": "Cognitive (VI) Chatbots", "div1-title": "VI Chatbots", "div1-text": "The main mission of chatbots is to understand what the user is saying through natural language processing and collect enough information to take appropriate action or simply answer their questions.", "div2-title": "", "div2-text": "In addition to the chatbot, custom made application is integrated in order to control interface with the user. Once the chatbot collects enough information from the users, it delivers such knowledge to the application which then executes respective actions. The action could simply be looking up an answer from a database, pay the bill or it could be more complicated involving a physical action such as turning on/off the light.", "div3-title": "", "div3-text": "Technology is based on Watson Conversation service hosted on IBM bluemix platform on top of which we develop related applications.", "div4-title": "Practical Applications", "div4-text": "Chatbots are designed based on intents, entities and dialog flow. Intents are actions that users are intending to perform: e.g. get account balance, scheduled a doctor appointment. ", "div5-title": "", "div5-text": "Entities are the specific pieces of information we want to extract from the user response: e.g. account number, doctor name. Dialog flow is the conversation logic.", "div6-title": "What do we need", "div6-text": "This sums up as following requirements for the creation of the VI chatbot:", "div7-title": "", "div7-text": "- General purpose of chatbot", "div8-title": "", "div8-text": "- Examples of current user stories and conversations (as many as possible)", "div9-title": "", "div9-text": "- Bluemix Watson Conversation credentials (or we will handle this for you)", "div10-title": "", "div10-text": "" } } };
 
 /***/ }),
 /* 259 */
@@ -29622,7 +29623,37 @@
 							{ className: 'page-title' },
 							_eng2.default["homepage-block-buttons"]["big-data-analytics"]
 						)
-					)
+					),
+					_react2.default.createElement(
+						'div',
+						{ className: 'course-description-text' },
+						_react2.default.createElement(
+							'div',
+							{ className: '' },
+							_eng2.default["big-data-analytics"]["description"]["div1"]
+						),
+						_react2.default.createElement('br', null),
+						_react2.default.createElement(
+							'div',
+							{ className: '' },
+							_eng2.default["big-data-analytics"]["description"]["div2"]
+						),
+						_react2.default.createElement('br', null),
+						_react2.default.createElement(
+							'div',
+							{ className: '' },
+							_eng2.default["big-data-analytics"]["description"]["div3"]
+						),
+						_react2.default.createElement('br', null),
+						_react2.default.createElement(
+							'div',
+							{ className: '' },
+							_eng2.default["big-data-analytics"]["description"]["div4"]
+						),
+						_react2.default.createElement('br', null)
+					),
+					_react2.default.createElement('br', null),
+					_react2.default.createElement('img', { id: 'tiny-logo', src: './pics/logo_3.png' })
 				);
 			}
 		}]);
@@ -30047,6 +30078,8 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -30056,7 +30089,7 @@
 	//PROPS
 	//destination
 	//label
-	//go_to_page function
+	//props for destination component
 	
 	var CustomButtonComponent = function (_React$Component) {
 		_inherits(CustomButtonComponent, _React$Component);
@@ -30081,7 +30114,7 @@
 			value: function render() {
 				return _react2.default.createElement(
 					_reactRouterDom.Link,
-					{ to: this.props.destination, className: 'custom-link' },
+					_defineProperty({ className: 'custom-link', to: { pathname: this.props.destination, offering_id: this.props.offering_id, course: this.props.course, picture: this.props.picture } }, 'className', 'custom-link'),
 					_react2.default.createElement(
 						'p',
 						{ className: 'button-link' },
@@ -30191,17 +30224,17 @@
 								_react2.default.createElement(
 									'td',
 									null,
-									_react2.default.createElement(_CustomButtonComponent2.default, { destination: 'dummy_offering', label: _eng2.default["it-cognitive-transformation-page"]["offering-1"]["name"] })
+									_react2.default.createElement(_CustomButtonComponent2.default, { destination: '/cognitive_transformation/offering-1', course: 'it-cognitive-transformation-page', picture: 'chatbot.jpg', offering_id: 'offering-1', label: _eng2.default["it-cognitive-transformation-page"]["offering-1"]["name"] })
 								),
 								_react2.default.createElement(
 									'td',
 									null,
-									_react2.default.createElement(_CustomButtonComponent2.default, { destination: 'dummy_offering', label: _eng2.default["it-cognitive-transformation-page"]["offering-2"]["name"] })
+									_react2.default.createElement(_CustomButtonComponent2.default, { destination: '/cognitive_transformation/offering-2', course: 'it-cognitive-transformation-page', picture: 'smart_reader_2.png', offering_id: 'offering-2', label: _eng2.default["it-cognitive-transformation-page"]["offering-2"]["name"] })
 								),
 								_react2.default.createElement(
 									'td',
 									null,
-									_react2.default.createElement(_CustomButtonComponent2.default, { destination: 'dummy_offering', label: _eng2.default["it-cognitive-transformation-page"]["offering-3"]["name"] })
+									_react2.default.createElement(_CustomButtonComponent2.default, { destination: '/cognitive_transformation/offering-3', course: 'it-cognitive-transformation-page', picture: 'process_automation.jpg', offering_id: 'offering-3', label: _eng2.default["it-cognitive-transformation-page"]["offering-3"]["name"] })
 								)
 							),
 							_react2.default.createElement(
@@ -30210,17 +30243,17 @@
 								_react2.default.createElement(
 									'td',
 									null,
-									_react2.default.createElement(_CustomButtonComponent2.default, { destination: 'dummy_offering', label: _eng2.default["it-cognitive-transformation-page"]["offering-4"]["name"] })
+									_react2.default.createElement(_CustomButtonComponent2.default, { destination: '/cognitive_transformation/offering-4', course: 'it-cognitive-transformation-page', picture: 'process_automation.jpg', offering_id: 'offering-4', label: _eng2.default["it-cognitive-transformation-page"]["offering-4"]["name"] })
 								),
 								_react2.default.createElement(
 									'td',
 									null,
-									_react2.default.createElement(_CustomButtonComponent2.default, { destination: 'dummy_offering', label: _eng2.default["it-cognitive-transformation-page"]["offering-5"]["name"] })
+									_react2.default.createElement(_CustomButtonComponent2.default, { destination: '/cognitive_transformation/offering-5', course: 'it-cognitive-transformation-page', picture: 'process_automation.jpg', offering_id: 'offering-5', label: _eng2.default["it-cognitive-transformation-page"]["offering-5"]["name"] })
 								),
 								_react2.default.createElement(
 									'td',
 									null,
-									_react2.default.createElement(_CustomButtonComponent2.default, { destination: 'dummy_offering', label: _eng2.default["it-cognitive-transformation-page"]["offering-6"]["name"] })
+									_react2.default.createElement(_CustomButtonComponent2.default, { destination: '/cognitive_transformation/offering-6', course: 'it-cognitive-transformation-page', picture: 'data_architecture.jpg', offering_id: 'offering-6', label: _eng2.default["it-cognitive-transformation-page"]["offering-6"]["name"] })
 								)
 							)
 						)
@@ -30257,6 +30290,10 @@
 	
 	var _BlockButtonComponent2 = _interopRequireDefault(_BlockButtonComponent);
 	
+	var _eng = __webpack_require__(/*! ./lang_packs/eng.json */ 258);
+	
+	var _eng2 = _interopRequireDefault(_eng);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -30286,6 +30323,35 @@
 		}, {
 			key: 'render',
 			value: function render() {
+				console.log(this.props.location.course);
+				console.log(this.props.match.params.offering_id);
+				console.log(this.props);
+	
+				var items_to_render = [];
+	
+				for (var i = 1; i <= 10; i++) {
+					var title_handle = "div" + i + "-title";
+					var text_handle = "div" + i + "-text";
+	
+					if (_eng2.default[this.props.location.course][this.props.match.params.offering_id][title_handle] != "") {
+						items_to_render.push(_react2.default.createElement('br', null));
+						items_to_render.push(_react2.default.createElement(
+							'h3',
+							{ className: 'offering-description-title' },
+							_eng2.default[this.props.location.course][this.props.match.params.offering_id][title_handle]
+						));
+						items_to_render.push(_react2.default.createElement('br', null));
+					};
+	
+					if (_eng2.default[this.props.location.course][this.props.match.params.offering_id][text_handle] != "") {
+						items_to_render.push(_react2.default.createElement(
+							'h3',
+							{ className: 'offering-description-div' },
+							_eng2.default[this.props.location.course][this.props.match.params.offering_id][text_handle]
+						));
+					};
+				};
+	
 				return _react2.default.createElement(
 					'div',
 					{ className: 'page', id: 'team-page' },
@@ -30298,13 +30364,9 @@
 							_react2.default.createElement(
 								'div',
 								{ className: 'page-title' },
-								'#OFFERING NAME#'
+								_eng2.default[this.props.location.course][this.props.match.params.offering_id]["name"]
 							),
-							_react2.default.createElement(
-								'div',
-								{ style: { marginTop: '20%', color: 'orange' } },
-								'//There will be a picture on the backround of this side of the page. Something with a feel that would resemble what is being offered.'
-							)
+							_react2.default.createElement('img', { id: 'offering-pic', src: "./pics/" + this.props.location.picture })
 						),
 						_react2.default.createElement(
 							'div',
@@ -30315,18 +30377,11 @@
 								_react2.default.createElement(
 									'div',
 									{ className: 'course-description' },
-									_react2.default.createElement(
-										'h3',
-										null,
-										'#Offering Description#'
-									),
-									_react2.default.createElement(
-										'div',
-										{ style: { marginTop: '20%', color: 'orange' } },
-										'Each offering will have a descriptory text placed here'
-									)
+									items_to_render
 								)
-							)
+							),
+							_react2.default.createElement('br', null),
+							_react2.default.createElement('img', { id: 'tiny-logo', src: './pics/logo_3.png' })
 						)
 					)
 				);

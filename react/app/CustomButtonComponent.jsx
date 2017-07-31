@@ -25,7 +25,7 @@ class CustomButtonComponent extends React.Component {
 
 	render() {	
 	  	return (
-	  		<Link to={this.props.destination} className="custom-link"><p className="button-link">{this.props.label}</p></Link>
+	  		<Link className="custom-link" to={{pathname:this.props.destination, offering_id:this.props.offering_id, course: this.props.course, picture: this.props.picture}} className="custom-link"><p className="button-link">{this.props.label}</p></Link>
 	    );
   	}
 

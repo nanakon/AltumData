@@ -99,7 +99,8 @@ class SideMenuComponent extends React.Component {
 	  			<Route path="/team" component={TeamComponent}/>
 	  			<Route path="/big_data" component={BigDataComponent}/>
 	  			<Route path="/corporate_program" component={CorporateProgramComponent}/>
-	  			<Route path="/cognitive_transformation" component={CognitiveTransformationComponent}/>
+	  			<Route exact path="/cognitive_transformation" component={CognitiveTransformationComponent}/>
+	  			<Route path="/cognitive_transformation/:offering_id" component={OfferingsComponent}/>
 	  			<Route path="/bio" component={BioComponent}/>
 	  			<Route path="/dummy_offering" component={OfferingsComponent}/>
 	  		</main>

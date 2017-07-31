@@ -176,19 +176,47 @@ body {
 }
 
 .left-column {
-	float: left;
+	position:fixed;
+	left:0;
+	top:0;
 	margin-left: 5%;
 	width: 45%;
 	min-height: 100%;
 }
 
 .right-column {
+	height: 100vh;
+	overflow:auto;
 	color: grey;
 	float: right;
-	width: 45%;
-	margin-right: 5%;
+	width: 50%;
+	margin-right: 0%;
 	background-color: #fff;
 	min-height: 100%;
+	text-align:center;
+}
+
+.offering-description-title {
+	font-weight: bolder;
+	font-size: 2em;
+}
+
+.offering-description-div {
+	width: 80%;
+	padding-left:5%;
+	text-align:left;
+	font-size: 1.3em;
+}
+
+#offering-pic {
+	z-index: -1;
+	position:fixed;
+	top:0;
+	left: 5%;
+	margin-top: 0%;
+	width: 45%;
+	height: auto;
+	overflow:hidden;
 }
 
 .right-column-content {
@@ -279,5 +307,10 @@ body {
 #profile-photo {
 	margin-top:2%;
 	width: 50%;
+	height:auto;
+}
+
+#tiny-logo {
+	width:50px;
 	height:auto;
 }

@@ -30,24 +30,24 @@ class CognitiveTransformationComponent extends React.Component {
 	  					<table id="offerings-buttons-table">
 	  						<tr>
 		  						<td>
-					  				<CustomButtonComponent destination="OfferingsComponent" label={language_pack["it-cognitive-transformation-page"]["offering-1"]["name"]}/>
+					  				<CustomButtonComponent destination="/cognitive_transformation/offering-1" course="it-cognitive-transformation-page" picture="chatbot.jpg" offering_id="offering-1" label={language_pack["it-cognitive-transformation-page"]["offering-1"]["name"]}/>
 					  			</td>
 					  			<td>
-					  				<CustomButtonComponent destination="dummy_offering" label={language_pack["it-cognitive-transformation-page"]["offering-2"]["name"]}/>
+					  				<CustomButtonComponent destination="/cognitive_transformation/offering-2" course="it-cognitive-transformation-page" picture="smart_reader_2.png" offering_id="offering-2" label={language_pack["it-cognitive-transformation-page"]["offering-2"]["name"]}/>
 					  			</td>
 					  			<td>
-					  				<CustomButtonComponent destination="dummy_offering" label={language_pack["it-cognitive-transformation-page"]["offering-3"]["name"]}/>
+					  				<CustomButtonComponent destination="/cognitive_transformation/offering-3" course="it-cognitive-transformation-page" picture="process_automation.jpg" offering_id="offering-3" label={language_pack["it-cognitive-transformation-page"]["offering-3"]["name"]}/>
 			  					</td>
 		  					</tr>
 		  					<tr>
 								<td>
-			  						<CustomButtonComponent destination="dummy_offering" label={language_pack["it-cognitive-transformation-page"]["offering-4"]["name"]}/>
+			  						<CustomButtonComponent destination="/cognitive_transformation/offering-4" course="it-cognitive-transformation-page" picture="process_automation.jpg" offering_id="offering-4" label={language_pack["it-cognitive-transformation-page"]["offering-4"]["name"]}/>
 					  			</td>
 					  			<td>
-					  				<CustomButtonComponent destination="dummy_offering" label={language_pack["it-cognitive-transformation-page"]["offering-5"]["name"]}/>
+					  				<CustomButtonComponent destination="/cognitive_transformation/offering-5" course="it-cognitive-transformation-page" picture="process_automation.jpg" offering_id="offering-5" label={language_pack["it-cognitive-transformation-page"]["offering-5"]["name"]}/>
 					  			</td>
 					  			<td>
-					  				<CustomButtonComponent destination="dummy_offering" label={language_pack["it-cognitive-transformation-page"]["offering-6"]["name"]}/>
+					  				<CustomButtonComponent destination="/cognitive_transformation/offering-6" course="it-cognitive-transformation-page" picture="data_architecture.jpg" offering_id="offering-6" label={language_pack["it-cognitive-transformation-page"]["offering-6"]["name"]}/>
 			  					</td>
 		  					</tr>
 	  					</table>
