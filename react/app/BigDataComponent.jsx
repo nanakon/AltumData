@@ -18,7 +18,8 @@ class BigDataComponent extends React.Component {
 
 	render() {	
 	  	return (
-	  		<div className="page" id="big-data-page">
+	  		<div className={"page"} id="big-data-page" style={{backgroundImage:'url(./pics/data_architecture_2.jpg)', backgroundRepeat:'no-repeat', backgroundPosition:'left-top', backgroundSize:'cover'}}>
+	  			<div className="dark-tint-overlay"/>
 	  			<div style={{position:'relative'}}>
 	  				<div className="page-title">{language_pack["homepage-block-buttons"]["big-data-analytics"]}</div>
 	  			</div>

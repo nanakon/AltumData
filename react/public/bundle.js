@@ -67,6 +67,10 @@
 	
 	var _reactRouterDom = __webpack_require__(/*! react-router-dom */ 218);
 	
+	var _eng = __webpack_require__(/*! ./lang_packs/eng.json */ 258);
+	
+	var _eng2 = _interopRequireDefault(_eng);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -150,11 +154,51 @@
 						{ id: 'outer_container' },
 						_react2.default.createElement(
 							'div',
+							{ id: 'bar-mobile' },
+							_react2.default.createElement(
+								_reactRouterDom.Link,
+								{ to: '/', className: 'nav-link-mobile' },
+								_react2.default.createElement(
+									'span',
+									{ className: 'nav-link-mobile-label' },
+									_eng2.default["nav-links"]["home"]
+								)
+							),
+							_react2.default.createElement(
+								_reactRouterDom.Link,
+								{ to: 'about', className: 'nav-link-mobile' },
+								_react2.default.createElement(
+									'span',
+									{ className: 'nav-link-mobile-label' },
+									_eng2.default["nav-links"]["about"]
+								)
+							),
+							_react2.default.createElement(
+								_reactRouterDom.Link,
+								{ to: '/expertises', className: 'nav-link-mobile' },
+								_react2.default.createElement(
+									'span',
+									{ className: 'nav-link-mobile-label' },
+									_eng2.default["nav-links"]["expertises"]
+								)
+							),
+							_react2.default.createElement(
+								_reactRouterDom.Link,
+								{ to: '/team', className: 'nav-link-mobile' },
+								_react2.default.createElement(
+									'span',
+									{ className: 'nav-link-mobile-label' },
+									_eng2.default["nav-links"]["team"]
+								)
+							)
+						),
+						_react2.default.createElement(
+							'div',
 							{ id: 'bar' },
 							_react2.default.createElement(
 								_reactRouterDom.Link,
 								{ to: '/' },
-								_react2.default.createElement('img', { id: 'logo-bar', src: '/pics/logo_4.png' })
+								_react2.default.createElement('img', { id: 'logo-bar', src: '/pics/logo_3.png' })
 							)
 						),
 						side_menu
@@ -24472,6 +24516,8 @@
 		value: true
 	});
 	
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
 	var _react = __webpack_require__(/*! react */ 1);
@@ -24510,11 +24556,11 @@
 	
 	var _OfferingsComponent2 = _interopRequireDefault(_OfferingsComponent);
 	
-	var _BioComponent = __webpack_require__(/*! ./BioComponent.jsx */ 267);
+	var _BioComponent = __webpack_require__(/*! ./BioComponent.jsx */ 268);
 	
 	var _BioComponent2 = _interopRequireDefault(_BioComponent);
 	
-	var _reactBurgerMenu = __webpack_require__(/*! react-burger-menu */ 268);
+	var _reactBurgerMenu = __webpack_require__(/*! react-burger-menu */ 269);
 	
 	var _reactRouterDom = __webpack_require__(/*! react-router-dom */ 218);
 	
@@ -24567,7 +24613,7 @@
 						top: '90px'
 					},
 					bmBurgerBars: {
-						background: '#afafaf'
+						background: '#7044d6'
 					},
 					bmCrossButton: {
 						height: '24px',
@@ -24600,7 +24646,7 @@
 					null,
 					_react2.default.createElement(
 						_reactBurgerMenu.scaleRotate,
-						{ styles: styles, isOpen: this.state.side_menu_open, pageWrapId: "page-wrap", outerContainerId: "outer_container" },
+						{ id: 'menuComponent', styles: styles, isOpen: this.state.side_menu_open, pageWrapId: "page-wrap", outerContainerId: "outer_container" },
 						_react2.default.createElement(
 							'div',
 							{ id: 'nav-wrapper' },
@@ -24656,11 +24702,14 @@
 						_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _HomePageComponent2.default }),
 						_react2.default.createElement(_reactRouterDom.Route, { path: '/about', component: _AboutUsComponent2.default }),
 						_react2.default.createElement(_reactRouterDom.Route, { path: '/expertises', component: _ExpertisesComponent2.default }),
-						_react2.default.createElement(_reactRouterDom.Route, { path: '/team', component: _TeamComponent2.default }),
+						_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/team', component: _TeamComponent2.default }),
+						_react2.default.createElement(_reactRouterDom.Route, { path: '/team/:person_name', component: _BioComponent2.default }),
 						_react2.default.createElement(_reactRouterDom.Route, { path: '/big_data', component: _BigDataComponent2.default }),
 						_react2.default.createElement(_reactRouterDom.Route, { path: '/corporate_program', component: _CorporateProgramComponent2.default }),
 						_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/cognitive_transformation', component: _CognitiveTransformationComponent2.default }),
-						_react2.default.createElement(_reactRouterDom.Route, { path: '/cognitive_transformation/:offering_id', component: _OfferingsComponent2.default }),
+						_react2.default.createElement(_reactRouterDom.Route, { path: '/cognitive_transformation/:offering_id', render: function render(props) {
+								return _react2.default.createElement(_OfferingsComponent2.default, _extends({}, props, { course: 'it-cognitive-transformation-page' }));
+							} }),
 						_react2.default.createElement(_reactRouterDom.Route, { path: '/bio', component: _BioComponent2.default }),
 						_react2.default.createElement(_reactRouterDom.Route, { path: '/dummy_offering', component: _OfferingsComponent2.default })
 					)
@@ -24734,8 +24783,8 @@
 					{ id: 'home-page' },
 					_react2.default.createElement(
 						'video',
-						{ id: 'background-video', width: '1920', height: '1080', loop: true, autoPlay: true },
-						_react2.default.createElement('source', { src: '/pics/background_vid.webm', type: 'video/webm' }),
+						{ id: 'background-video', width: '100%', height: 'auto', loop: true, autoPlay: true },
+						_react2.default.createElement('source', { src: '/pics/sunset_skyscrapers.mp4', type: 'video/webm' }),
 						'Your browser does not support the video tag.'
 					),
 					_react2.default.createElement(
@@ -24766,11 +24815,7 @@
 							_react2.default.createElement(_BlockButtonComponent2.default, { text: _eng2.default["homepage-block-buttons"]["big-data-analytics"], onClick: this.go_to_page, destination: 'big_data' }),
 							_react2.default.createElement(_BlockButtonComponent2.default, { text: _eng2.default["homepage-block-buttons"]["it-cognitive-transformation"], onClick: this.go_to_page, destination: 'cognitive_transformation' })
 						),
-						_react2.default.createElement(
-							'div',
-							{ id: 'global-warming-quote' },
-							_eng2.default["global-warming-quote"]
-						)
+						_react2.default.createElement('div', { id: 'global-warming-quote' })
 					)
 				);
 			}
@@ -24844,7 +24889,11 @@
 						_react2.default.createElement(
 							_button2.default,
 							{ className: 'homepage-button' },
-							this.props.text
+							_react2.default.createElement(
+								'span',
+								{ className: 'homepage-button-label' },
+								this.props.text
+							)
 						)
 					)
 				);
@@ -29554,7 +29603,7 @@
 
 	"use strict";
 	
-	module.exports = { "nav-links": { "home": "HOME", "about": "ABOUT US", "expertises": "EXPERTISES", "team": "TEAM" }, "homepage-block-buttons": { "corporate-enablement-program": "CORPORATE ENABLEMENT PROGRAM", "big-data-analytics": "BIG DATA ANALYTICS", "it-cognitive-transformation": "IT COGNITIVE TRANSFORMATION" }, "homepage-quote": "ANY FOOL CAN KNOW. THE POINT IS TO UNDERSTAND", "homepage-quote-author": "- Albert Einstein", "global-warming-quote": "Approximately 287 000 000 000 tonnes of ice melt in Antarctica every year due to global warming.", "it-cognitive-transformation-page": { "description": "In 1800's humanity stood in front of industrial rev olution driven by invention of the machine, today that machine is imbune with A/V Intelegance opening the door to adoptive robotics era.  Future is not far ahead as adoptive robotics already found it's applications within Comune,  Social and Corporate IT systems enabling them to acheave whole new levles of efficientcy & productivity.", "description-note": "*Cognitive computing is the simulation of human thought processes in a computerized model.", "offering-1": { "name": "Cognitive (VI) Chatbots", "div1-title": "VI Chatbots", "div1-text": "The main mission of chatbots is to understand what the user is saying through natural language processing and collect enough information to take appropriate action or simply answer their questions.", "div2-title": "", "div2-text": "In addition to the chatbot, custom made application is integrated in order to control interface with the user. Once the chatbot collects enough information from the users, it delivers such knowledge to the application which then executes respective actions. The action could simply be looking up an answer from a database, pay the bill or it could be more complicated involving a physical action such as turning on/off the light.", "div3-title": "", "div3-text": "Technology is based on Watson Conversation service hosted on IBM bluemix platform on top of which we develop related applications.", "div4-title": "Practical Applications", "div4-text": "Chatbots are designed based on intents, entities and dialog flow. Intents are actions that users are intending to perform: e.g. get account balance, scheduled a doctor appointment. ", "div5-title": "", "div5-text": "Entities are the specific pieces of information we want to extract from the user response: e.g. account number, doctor name. Dialog flow is the conversation logic.", "div6-title": "What do we need", "div6-text": "This sums up as following requirements for the creation of the VI chatbot:", "div7-title": "", "div7-text": "- General purpose of chatbot", "div8-title": "", "div8-text": "- Examples of current user stories and conversations (as many as possible)", "div9-title": "", "div9-text": "- Bluemix Watson Conversation credentials (or we will handle this for you)", "div10-title": "", "div10-text": "" }, "offering-2": { "name": "Smart Readers", "div1-title": "Cognitive Smart Readers", "div1-text": "Integrated cognitive systems capable of reading and processing thousands of documents in various formats (eg. PDF, JPG…) by using artificial intelligence. Acquired data can serve as an input or output in line with the organization's policies.", "div2-title": "", "div2-text": "Cognitive readers analyze text to extract meta-data from content such as concepts, entities, keywords, categories, sentiment, emotion, relations and semantic roles. Applications combine multiple services such as Document conversion (scan, pdf, doc, HTML ..), Visual recognition or Natural language understanding.", "div3-title": "", "div3-text": "The goal of such applications is to extract data from unstructured texts or picture and process it in parallel with other organization applications.", "div4-title": "Practical applications:", "div4-text": "Reading contract PDF (or other formats) in order to extract data for finance, HR, Procurement, Sales or other organizations and signify key drivers, feed related systems or present recommendations.", "div5-title": "", "div5-text": "Example :Read applicants CV and feed appropriate HR system. Read sales contracts and feed appropriate systems, also understanding key drivers such as GP of the existing project. ", "div6-title": "What do we need", "div6-text": "This sums up as following requirements for the creation of the VI chatbot:", "div7-title": "", "div7-text": "- General purpose of Cognitive reader", "div8-title": "", "div8-text": "- Examples of inputs (documents) and information which should be extracted (as many as possible) ", "div9-title": "", "div9-text": "- Bluemix Service credentials (or we will handle this for you)", "div10-title": "", "div10-text": "" }, "offering-3": { "name": "VI Business Process Automation", "div1-title": "VI Lean Processes", "div1-text": "Our Business Process optimization solutions are based on advanced analytical methods to help organizations make better decisions. ", "div2-title": "", "div2-text": "Optimization applications are often concerned with determining the option which will drive maximum(profit, performance or yield) or minimum (loss, risk or cost) related to real-world objective e.g. business case. So far these optimization methods require 3rd party software to be installed on user’s machine what makes integration into existing application quite difficult. Our Business Process optimization solutions focus on the implementation of Linear programming / Nonlinear programming into existing Organization's workflow applications (Web, Mobile) and calculate the optimal solution in real time (based on API).", "div3-title": "", "div3-text": "", "div4-title": "", "div4-text": "", "div5-title": "", "div5-text": "", "div6-title": "", "div6-text": "", "div7-title": "", "div7-text": "", "div8-title": "", "div8-text": "", "div9-title": "", "div9-text": "", "div10-title": "", "div10-text": "" }, "offering-4": { "name": "MS Office Automation", "div1-title": "VBA MACRO Solutions", "div1-text": "MS Office tools like MS Excel are highly popular and easy to use within a corporate environment. Our MS Office automation solutions help to get the maximum benefit from your Office applications by automating: repetitive tasks, dashboard or report creation, a collection of data from various sources, document creation, print and much more.", "div2-title": "", "div2-text": "Automation is done via Visual Basic for Application (sometimes called Macros) and such an Office tools can integrate with other Windows applications as well.", "div3-title": "", "div3-text": "We know that our clients love MACs, therefore we extended our support for MS Office on MAC OS.", "div4-title": "", "div4-text": "", "div5-title": "", "div5-text": "", "div6-title": "", "div6-text": "", "div7-title": "", "div7-text": "", "div8-title": "", "div8-text": "", "div9-title": "", "div9-text": "", "div10-title": "", "div10-text": "" }, "offering-5": { "name": "Workflow Tools", "div1-title": "VBA MACRO Solutions", "div1-text": "Web/Cloud based applications (desktop and mobile) focused on supporting Organization's internal processes by a collection of the inputs and delivering them to different segments of the organization.", "div2-title": "Practical Applications:", "div2-text": "HR hiring and leaving forms", "div3-title": "", "div3-text": "Hospital reception forms", "div4-title": "", "div4-text": "Request forms with approval chain (Budget approvals, vacation, expense reimbursement.. )", "div5-title": "", "div5-text": "Workflow tools between two or more departments Internal/external surveys", "div6-title": "", "div6-text": "", "div7-title": "", "div7-text": "", "div8-title": "", "div8-text": "", "div9-title": "", "div9-text": "", "div10-title": "", "div10-text": "" }, "offering-6": { "name": "Data Architecture", "div1-title": "Data Bases (Information Warehouse / Data Mart / Data Lake)", "div1-text": "Creation and maintenance of Relational or Multidimensional (aka data cubes) databases in pair with on top application layer which serves to extract data in the meanigful format for the requestion organization.", "div2-title": "Practical Applications:", "div2-text": "Creation of data warehouse of revenue, cost & expense data capable of being queried in a form with flexibly structured dashboards.", "div3-title": "", "div3-text": "Creation of debt tracking data base with the capability to query results in an appropriate format.", "div4-title": "", "div4-text": "All our applications are compatible with cognitive solutions which will provide organization with richer data, key drivers, and base for SMART decision making (predictive, behavior or sentiment modeling).", "div5-title": "Data Mining", "div5-text": "In many cases, data is not easily attainable to serve organization needs. Data needed for key decision making can be both structured or unstructured thus increasing the complexity of its extractions. Our experts can serve you required BIG DATA on demand using advanced extraction techniques. Contact us to learn more.", "div6-title": "", "div6-text": "", "div7-title": "", "div7-text": "", "div8-title": "", "div8-text": "", "div9-title": "", "div9-text": "", "div10-title": "", "div10-text": "" } }, "big-data-analytics": { "description": { "div1": "In midst of the digital age, Organizations are faced with ever increasing operational dynamics which demands effective and qualitative decision making. In practice, this is timely and complicated process urging the organizations to use expensive methods such as ''opinions'' or develop Data Science capability within its own mists.", "div2": "Data Science approach in correlation with Big Data enables the organization to see the environment through exact data and understand near future with very high certainty power.", "div3": "Data sets are most commonly analyzed as Predictions, Sentiment Analytics or Behaviour Analytics. Each of those capabilities is arming the organization with the ability to understand future on the empiric level and base its actions accordingly.", "div4": "Building Data Science capabilities are the timely and costly process, which you can skip and get your key points today by using our BIG DATA Modeling on Demand expertise." }, "description-note": "*Cognitive computing is the simulation of human thought processes in a computerized model.", "offering-1": { "name": "Cognitive (VI) Chatbots", "div1-title": "VI Chatbots", "div1-text": "The main mission of chatbots is to understand what the user is saying through natural language processing and collect enough information to take appropriate action or simply answer their questions.", "div2-title": "", "div2-text": "In addition to the chatbot, custom made application is integrated in order to control interface with the user. Once the chatbot collects enough information from the users, it delivers such knowledge to the application which then executes respective actions. The action could simply be looking up an answer from a database, pay the bill or it could be more complicated involving a physical action such as turning on/off the light.", "div3-title": "", "div3-text": "Technology is based on Watson Conversation service hosted on IBM bluemix platform on top of which we develop related applications.", "div4-title": "Practical Applications", "div4-text": "Chatbots are designed based on intents, entities and dialog flow. Intents are actions that users are intending to perform: e.g. get account balance, scheduled a doctor appointment. ", "div5-title": "", "div5-text": "Entities are the specific pieces of information we want to extract from the user response: e.g. account number, doctor name. Dialog flow is the conversation logic.", "div6-title": "What do we need", "div6-text": "This sums up as following requirements for the creation of the VI chatbot:", "div7-title": "", "div7-text": "- General purpose of chatbot", "div8-title": "", "div8-text": "- Examples of current user stories and conversations (as many as possible)", "div9-title": "", "div9-text": "- Bluemix Watson Conversation credentials (or we will handle this for you)", "div10-title": "", "div10-text": "" } } };
+	module.exports = { "nav-links": { "home": "HOME", "about": "ABOUT US", "expertises": "EXPERTISES", "team": "TEAM" }, "homepage-block-buttons": { "corporate-enablement-program": "CORPORATE ENABLEMENT PROGRAM", "big-data-analytics": "BIG DATA ANALYTICS", "it-cognitive-transformation": "IT COGNITIVE TRANSFORMATION" }, "homepage-quote": "ANY FOOL CAN KNOW. THE POINT IS TO UNDERSTAND", "homepage-quote-author": "- Albert Einstein", "global-warming-quote": "Approximately 287 000 000 000 tonnes of ice melt in Antarctica every year due to global warming.", "about-us": { "title": "ABOUT ALTUM DATA", "content": "Altum Data equips organizations with the tools, strategies, and culture necessary to sustain effective transformation. By leveraging over 200 years of experience in instructing and implementing Lean, Six Sigma, Kaizen, and Big Data solutions, Altum Data is well-equipped to empower both individuals and corporations to drive sustainable change and transform their business from within. Our team of experts have experience in, in what? Altum Data’s approach to employee and project-team led solutions along with leadership buy-in to cultural transformations allows organizations to develop real, sustainable change which has a direct impact on improving the bottom line." }, "expertises": { "title": "EXPERTISES", "content": { "div1-title": "Our Approach", "div1-text": "" } }, "corporate-enablement-program": { "description": { "div1-text": "Lean Six Sigma is a comprehensive methodology that helps organizations improve value to their customers by reducing waste (Lean) and variation (Six Sigma) in an organization’s processes.  Applying Lean Six Sigma results in increased productivity through process efficiencies, increased revenue, decreased costs (e.g. inventory errors, product defects, overproduction) and innovative solutions for an organization.", "div2-text": "Lean Six Sigma goes beyond the traditional manufacturing environment.  Today it is applied in many other industries such as healthcare, logistics, service, retail, and more.", "div3-text": "Companies who have chosen to implement Lean Six Sigma throughout their enterprise, have conservatively impacted their bottom line with tangible results in the range of $500,000 to $5,000,000 (USD) annually." } }, "it-cognitive-transformation-page": { "description": "As the industrial revolution driven by invention of the machine, today business is more and more driving by artificial intelligence and advanced cognitive solutions.  Machine learning, cognitive IT, and adoptive robotics already have already found applications within communications, HR, manufacturing, and social and corporate IT systems enabling new levels of efficiency and production.", "description-note": "*Cognitive computing is the simulation of human thought processes in a computerized model.", "offering-1": { "name": "Cognitive (VI) Chatbots", "div1-title": "VI Chatbots", "div1-text": "The main mission of a chatbot is to understand what the user is saying through natural language processing and collect enough information to take appropriate actions, or simply answer their questions.", "div2-title": "", "div2-text": "Custom-made applications can be integrated in order to control interface with the user. Once the chatbot collects enough information from the users, it delivers knowledge to the application which then executes respective actions. The action could simply be looking up an answer from a database, pay bills, answering insurance claims, or something more complicated which involves physical action such as turning on/off the light.", "div3-title": "", "div3-text": "Our chatbot technology is based on Watson Conversation service hosted on IBM’s bluemix platform, on top of which we develop related applications.", "div4-title": "Practical Applications", "div4-text": "Chatbots are designed based on intents, entities and dialog flow. Intents are actions that users are intending to perform: e.g. get account balance, scheduled a doctor appointment.", "div5-title": "", "div5-text": "Entities are the specific pieces of information we want to extract from the user response: e.g. account number, doctor name. Dialog flow is the conversation logic.", "div6-title": "What do we need", "div6-text": "This sums up as following requirements for the creation of the VI chatbot:", "div7-title": "", "div7-text": "- General purpose of chatbot", "div8-title": "", "div8-text": "- Examples of current user stories and conversations (as many as possible)", "div9-title": "", "div9-text": "- Bluemix Watson Conversation credentials (or we will handle this for you)", "div10-title": "", "div10-text": "" }, "offering-2": { "name": "Smart Readers", "div1-title": "Cognitive Smart Readers", "div1-text": "Smart readers are integrated cognitive systems capable of reading and processing thousands of documents in various formats (eg. PDF, JPG…) by using artificial intelligence.  The acquired data can serve as input or output in-line with the organization's policies.", "div2-title": "", "div2-text": "Cognitive readers analyze text to extract meta-data from content such as concepts, entities, keywords, categories, sentiment, emotion, relations and semantic roles. Applications can combine multiple services such as Document conversion (scan, pdf, doc, HTML ..), visual recognition or natural language understanding.", "div3-title": "", "div3-text": "The goal of such applications is to extract data from unstructured texts or pictures and process it in parallel with other organization applications.", "div4-title": "Practical applications:", "div4-text": "Reading contract PDFs (or other formats) in order to extract data for finance, HR, Procurement, Sales or other organizations and signify key drivers, feed related systems, or present recommendations.", "div5-title": "", "div5-text": "Example :Read applicant CV’s and feed the appropriate HR system. Read sales contracts and feed appropriate systems, along with understanding key drivers such as GP of the existing project.", "div6-title": "What do we need", "div6-text": "This sums up as following requirements for the creation of the VI chatbot:", "div7-title": "", "div7-text": "- General purpose of Cognitive reader", "div8-title": "", "div8-text": "- Examples of inputs (documents) and information which should be extracted (as many as possible) ", "div9-title": "", "div9-text": "- Bluemix Service credentials (or we will handle this for you)", "div10-title": "", "div10-text": "" }, "offering-3": { "name": "VI Business Process Optimization", "div1-title": "VI Lean Processes", "div1-text": "Our Business Process optimization solutions are based on advanced analytical methods to help organizations make better decisions.", "div2-title": "", "div2-text": "Optimization applications are often concerned with determining the option which will drive maximum(profit, performance or yield) or minimum (loss, risk or cost) related to real-world objectives or business cases. So far these optimization methods require 3rd party software to be installed on user’s machine what makes integration into existing application quite difficult. Our Business Process optimization solutions focus on the implementation of Linear programming / Nonlinear programming into existing Organization's workflow applications (Web, Mobile) and calculate the optimal solution in real time (based on API).", "div3-title": "", "div3-text": "", "div4-title": "", "div4-text": "", "div5-title": "", "div5-text": "", "div6-title": "", "div6-text": "", "div7-title": "", "div7-text": "", "div8-title": "", "div8-text": "", "div9-title": "", "div9-text": "", "div10-title": "", "div10-text": "" }, "offering-4": { "name": "MS Office Automation", "div1-title": "VBA MACRO Solutions", "div1-text": "MS Office tools like MS Excel are highly popular and easy to use within a corporate environment. Our MS Office automation solutions help get the maximum benefit from your Office applications by automating: repetitive tasks, dashboard or report creation, a collection of data from various sources, document creation, print and much more.", "div2-title": "", "div2-text": "Automation is done via Visual Basic for Application (sometimes called Macros) and such Office tools can integrate with other Windows applications as well.", "div3-title": "", "div3-text": "We know that our clients love MACs, therefore we extended our support for MS Office on MAC OS.", "div4-title": "", "div4-text": "", "div5-title": "", "div5-text": "", "div6-title": "", "div6-text": "", "div7-title": "", "div7-text": "", "div8-title": "", "div8-text": "", "div9-title": "", "div9-text": "", "div10-title": "", "div10-text": "" }, "offering-5": { "name": "Workflow Tools", "div1-title": "VBA MACRO Solutions", "div1-text": "Web/Cloud based applications (desktop and mobile) focused on supporting Organization's internal processes by a collection of the inputs and delivering them to different segments of the organization.", "div2-title": "Practical Applications:", "div2-text": "HR hiring and leaving forms", "div3-title": "", "div3-text": "Hospital reception forms", "div4-title": "", "div4-text": "Request forms with approval chain (Budget approvals, vacation, expense reimbursement.. )", "div5-title": "", "div5-text": "Workflow tools between two or more departments Internal/external surveys", "div6-title": "", "div6-text": "", "div7-title": "", "div7-text": "", "div8-title": "", "div8-text": "", "div9-title": "", "div9-text": "", "div10-title": "", "div10-text": "" }, "offering-6": { "name": "Data Architecture", "div1-title": "Data Bases (Information Warehouse / Data Mart / Data Lake)", "div1-text": "Creation and maintenance of Relational or Multidimensional (aka data cubes) databases in pair with on-top application layers which serve to extract data in a meaningful format.", "div2-title": "Practical Applications:", "div2-text": "Creation of data warehouse of revenue, cost & expense data capable of being queried in a form with flexibly structured dashboards.", "div3-title": "", "div3-text": "Creation of debt tracking databases with the capability to query results in an appropriate format.", "div4-title": "", "div4-text": "All our applications are compatible with cognitive solutions which will provide organizations with richer data, key drivers, and a base for SMART decision making (predictive, behavior or sentiment modeling).", "div5-title": "Data Mining", "div5-text": "In many cases, data is not easily attainable to serve organization needs. Data needed for key decision-making can be both structured or unstructured thus increasing the complexity of its extractions. Our experts can serve you required BIG DATA on demand using advanced extraction techniques. Contact us to learn more.", "div6-title": "", "div6-text": "", "div7-title": "", "div7-text": "", "div8-title": "", "div8-text": "", "div9-title": "", "div9-text": "", "div10-title": "", "div10-text": "" } }, "big-data-analytics": { "description": { "div1": "Today, organizations are faced with ever increasing operational dynamics that demand effective and qualitative decision-making.  Often, organizations and management teams rely on opinions or past experience to direct how they move forward.", "div2": "Organizations that embrace data science are able to quantify the main drivers of their business, reduce the likelihood of human error in decision making, and predict what will happen to their business in the near future.", "div3": "Data sets are most commonly analyzed as Predictions, Sentiment Analytics or Behavior Analytics. Each capability enables the organization to understand future based of historical trends and likely future outcomes level and base its actions accordingly.", "div4": "Building Data Science capabilities can be a timely and costly process.  Altum Data makes it simple to implement a big data approach in your business by using our BIG DATA Modeling on Demand expertise." }, "description-note": "*Cognitive computing is the simulation of human thought processes in a computerized model.", "offering-1": { "name": "Cognitive (VI) Chatbots", "div1-title": "VI Chatbots", "div1-text": "The main mission of chatbots is to understand what the user is saying through natural language processing and collect enough information to take appropriate action or simply answer their questions.", "div2-title": "", "div2-text": "In addition to the chatbot, custom made application is integrated in order to control interface with the user. Once the chatbot collects enough information from the users, it delivers such knowledge to the application which then executes respective actions. The action could simply be looking up an answer from a database, pay the bill or it could be more complicated involving a physical action such as turning on/off the light.", "div3-title": "", "div3-text": "Technology is based on Watson Conversation service hosted on IBM bluemix platform on top of which we develop related applications.", "div4-title": "Practical Applications", "div4-text": "Chatbots are designed based on intents, entities and dialog flow. Intents are actions that users are intending to perform: e.g. get account balance, scheduled a doctor appointment. ", "div5-title": "", "div5-text": "Entities are the specific pieces of information we want to extract from the user response: e.g. account number, doctor name. Dialog flow is the conversation logic.", "div6-title": "What do we need", "div6-text": "This sums up as following requirements for the creation of the VI chatbot:", "div7-title": "", "div7-text": "- General purpose of chatbot", "div8-title": "", "div8-text": "- Examples of current user stories and conversations (as many as possible)", "div9-title": "", "div9-text": "- Bluemix Watson Conversation credentials (or we will handle this for you)", "div10-title": "", "div10-text": "" } }, "bios": { "don-sobeski": { "name": "Don Sobeski", "role": "Managing Partner", "div1": "Don Sobeski is a Lean Six Sigma Black Belt and Instructor, who brings 40 years of experience from IBM where he worked as a Hardware Engineer, Software Developer, Instructor, LSS Black Belt and Business Performance Consultant in the retail, insurance, chemical and financial services industries.", "div2": "For the past 9 years his focus has been on process excellence through Lean and Lean Six Sigma training and coaching that has enabled IBM business units to achieve significant savings and ROI.  He is a member of the American Society of Quality (ASQ), the Lean Enterprise Institute (LEI) and the Association for Talent Development (ATD)." }, "david-hare": { "name": "David Hare", "role": "Managing Partner", "div1": "David Hare is the co-founder and managing partner of the Path Forward to Business Transformation LLC.  Previously, David served as a Program Manager and Transformation Facilitator at International Business Machines (IBM). His 30+ years of service at IBM included roles in manufacturing, process engineering, HR management, and the facilitation of global process transformation change initiatives. David is an accredited organizational change facilitator, with subject matter expertise in business process and change management. In the past five years, David and his team have facilitated process transformations efforts valued at over $900 million dollars (USD).", "div2": "In his spare time, David serves as a nationally certified interscholastic coach and devotes much of his time to developing youth leadership." }, "barbara-reusser": { "name": "Barbara Reusser", "role": "Master Black Belt", "div1": "Barbara S. Reusser has more than 30 years of consulting experience in change management, instructional design, and process improvement for business transformation. As a Master Black Belt, she has supported the successful implementation of Lean Six Sigma-based process improvement at a variety of companies through coaching projects, facilitation of champion workshops, and designing training materials to support successful global deployments. She has consulted with public and private sector clients in the areas of managerial and executive development, strategic change initiatives, and organizational realignments.", "div2": "As a member of PricewaterhouseCoopers, she led business transformation projects with various Fortune 100 businesses. In addition, Barbara was previously an internal consultant with a large government agency, leading executive training and development and transformational change. She was also previously on the faculties at two universities. Barbara has published and presented internationally on the topics of instructional design and change management." }, "richard-orth": { "name": "Richard Orth", "role": "Transformation Facilitator", "div1": "Richard Orth is a Transformation Facilitator, having over 39 years’ experience with IBM as a change leader, facilitator, trainer, leadership coach and business analyst. He helps client organizations improve their capabilities in the areas of cultural transformation, leadership development, collaborative problem-solving and decision-making, and process facilitation.", "div2": "Richard is an IBM certified IT Specialist and also a volunteer community mediator." }, "luca-bencini": { "name": "Luca Bencini", "role": "Master Black Belt and Operations Excellence Consultant", "div1": "Luca Bencini is an Operations Excellence Consultant with over 25 years’ experience in business strategy, process improvement and change management. As a practitioner and consultant delivering business results through continuous and breakthrough improvements.  He has worked in a number of industries such as electric utilities, healthcare, financial services, supply chain, IT, manufacturing (discrete and process) and government.  Additionally he has worked in functions like: marketing, finance, operations and sales.  He also led several operational excellence deployments and was heavily involved in the Deming Prize at Florida Power & Light.  Luca has worked and lived in the US, Latin America and Europe and is fluent in English, Spanish and Italian.", "div2": "Luca is a graduate of the Massachusetts Institute of Technology with degrees in Chemical Engineering and Economics and has an MBA from Harvard." }, "alan-henderson": { "name": "Alan Henderson", "role": "Busiest Person in the World", "div1": "Alan is an accomplished business development director and sales strategist.  Having sold and developed business opportunities in Banking, Pharmaceutical, Aviation, and IT sectors, Alan has a wealth of experience in understanding what clients need and providing value to their organization.  Alan has experience in bringing start-ups sustainable profitability, SMEs increase their market share, and large corporations evolve their selling processes.  Within Altum Data, Alan acts as a consultant to help guide companies through the process of embracing lean, transformation, and cognitive solutions." } } };
 
 /***/ }),
 /* 259 */
@@ -29614,7 +29663,8 @@
 			value: function render() {
 				return _react2.default.createElement(
 					'div',
-					{ className: 'page', id: 'big-data-page' },
+					{ className: "page", id: 'big-data-page', style: { backgroundImage: 'url(./pics/data_architecture_2.jpg)', backgroundRepeat: 'no-repeat', backgroundPosition: 'left-top', backgroundSize: 'cover' } },
+					_react2.default.createElement('div', { className: 'dark-tint-overlay' }),
 					_react2.default.createElement(
 						'div',
 						{ style: { position: 'relative' } },
@@ -29686,6 +29736,10 @@
 	
 	var _BlockButtonComponent2 = _interopRequireDefault(_BlockButtonComponent);
 	
+	var _eng = __webpack_require__(/*! ./lang_packs/eng.json */ 258);
+	
+	var _eng2 = _interopRequireDefault(_eng);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -29724,13 +29778,13 @@
 						_react2.default.createElement(
 							'div',
 							{ className: 'page-title' },
-							'ABOUT ALTUM DATA'
+							_eng2.default["about-us"]["title"]
 						)
 					),
 					_react2.default.createElement(
 						'div',
 						{ id: 'aboutus-content' },
-						'#Who we are what we do why we do that or whatever else that people should know about this project#'
+						_eng2.default["about-us"]["content"]
 					)
 				);
 			}
@@ -29795,14 +29849,127 @@
 			value: function render() {
 				return _react2.default.createElement(
 					'div',
-					{ className: 'page', id: 'aboutus-page' },
+					{ className: 'page', id: 'expertises-page' },
 					_react2.default.createElement(
 						'div',
-						{ style: { position: 'relative' } },
+						{ className: 'expertises-page-content', id: 'expertises-page-content-left', style: { position: 'relative' } },
 						_react2.default.createElement(
 							'div',
-							{ className: 'page-title' },
+							{ className: 'page-title blue', id: 'expertises-title-1' },
 							'Our Expertises'
+						),
+						_react2.default.createElement('br', null),
+						_react2.default.createElement(
+							'h3',
+							{ className: 'expertises-page-content-div' },
+							'Altum Data takes a holistic approach to facilitate and sustain organizational transformation. Our team collaborates with stakeholders at all levels to develop competencies aligned with two key indicators of organizational success: ',
+							_react2.default.createElement(
+								'span',
+								{ className: 'oblique bold' },
+								'Employee Engagement'
+							),
+							' and ',
+							_react2.default.createElement(
+								'span',
+								{ className: 'oblique bold' },
+								'Process Excellence'
+							),
+							'.\xA0 The more an organization improves these leading indicators, the greater their business success, as measured by the lagging indicators of ',
+							_react2.default.createElement(
+								'span',
+								{ className: 'oblique bold' },
+								'Client Value'
+							),
+							' and ',
+							_react2.default.createElement(
+								'span',
+								{ className: 'oblique bold' },
+								'Financial Results'
+							),
+							'.'
+						),
+						_react2.default.createElement(
+							'h3',
+							{ className: 'expertises-page-content-div' },
+							'In the past 5 years this approach generated over ',
+							_react2.default.createElement(
+								'span',
+								{ className: 'oblique bold' },
+								'$900M'
+							),
+							' in savings for our clients.'
+						),
+						_react2.default.createElement('br', null)
+					),
+					_react2.default.createElement(
+						'div',
+						{ className: 'expertises-page-content', id: 'expertises-page-content-right' },
+						_react2.default.createElement(
+							'div',
+							{ className: 'page-title blue', id: 'expertises-title-1' },
+							'Components of Successful and Sustainable Change'
+						),
+						_react2.default.createElement('br', null),
+						_react2.default.createElement(
+							'h3',
+							{ className: 'expertises-page-content-div' },
+							_react2.default.createElement(
+								'h4',
+								null,
+								_react2.default.createElement(
+									'span',
+									{ className: 'oblique bold blue' },
+									'Transformational Leadership'
+								)
+							),
+							_react2.default.createElement('br', null),
+							'- Senior leaders identify the compelling reasons for change and measures of success',
+							_react2.default.createElement('br', null),
+							'- Identify key leadership styles and behaviors that affect business performance',
+							_react2.default.createElement('br', null),
+							'- Improve leaders\u2019 effectiveness by creating individual and team development plans',
+							_react2.default.createElement('br', null),
+							'- Coach and mentor leaders to implement and sustain change',
+							_react2.default.createElement('br', null),
+							_react2.default.createElement('br', null),
+							_react2.default.createElement(
+								'h4',
+								null,
+								_react2.default.createElement(
+									'span',
+									{ className: 'oblique bold blue' },
+									'Adaptive Culture'
+								)
+							),
+							_react2.default.createElement('br', null),
+							'- Create a baseline of the organization\u2019s current and preferred culture',
+							_react2.default.createElement('br', null),
+							'- Gain senior leaders\u2019 commitment and define their role in leading change',
+							_react2.default.createElement('br', null),
+							'- Develop a change plan with representative managers, supervisors, and employees',
+							_react2.default.createElement('br', null),
+							'- Engage the entire organization to implement the change plan',
+							_react2.default.createElement('br', null),
+							_react2.default.createElement('br', null),
+							_react2.default.createElement(
+								'h4',
+								null,
+								_react2.default.createElement(
+									'span',
+									{ className: 'oblique bold blue' },
+									'Process Excellence'
+								)
+							),
+							_react2.default.createElement('br', null),
+							'- Build skills in process analysis and process improvement techniques',
+							_react2.default.createElement('br', null),
+							'- Develop team-based problem-solving and decision-making skills ',
+							_react2.default.createElement('br', null),
+							'- Transform processes to simplify, and standardize, and automate',
+							_react2.default.createElement('br', null),
+							'- Certify / qualify participants in Lean, Lean Six Sigma, Agile and Change Management disciplines',
+							_react2.default.createElement('br', null),
+							_react2.default.createElement('br', null)
 						)
 					)
 				);
@@ -29839,7 +30006,13 @@
 	
 	var _reactRouterDom = __webpack_require__(/*! react-router-dom */ 218);
 	
+	var _eng = __webpack_require__(/*! ./lang_packs/eng.json */ 258);
+	
+	var _eng2 = _interopRequireDefault(_eng);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
@@ -29856,39 +30029,101 @@
 			var _this = _possibleConstructorReturn(this, (TeamComponent.__proto__ || Object.getPrototypeOf(TeamComponent)).call(this, props));
 	
 			_this.state = {};
-			_this.go_to_page = _this.go_to_page.bind(_this);
 			return _this;
 		}
 	
 		_createClass(TeamComponent, [{
-			key: 'go_to_page',
-			value: function go_to_page(destination) {
-				this.props.go_to_page(destination);
-			}
-		}, {
 			key: 'render',
 			value: function render() {
 				return _react2.default.createElement(
 					'div',
-					{ className: 'page', id: 'team-page' },
+					{ className: 'page', id: 'team-page', style: { backgroundImage: 'url("./pics/team.jpg")', backgroundRepeat: 'no-repeat', backgroundPosition: 'left-top', backgroundClip: 'content-box', backgroundSize: 'cover' } },
 					_react2.default.createElement(
 						'div',
-						{ style: { position: 'relative' } },
+						{ id: 'team-page-content-wrapper' },
 						_react2.default.createElement(
 							'div',
-							{ className: 'page-title' },
-							'THE ALTUM DATA TEAM'
-						)
-					),
-					_react2.default.createElement(
-						'div',
-						{ id: 'team-page-content' },
-						_react2.default.createElement(
-							_reactRouterDom.Link,
-							{ to: 'bio', className: 'team-name' },
-							'Name1'
+							{ style: { position: 'relative' } },
+							_react2.default.createElement(
+								'div',
+								{ className: 'page-title' },
+								'THE ALTUM DATA TEAM'
+							)
 						),
-						' - role1, Name2 - role2, Name3 - role3 .... NameX - roleX'
+						_react2.default.createElement(
+							'div',
+							{ id: 'team-page-content' },
+							_react2.default.createElement(
+								'div',
+								{ id: 'team-page-content-sub-wrapper' },
+								_react2.default.createElement(
+									_reactRouterDom.Link,
+									_defineProperty({ className: 'custom-link', to: { pathname: "/team/don-sobeski", person_name: "don-sobeski" } }, 'className', 'name-link'),
+									'Don Sobeski'
+								),
+								_react2.default.createElement(
+									'span',
+									{ className: 'person-role' },
+									' - ',
+									_eng2.default["bios"]["don-sobeski"]["role"]
+								),
+								_react2.default.createElement(
+									_reactRouterDom.Link,
+									_defineProperty({ className: 'custom-link', to: { pathname: "/team/david-hare", person_name: "david-hare" } }, 'className', 'name-link'),
+									'David Hare'
+								),
+								_react2.default.createElement(
+									'span',
+									{ className: 'person-role' },
+									' - ',
+									_eng2.default["bios"]["david-hare"]["role"]
+								),
+								_react2.default.createElement(
+									_reactRouterDom.Link,
+									_defineProperty({ className: 'custom-link', to: { pathname: "/team/richard-orth", person_name: "richard-orth" } }, 'className', 'name-link'),
+									'Richard Orth'
+								),
+								_react2.default.createElement(
+									'span',
+									{ className: 'person-role' },
+									' - ',
+									_eng2.default["bios"]["richard-orth"]["role"]
+								),
+								_react2.default.createElement(
+									_reactRouterDom.Link,
+									_defineProperty({ className: 'custom-link', to: { pathname: "/team/barbara-reusser", person_name: "barbara-reusser" } }, 'className', 'name-link'),
+									'Barbara Reusser'
+								),
+								_react2.default.createElement(
+									'span',
+									{ className: 'person-role' },
+									' - ',
+									_eng2.default["bios"]["barbara-reusser"]["role"]
+								),
+								_react2.default.createElement(
+									_reactRouterDom.Link,
+									_defineProperty({ className: 'custom-link', to: { pathname: "/team/luca-bencini", person_name: "luca-bencini" } }, 'className', 'name-link'),
+									'Luca Bencini'
+								),
+								_react2.default.createElement(
+									'span',
+									{ className: 'person-role' },
+									' - ',
+									_eng2.default["bios"]["luca-bencini"]["role"]
+								),
+								_react2.default.createElement(
+									_reactRouterDom.Link,
+									_defineProperty({ className: 'custom-link', to: { pathname: "/team/alan-henderson", person_name: "alan-henderson" } }, 'className', 'name-link'),
+									'Alan Henderson'
+								),
+								_react2.default.createElement(
+									'span',
+									{ className: 'person-role' },
+									' - ',
+									_eng2.default["bios"]["alan-henderson"]["role"]
+								)
+							)
+						)
 					)
 				);
 			}
@@ -29947,21 +30182,15 @@
 			var _this = _possibleConstructorReturn(this, (CorporateProgramComponent.__proto__ || Object.getPrototypeOf(CorporateProgramComponent)).call(this, props));
 	
 			_this.state = {};
-			_this.go_to_page = _this.go_to_page.bind(_this);
 			return _this;
 		}
 	
 		_createClass(CorporateProgramComponent, [{
-			key: 'go_to_page',
-			value: function go_to_page(destination) {
-				this.props.go_to_page(destination);
-			}
-		}, {
 			key: 'render',
 			value: function render() {
 				return _react2.default.createElement(
 					'div',
-					{ className: 'page', id: 'team-page' },
+					{ className: 'page', id: 'corporate-enablement-program-page' },
 					_react2.default.createElement(
 						'div',
 						{ style: { position: 'relative' } },
@@ -29973,7 +30202,24 @@
 						_react2.default.createElement(
 							'div',
 							{ className: 'course-description-text' },
-							'#Descriptory text of this course#'
+							_react2.default.createElement(
+								'div',
+								null,
+								_eng2.default["corporate-enablement-program"]["description"]["div1-text"]
+							),
+							_react2.default.createElement('br', null),
+							_react2.default.createElement(
+								'div',
+								null,
+								_eng2.default["corporate-enablement-program"]["description"]["div2-text"]
+							),
+							_react2.default.createElement('br', null),
+							_react2.default.createElement(
+								'div',
+								null,
+								_eng2.default["corporate-enablement-program"]["description"]["div3-text"]
+							),
+							_react2.default.createElement('br', null)
 						),
 						_react2.default.createElement(
 							'div',
@@ -30039,11 +30285,6 @@
 									)
 								)
 							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ style: { marginTop: '5%', color: 'orange' } },
-							'//There will be as many buttons as there are offerings obviously, the final arangement will depend on how many buttons there are'
 						)
 					)
 				);
@@ -30191,69 +30432,73 @@
 			value: function render() {
 				return _react2.default.createElement(
 					'div',
-					{ className: 'page', id: 'team-page' },
+					{ className: 'page', style: { backgroundImage: 'url(./pics/cogtransformation.jpg)', backgroundRepeat: 'no-repeat', backgroundPosition: 'left-top', backgroundSize: 'cover' } },
 					_react2.default.createElement(
 						'div',
-						{ style: { position: 'relative' } },
+						{ id: 'cognitive-transformation-content-wrapper' },
 						_react2.default.createElement(
 							'div',
-							{ className: 'page-title' },
-							_eng2.default["homepage-block-buttons"]["it-cognitive-transformation"]
-						)
-					),
-					_react2.default.createElement(
-						'div',
-						{ className: 'course-description-text' },
-						_eng2.default["it-cognitive-transformation-page"]["description"]
-					),
-					_react2.default.createElement('br', null),
-					_react2.default.createElement(
-						'div',
-						{ className: 'course-description-text-note' },
-						_eng2.default["it-cognitive-transformation-page"]["description-note"]
-					),
-					_react2.default.createElement(
-						'div',
-						{ className: 'offerings-buttons-wrapper' },
+							{ style: { position: 'relative' } },
+							_react2.default.createElement(
+								'div',
+								{ className: 'page-title' },
+								_eng2.default["homepage-block-buttons"]["it-cognitive-transformation"]
+							)
+						),
 						_react2.default.createElement(
-							'table',
-							{ id: 'offerings-buttons-table' },
+							'div',
+							{ className: 'course-description-text' },
+							_eng2.default["it-cognitive-transformation-page"]["description"]
+						),
+						_react2.default.createElement('br', null),
+						_react2.default.createElement(
+							'div',
+							{ className: 'course-description-text-note' },
+							_eng2.default["it-cognitive-transformation-page"]["description-note"]
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'offerings-buttons-wrapper' },
 							_react2.default.createElement(
-								'tr',
-								null,
+								'table',
+								{ id: 'offerings-buttons-table' },
 								_react2.default.createElement(
-									'td',
+									'tr',
 									null,
-									_react2.default.createElement(_CustomButtonComponent2.default, { destination: '/cognitive_transformation/offering-1', course: 'it-cognitive-transformation-page', picture: 'chatbot.jpg', offering_id: 'offering-1', label: _eng2.default["it-cognitive-transformation-page"]["offering-1"]["name"] })
+									_react2.default.createElement(
+										'td',
+										null,
+										_react2.default.createElement(_CustomButtonComponent2.default, { destination: '/cognitive_transformation/offering-1', course: 'it-cognitive-transformation-page', picture: 'chatbot.jpg', offering_id: 'offering-1', label: _eng2.default["it-cognitive-transformation-page"]["offering-1"]["name"] })
+									),
+									_react2.default.createElement(
+										'td',
+										null,
+										_react2.default.createElement(_CustomButtonComponent2.default, { destination: '/cognitive_transformation/offering-2', course: 'it-cognitive-transformation-page', picture: 'smart_reader_2.png', offering_id: 'offering-2', label: _eng2.default["it-cognitive-transformation-page"]["offering-2"]["name"] })
+									),
+									_react2.default.createElement(
+										'td',
+										null,
+										_react2.default.createElement(_CustomButtonComponent2.default, { destination: '/cognitive_transformation/offering-3', course: 'it-cognitive-transformation-page', picture: 'process_automation.jpg', offering_id: 'offering-3', label: _eng2.default["it-cognitive-transformation-page"]["offering-3"]["name"] })
+									)
 								),
 								_react2.default.createElement(
-									'td',
+									'tr',
 									null,
-									_react2.default.createElement(_CustomButtonComponent2.default, { destination: '/cognitive_transformation/offering-2', course: 'it-cognitive-transformation-page', picture: 'smart_reader_2.png', offering_id: 'offering-2', label: _eng2.default["it-cognitive-transformation-page"]["offering-2"]["name"] })
-								),
-								_react2.default.createElement(
-									'td',
-									null,
-									_react2.default.createElement(_CustomButtonComponent2.default, { destination: '/cognitive_transformation/offering-3', course: 'it-cognitive-transformation-page', picture: 'process_automation.jpg', offering_id: 'offering-3', label: _eng2.default["it-cognitive-transformation-page"]["offering-3"]["name"] })
-								)
-							),
-							_react2.default.createElement(
-								'tr',
-								null,
-								_react2.default.createElement(
-									'td',
-									null,
-									_react2.default.createElement(_CustomButtonComponent2.default, { destination: '/cognitive_transformation/offering-4', course: 'it-cognitive-transformation-page', picture: 'process_automation.jpg', offering_id: 'offering-4', label: _eng2.default["it-cognitive-transformation-page"]["offering-4"]["name"] })
-								),
-								_react2.default.createElement(
-									'td',
-									null,
-									_react2.default.createElement(_CustomButtonComponent2.default, { destination: '/cognitive_transformation/offering-5', course: 'it-cognitive-transformation-page', picture: 'process_automation.jpg', offering_id: 'offering-5', label: _eng2.default["it-cognitive-transformation-page"]["offering-5"]["name"] })
-								),
-								_react2.default.createElement(
-									'td',
-									null,
-									_react2.default.createElement(_CustomButtonComponent2.default, { destination: '/cognitive_transformation/offering-6', course: 'it-cognitive-transformation-page', picture: 'data_architecture.jpg', offering_id: 'offering-6', label: _eng2.default["it-cognitive-transformation-page"]["offering-6"]["name"] })
+									_react2.default.createElement(
+										'td',
+										null,
+										_react2.default.createElement(_CustomButtonComponent2.default, { destination: '/cognitive_transformation/offering-4', course: 'it-cognitive-transformation-page', picture: 'process_automation.jpg', offering_id: 'offering-4', label: _eng2.default["it-cognitive-transformation-page"]["offering-4"]["name"] })
+									),
+									_react2.default.createElement(
+										'td',
+										null,
+										_react2.default.createElement(_CustomButtonComponent2.default, { destination: '/cognitive_transformation/offering-5', course: 'it-cognitive-transformation-page', picture: 'process_automation.jpg', offering_id: 'offering-5', label: _eng2.default["it-cognitive-transformation-page"]["offering-5"]["name"] })
+									),
+									_react2.default.createElement(
+										'td',
+										null,
+										_react2.default.createElement(_CustomButtonComponent2.default, { destination: '/cognitive_transformation/offering-6', course: 'it-cognitive-transformation-page', picture: 'data_architecture.jpg', offering_id: 'offering-6', label: _eng2.default["it-cognitive-transformation-page"]["offering-6"]["name"] })
+									)
 								)
 							)
 						)
@@ -30290,6 +30535,10 @@
 	
 	var _BlockButtonComponent2 = _interopRequireDefault(_BlockButtonComponent);
 	
+	var _OfferingExampleComponent = __webpack_require__(/*! ./OfferingExampleComponent.jsx */ 267);
+	
+	var _OfferingExampleComponent2 = _interopRequireDefault(_OfferingExampleComponent);
+	
 	var _eng = __webpack_require__(/*! ./lang_packs/eng.json */ 258);
 	
 	var _eng2 = _interopRequireDefault(_eng);
@@ -30323,34 +30572,45 @@
 		}, {
 			key: 'render',
 			value: function render() {
-				console.log(this.props.location.course);
-				console.log(this.props.match.params.offering_id);
-				console.log(this.props);
 	
+				var picture_map = {
+					"offering-1": "chatbot_2.jpg",
+					"offering-2": "smartreader.jpg",
+					"offering-3": "optimization.jpg",
+					"offering-4": "office_automation.jpg",
+					"offering-5": "automation.jpg",
+					"offering-6": "bigdata.jpg"
+				};
 				var items_to_render = [];
 	
 				for (var i = 1; i <= 10; i++) {
 					var title_handle = "div" + i + "-title";
 					var text_handle = "div" + i + "-text";
 	
-					if (_eng2.default[this.props.location.course][this.props.match.params.offering_id][title_handle] != "") {
+					if (_eng2.default[this.props.course][this.props.match.params.offering_id][title_handle] != "") {
 						items_to_render.push(_react2.default.createElement('br', null));
 						items_to_render.push(_react2.default.createElement(
 							'h3',
 							{ className: 'offering-description-title' },
-							_eng2.default[this.props.location.course][this.props.match.params.offering_id][title_handle]
+							_eng2.default[this.props.course][this.props.match.params.offering_id][title_handle]
 						));
 						items_to_render.push(_react2.default.createElement('br', null));
 					};
 	
-					if (_eng2.default[this.props.location.course][this.props.match.params.offering_id][text_handle] != "") {
+					if (_eng2.default[this.props.course][this.props.match.params.offering_id][text_handle] != "") {
 						items_to_render.push(_react2.default.createElement(
 							'h3',
 							{ className: 'offering-description-div' },
-							_eng2.default[this.props.location.course][this.props.match.params.offering_id][text_handle]
+							_eng2.default[this.props.course][this.props.match.params.offering_id][text_handle]
 						));
 					};
 				};
+	
+				//		<img id="offering-pic" src={"./pics/"+picture_map[this.props.match.params.offering_id]}/>
+				//		<img id="offering-pic-mobile" src={"./pics/landscape_"+picture_map[this.props.match.params.offering_id]}/>
+	
+	
+				var background_image_path = "./pics/" + picture_map[this.props.match.params.offering_id];
 	
 				return _react2.default.createElement(
 					'div',
@@ -30360,13 +30620,12 @@
 						{ style: { position: 'relative' } },
 						_react2.default.createElement(
 							'div',
-							{ className: 'left-column' },
+							{ className: 'left-column', style: { backgroundImage: 'url(' + background_image_path + ')', backgroundRepeat: 'no-repeat', backgroundPosition: 'left-top', backgroundClip: 'content-box', backgroundSize: 'cover' } },
 							_react2.default.createElement(
 								'div',
-								{ className: 'page-title' },
-								_eng2.default[this.props.location.course][this.props.match.params.offering_id]["name"]
-							),
-							_react2.default.createElement('img', { id: 'offering-pic', src: "./pics/" + this.props.location.picture })
+								{ className: 'page-title', id: 'offering-title' },
+								_eng2.default[this.props.course][this.props.match.params.offering_id]["name"]
+							)
 						),
 						_react2.default.createElement(
 							'div',
@@ -30378,6 +30637,11 @@
 									'div',
 									{ className: 'course-description' },
 									items_to_render
+								),
+								_react2.default.createElement(
+									'div',
+									{ className: 'examples-wrapper' },
+									_react2.default.createElement(_OfferingExampleComponent2.default, { course: this.props.course, offering_id: this.props.match.params.offering_id })
 								)
 							),
 							_react2.default.createElement('br', null),
@@ -30395,12 +30659,12 @@
 
 /***/ }),
 /* 267 */
-/*!************************************!*\
-  !*** ./react/app/BioComponent.jsx ***!
-  \************************************/
+/*!************************************************!*\
+  !*** ./react/app/OfferingExampleComponent.jsx ***!
+  \************************************************/
 /***/ (function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 		value: true
@@ -30411,6 +30675,65 @@
 	var _react = __webpack_require__(/*! react */ 1);
 	
 	var _react2 = _interopRequireDefault(_react);
+	
+	var _eng = __webpack_require__(/*! ./lang_packs/eng.json */ 258);
+	
+	var _eng2 = _interopRequireDefault(_eng);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var OfferingExampleComponent = function (_React$Component) {
+		_inherits(OfferingExampleComponent, _React$Component);
+	
+		function OfferingExampleComponent(props) {
+			_classCallCheck(this, OfferingExampleComponent);
+	
+			var _this = _possibleConstructorReturn(this, (OfferingExampleComponent.__proto__ || Object.getPrototypeOf(OfferingExampleComponent)).call(this, props));
+	
+			_this.state = {};
+			return _this;
+		}
+	
+		_createClass(OfferingExampleComponent, [{
+			key: 'render',
+			value: function render() {
+				return _react2.default.createElement('div', { className: 'offering-example' });
+			}
+		}]);
+	
+		return OfferingExampleComponent;
+	}(_react2.default.Component);
+	
+	exports.default = OfferingExampleComponent;
+
+/***/ }),
+/* 268 */
+/*!************************************!*\
+  !*** ./react/app/BioComponent.jsx ***!
+  \************************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _eng = __webpack_require__(/*! ./lang_packs/eng.json */ 258);
+	
+	var _eng2 = _interopRequireDefault(_eng);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -30429,47 +30752,53 @@
 			var _this = _possibleConstructorReturn(this, (BioComponent.__proto__ || Object.getPrototypeOf(BioComponent)).call(this, props));
 	
 			_this.state = {};
-			_this.go_to_page = _this.go_to_page.bind(_this);
 			return _this;
 		}
 	
 		_createClass(BioComponent, [{
-			key: "go_to_page",
-			value: function go_to_page(destination) {
-				this.props.go_to_page(destination);
-			}
-		}, {
-			key: "render",
+			key: 'render',
 			value: function render() {
 				return _react2.default.createElement(
-					"div",
-					{ className: "page", id: "aboutus-page" },
+					'div',
+					{ className: 'page', id: 'aboutus-page' },
 					_react2.default.createElement(
-						"div",
+						'div',
 						{ style: { position: 'relative' } },
 						_react2.default.createElement(
-							"div",
-							{ className: "left-column" },
-							_react2.default.createElement(
-								"div",
-								{ id: "homepage-title" },
-								"#NAME#"
-							),
-							_react2.default.createElement("img", { id: "profile-photo", src: "/pics/blank-profile.png" })
+							'div',
+							{ className: 'left-column-bio' },
+							_react2.default.createElement('img', { id: 'profile-photo', src: "/pics/profile_photos/" + this.props.match.params.person_name + ".jpg" })
 						),
 						_react2.default.createElement(
-							"div",
-							{ className: "right-column" },
+							'div',
+							{ className: 'right-column-bio' },
 							_react2.default.createElement(
-								"div",
-								{ className: "right-column-content" },
+								'div',
+								{ className: 'right-column-content' },
 								_react2.default.createElement(
-									"div",
-									{ className: "course-description" },
+									'div',
+									{ className: 'bio-content' },
 									_react2.default.createElement(
-										"h3",
-										null,
-										"#Bio Text#"
+										'div',
+										{ id: 'profile-name' },
+										_eng2.default["bios"][this.props.match.params.person_name]["name"],
+										_react2.default.createElement('br', null)
+									),
+									_react2.default.createElement(
+										'div',
+										{ id: 'profile-role' },
+										_eng2.default["bios"][this.props.match.params.person_name]["role"],
+										_react2.default.createElement('br', null)
+									),
+									_react2.default.createElement(
+										'h3',
+										{ className: 'offering-description-div' },
+										_eng2.default["bios"][this.props.match.params.person_name]["div1"]
+									),
+									_react2.default.createElement(
+										'h3',
+										{ className: 'offering-description-div' },
+										_eng2.default["bios"][this.props.match.params.person_name]["div2"]
 									)
 								)
 							)
@@ -30485,7 +30814,7 @@
 	exports.default = BioComponent;
 
 /***/ }),
-/* 268 */
+/* 269 */
 /*!***********************************************!*\
   !*** ./~/react-burger-menu/lib/BurgerMenu.js ***!
   \***********************************************/
@@ -30497,20 +30826,20 @@
 	  value: true
 	});
 	exports['default'] = {
-	  slide: __webpack_require__(/*! ./menus/slide */ 269),
-	  stack: __webpack_require__(/*! ./menus/stack */ 274),
-	  elastic: __webpack_require__(/*! ./menus/elastic */ 275),
-	  bubble: __webpack_require__(/*! ./menus/bubble */ 279),
-	  push: __webpack_require__(/*! ./menus/push */ 280),
-	  pushRotate: __webpack_require__(/*! ./menus/pushRotate */ 281),
-	  scaleDown: __webpack_require__(/*! ./menus/scaleDown */ 282),
-	  scaleRotate: __webpack_require__(/*! ./menus/scaleRotate */ 283),
-	  fallDown: __webpack_require__(/*! ./menus/fallDown */ 284)
+	  slide: __webpack_require__(/*! ./menus/slide */ 270),
+	  stack: __webpack_require__(/*! ./menus/stack */ 275),
+	  elastic: __webpack_require__(/*! ./menus/elastic */ 276),
+	  bubble: __webpack_require__(/*! ./menus/bubble */ 280),
+	  push: __webpack_require__(/*! ./menus/push */ 281),
+	  pushRotate: __webpack_require__(/*! ./menus/pushRotate */ 282),
+	  scaleDown: __webpack_require__(/*! ./menus/scaleDown */ 283),
+	  scaleRotate: __webpack_require__(/*! ./menus/scaleRotate */ 284),
+	  fallDown: __webpack_require__(/*! ./menus/fallDown */ 285)
 	};
 	module.exports = exports['default'];
 
 /***/ }),
-/* 269 */
+/* 270 */
 /*!************************************************!*\
   !*** ./~/react-burger-menu/lib/menus/slide.js ***!
   \************************************************/
@@ -30524,7 +30853,7 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var _menuFactory = __webpack_require__(/*! ../menuFactory */ 270);
+	var _menuFactory = __webpack_require__(/*! ../menuFactory */ 271);
 	
 	var _menuFactory2 = _interopRequireDefault(_menuFactory);
 	
@@ -30534,7 +30863,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 270 */
+/* 271 */
 /*!************************************************!*\
   !*** ./~/react-burger-menu/lib/menuFactory.js ***!
   \************************************************/
@@ -30570,15 +30899,15 @@
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _baseStyles = __webpack_require__(/*! ./baseStyles */ 271);
+	var _baseStyles = __webpack_require__(/*! ./baseStyles */ 272);
 	
 	var _baseStyles2 = _interopRequireDefault(_baseStyles);
 	
-	var _BurgerIcon = __webpack_require__(/*! ./BurgerIcon */ 272);
+	var _BurgerIcon = __webpack_require__(/*! ./BurgerIcon */ 273);
 	
 	var _BurgerIcon2 = _interopRequireDefault(_BurgerIcon);
 	
-	var _CrossIcon = __webpack_require__(/*! ./CrossIcon */ 273);
+	var _CrossIcon = __webpack_require__(/*! ./CrossIcon */ 274);
 	
 	var _CrossIcon2 = _interopRequireDefault(_CrossIcon);
 	
@@ -30896,7 +31225,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 271 */
+/* 272 */
 /*!***********************************************!*\
   !*** ./~/react-burger-menu/lib/baseStyles.js ***!
   \***********************************************/
@@ -30969,7 +31298,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 272 */
+/* 273 */
 /*!***********************************************!*\
   !*** ./~/react-burger-menu/lib/BurgerIcon.js ***!
   \***********************************************/
@@ -31108,7 +31437,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 273 */
+/* 274 */
 /*!**********************************************!*\
   !*** ./~/react-burger-menu/lib/CrossIcon.js ***!
   \**********************************************/
@@ -31241,7 +31570,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 274 */
+/* 275 */
 /*!************************************************!*\
   !*** ./~/react-burger-menu/lib/menus/stack.js ***!
   \************************************************/
@@ -31255,7 +31584,7 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var _menuFactory = __webpack_require__(/*! ../menuFactory */ 270);
+	var _menuFactory = __webpack_require__(/*! ../menuFactory */ 271);
 	
 	var _menuFactory2 = _interopRequireDefault(_menuFactory);
 	
@@ -31288,7 +31617,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 275 */
+/* 276 */
 /*!**************************************************!*\
   !*** ./~/react-burger-menu/lib/menus/elastic.js ***!
   \**************************************************/
@@ -31302,11 +31631,11 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var _snapsvgImporter = __webpack_require__(/*! ../snapsvgImporter */ 276);
+	var _snapsvgImporter = __webpack_require__(/*! ../snapsvgImporter */ 277);
 	
 	var _snapsvgImporter2 = _interopRequireDefault(_snapsvgImporter);
 	
-	var _menuFactory = __webpack_require__(/*! ../menuFactory */ 270);
+	var _menuFactory = __webpack_require__(/*! ../menuFactory */ 271);
 	
 	var _menuFactory2 = _interopRequireDefault(_menuFactory);
 	
@@ -31391,7 +31720,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 276 */
+/* 277 */
 /*!****************************************************!*\
   !*** ./~/react-burger-menu/lib/snapsvgImporter.js ***!
   \****************************************************/
@@ -31406,7 +31735,7 @@
 	exports['default'] = function () {
 	  var Snap = undefined;
 	  try {
-	    Snap = __webpack_require__(/*! snapsvg-cjs */ 277);
+	    Snap = __webpack_require__(/*! snapsvg-cjs */ 278);
 	  } finally {
 	    return Snap;
 	  }
@@ -31415,13 +31744,13 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 277 */
+/* 278 */
 /*!********************************************!*\
   !*** ./~/snapsvg-cjs/dist/snap.svg-cjs.js ***!
   \********************************************/
 /***/ (function(module, exports, __webpack_require__) {
 
-	window.eve = __webpack_require__(/*! eve */ 278)
+	window.eve = __webpack_require__(/*! eve */ 279)
 	
 	// Copyright (c) 2013 Adobe Systems Incorporated. All rights reserved.
 	//
@@ -39156,7 +39485,7 @@
 
 
 /***/ }),
-/* 278 */
+/* 279 */
 /*!**********************!*\
   !*** ./~/eve/eve.js ***!
   \**********************/
@@ -39568,7 +39897,7 @@
 
 
 /***/ }),
-/* 279 */
+/* 280 */
 /*!*************************************************!*\
   !*** ./~/react-burger-menu/lib/menus/bubble.js ***!
   \*************************************************/
@@ -39582,11 +39911,11 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var _snapsvgImporter = __webpack_require__(/*! ../snapsvgImporter */ 276);
+	var _snapsvgImporter = __webpack_require__(/*! ../snapsvgImporter */ 277);
 	
 	var _snapsvgImporter2 = _interopRequireDefault(_snapsvgImporter);
 	
-	var _menuFactory = __webpack_require__(/*! ../menuFactory */ 270);
+	var _menuFactory = __webpack_require__(/*! ../menuFactory */ 271);
 	
 	var _menuFactory2 = _interopRequireDefault(_menuFactory);
 	
@@ -39687,7 +40016,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 280 */
+/* 281 */
 /*!***********************************************!*\
   !*** ./~/react-burger-menu/lib/menus/push.js ***!
   \***********************************************/
@@ -39701,7 +40030,7 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var _menuFactory = __webpack_require__(/*! ../menuFactory */ 270);
+	var _menuFactory = __webpack_require__(/*! ../menuFactory */ 271);
 	
 	var _menuFactory2 = _interopRequireDefault(_menuFactory);
 	
@@ -39729,7 +40058,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 281 */
+/* 282 */
 /*!*****************************************************!*\
   !*** ./~/react-burger-menu/lib/menus/pushRotate.js ***!
   \*****************************************************/
@@ -39743,7 +40072,7 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var _menuFactory = __webpack_require__(/*! ../menuFactory */ 270);
+	var _menuFactory = __webpack_require__(/*! ../menuFactory */ 271);
 	
 	var _menuFactory2 = _interopRequireDefault(_menuFactory);
 	
@@ -39774,7 +40103,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 282 */
+/* 283 */
 /*!****************************************************!*\
   !*** ./~/react-burger-menu/lib/menus/scaleDown.js ***!
   \****************************************************/
@@ -39788,7 +40117,7 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var _menuFactory = __webpack_require__(/*! ../menuFactory */ 270);
+	var _menuFactory = __webpack_require__(/*! ../menuFactory */ 271);
 	
 	var _menuFactory2 = _interopRequireDefault(_menuFactory);
 	
@@ -39818,7 +40147,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 283 */
+/* 284 */
 /*!******************************************************!*\
   !*** ./~/react-burger-menu/lib/menus/scaleRotate.js ***!
   \******************************************************/
@@ -39832,7 +40161,7 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var _menuFactory = __webpack_require__(/*! ../menuFactory */ 270);
+	var _menuFactory = __webpack_require__(/*! ../menuFactory */ 271);
 	
 	var _menuFactory2 = _interopRequireDefault(_menuFactory);
 	
@@ -39863,7 +40192,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 284 */
+/* 285 */
 /*!***************************************************!*\
   !*** ./~/react-burger-menu/lib/menus/fallDown.js ***!
   \***************************************************/
@@ -39877,7 +40206,7 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var _menuFactory = __webpack_require__(/*! ../menuFactory */ 270);
+	var _menuFactory = __webpack_require__(/*! ../menuFactory */ 271);
 	
 	var _menuFactory2 = _interopRequireDefault(_menuFactory);
 	

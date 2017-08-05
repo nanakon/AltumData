@@ -2,6 +2,7 @@ import React from 'react';
 
 import BlockButtonComponent from './BlockButtonComponent.jsx';
 
+import language_pack from './lang_packs/eng.json';
 
 class AboutUsComponent extends React.Component {
 	constructor(props) {
@@ -19,10 +20,10 @@ class AboutUsComponent extends React.Component {
 	  	return (
 	  		<div className="page" id="aboutus-page">
 	  			<div style={{position:'relative'}}>
-	  				<div className="page-title">ABOUT ALTUM DATA</div>
+	  				<div className="page-title">{language_pack["about-us"]["title"]}</div>
 	  			</div>	
 	  			<div id="aboutus-content">
-	  				#Who we are what we do why we do that or whatever else that people should know about this project#
+	  				{language_pack["about-us"]["content"]}
 	  			</div>
 	  		</div>
 	    );

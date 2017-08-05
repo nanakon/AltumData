@@ -19,10 +19,8 @@ class HomePageComponent extends React.Component {
 	render() {	
 	  	return (
 	  		<div id="home-page">
-			
-	  		
-	  		<video id="background-video" width="1920" height="1080" loop autoPlay>
-			  <source src="/pics/background_vid.webm" type="video/webm"/>
+	  		<video id="background-video" width="100%" height="auto" loop autoPlay>
+			  <source src="/pics/sunset_skyscrapers.mp4" type="video/webm"/>
 			Your browser does not support the video tag.
 			</video>
 
@@ -36,7 +34,6 @@ class HomePageComponent extends React.Component {
 		  				<BlockButtonComponent text={language_pack["homepage-block-buttons"]["it-cognitive-transformation"]} onClick={this.go_to_page} destination="cognitive_transformation"/>
 	  				</div>
 	  			<div id="global-warming-quote">
-	  				{language_pack["global-warming-quote"]} 
 	  			</div>
 	  			</div>
 	  		</div>

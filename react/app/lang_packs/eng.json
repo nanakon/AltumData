@@ -13,19 +13,39 @@
   "homepage-quote": "ANY FOOL CAN KNOW. THE POINT IS TO UNDERSTAND",
   "homepage-quote-author": "- Albert Einstein",
   "global-warming-quote": "Approximately 287 000 000 000 tonnes of ice melt in Antarctica every year due to global warming.",
+  "about-us": {
+    "title": "ABOUT ALTUM DATA",
+    "content": "Altum Data equips organizations with the tools, strategies, and culture necessary to sustain effective transformation. By leveraging over 200 years of experience in instructing and implementing Lean, Six Sigma, Kaizen, and Big Data solutions, Altum Data is well-equipped to empower both individuals and corporations to drive sustainable change and transform their business from within. Our team of experts have experience in, in what? Altum Data’s approach to employee and project-team led solutions along with leadership buy-in to cultural transformations allows organizations to develop real, sustainable change which has a direct impact on improving the bottom line."
+  },
+  "expertises": {
+    "title": "EXPERTISES",
+    "content": {
+      "div1-title": "Our Approach",
+      "div1-text": ""
+    }
+  },
+
+  "corporate-enablement-program":{
+    "description": {
+      "div1-text": "Lean Six Sigma is a comprehensive methodology that helps organizations improve value to their customers by reducing waste (Lean) and variation (Six Sigma) in an organization’s processes.  Applying Lean Six Sigma results in increased productivity through process efficiencies, increased revenue, decreased costs (e.g. inventory errors, product defects, overproduction) and innovative solutions for an organization.",
+      "div2-text": "Lean Six Sigma goes beyond the traditional manufacturing environment.  Today it is applied in many other industries such as healthcare, logistics, service, retail, and more.",
+      "div3-text": "Companies who have chosen to implement Lean Six Sigma throughout their enterprise, have conservatively impacted their bottom line with tangible results in the range of $500,000 to $5,000,000 (USD) annually."
+    }
+  },
+
   "it-cognitive-transformation-page": {
-    "description": "In 1800's humanity stood in front of industrial rev olution driven by invention of the machine, today that machine is imbune with A/V Intelegance opening the door to adoptive robotics era.  Future is not far ahead as adoptive robotics already found it's applications within Comune,  Social and Corporate IT systems enabling them to acheave whole new levles of efficientcy & productivity.",
+    "description": "As the industrial revolution driven by invention of the machine, today business is more and more driving by artificial intelligence and advanced cognitive solutions.  Machine learning, cognitive IT, and adoptive robotics already have already found applications within communications, HR, manufacturing, and social and corporate IT systems enabling new levels of efficiency and production.",
     "description-note": "*Cognitive computing is the simulation of human thought processes in a computerized model.",
     "offering-1": {
       "name": "Cognitive (VI) Chatbots",
       "div1-title": "VI Chatbots",
-      "div1-text": "The main mission of chatbots is to understand what the user is saying through natural language processing and collect enough information to take appropriate action or simply answer their questions.",
+      "div1-text": "The main mission of a chatbot is to understand what the user is saying through natural language processing and collect enough information to take appropriate actions, or simply answer their questions.",
       "div2-title": "",
-      "div2-text": "In addition to the chatbot, custom made application is integrated in order to control interface with the user. Once the chatbot collects enough information from the users, it delivers such knowledge to the application which then executes respective actions. The action could simply be looking up an answer from a database, pay the bill or it could be more complicated involving a physical action such as turning on/off the light.",
+      "div2-text": "Custom-made applications can be integrated in order to control interface with the user. Once the chatbot collects enough information from the users, it delivers knowledge to the application which then executes respective actions. The action could simply be looking up an answer from a database, pay bills, answering insurance claims, or something more complicated which involves physical action such as turning on/off the light.",
       "div3-title": "",
-      "div3-text": "Technology is based on Watson Conversation service hosted on IBM bluemix platform on top of which we develop related applications.",
+      "div3-text": "Our chatbot technology is based on Watson Conversation service hosted on IBM’s bluemix platform, on top of which we develop related applications.",
       "div4-title": "Practical Applications",
-      "div4-text": "Chatbots are designed based on intents, entities and dialog flow. Intents are actions that users are intending to perform: e.g. get account balance, scheduled a doctor appointment. ",
+      "div4-text": "Chatbots are designed based on intents, entities and dialog flow. Intents are actions that users are intending to perform: e.g. get account balance, scheduled a doctor appointment.",
       "div5-title": "",
       "div5-text": "Entities are the specific pieces of information we want to extract from the user response: e.g. account number, doctor name. Dialog flow is the conversation logic.",
       "div6-title": "What do we need",
@@ -42,15 +62,15 @@
     "offering-2": {
       "name": "Smart Readers",
       "div1-title": "Cognitive Smart Readers",
-      "div1-text": "Integrated cognitive systems capable of reading and processing thousands of documents in various formats (eg. PDF, JPG…) by using artificial intelligence. Acquired data can serve as an input or output in line with the organization's policies.",
+      "div1-text": "Smart readers are integrated cognitive systems capable of reading and processing thousands of documents in various formats (eg. PDF, JPG…) by using artificial intelligence.  The acquired data can serve as input or output in-line with the organization's policies.",
       "div2-title": "",
-      "div2-text": "Cognitive readers analyze text to extract meta-data from content such as concepts, entities, keywords, categories, sentiment, emotion, relations and semantic roles. Applications combine multiple services such as Document conversion (scan, pdf, doc, HTML ..), Visual recognition or Natural language understanding.",
+      "div2-text": "Cognitive readers analyze text to extract meta-data from content such as concepts, entities, keywords, categories, sentiment, emotion, relations and semantic roles. Applications can combine multiple services such as Document conversion (scan, pdf, doc, HTML ..), visual recognition or natural language understanding.",
       "div3-title": "",
-      "div3-text": "The goal of such applications is to extract data from unstructured texts or picture and process it in parallel with other organization applications.",
+      "div3-text": "The goal of such applications is to extract data from unstructured texts or pictures and process it in parallel with other organization applications.",
       "div4-title": "Practical applications:",
-      "div4-text": "Reading contract PDF (or other formats) in order to extract data for finance, HR, Procurement, Sales or other organizations and signify key drivers, feed related systems or present recommendations.",
+      "div4-text": "Reading contract PDFs (or other formats) in order to extract data for finance, HR, Procurement, Sales or other organizations and signify key drivers, feed related systems, or present recommendations.",
       "div5-title": "",
-      "div5-text": "Example :Read applicants CV and feed appropriate HR system. Read sales contracts and feed appropriate systems, also understanding key drivers such as GP of the existing project. ",
+      "div5-text": "Example :Read applicant CV’s and feed the appropriate HR system. Read sales contracts and feed appropriate systems, along with understanding key drivers such as GP of the existing project.",
       "div6-title": "What do we need",
       "div6-text": "This sums up as following requirements for the creation of the VI chatbot:",
       "div7-title": "",
@@ -63,11 +83,11 @@
       "div10-text": ""
     },
     "offering-3": {
-      "name": "VI Business Process Automation",
+      "name": "VI Business Process Optimization",
       "div1-title": "VI Lean Processes",
-      "div1-text": "Our Business Process optimization solutions are based on advanced analytical methods to help organizations make better decisions. ",
+      "div1-text": "Our Business Process optimization solutions are based on advanced analytical methods to help organizations make better decisions.",
       "div2-title": "",
-      "div2-text": "Optimization applications are often concerned with determining the option which will drive maximum(profit, performance or yield) or minimum (loss, risk or cost) related to real-world objective e.g. business case. So far these optimization methods require 3rd party software to be installed on user’s machine what makes integration into existing application quite difficult. Our Business Process optimization solutions focus on the implementation of Linear programming / Nonlinear programming into existing Organization's workflow applications (Web, Mobile) and calculate the optimal solution in real time (based on API).",
+      "div2-text": "Optimization applications are often concerned with determining the option which will drive maximum(profit, performance or yield) or minimum (loss, risk or cost) related to real-world objectives or business cases. So far these optimization methods require 3rd party software to be installed on user’s machine what makes integration into existing application quite difficult. Our Business Process optimization solutions focus on the implementation of Linear programming / Nonlinear programming into existing Organization's workflow applications (Web, Mobile) and calculate the optimal solution in real time (based on API).",
       "div3-title": "",
       "div3-text": "",
       "div4-title": "",
@@ -88,9 +108,9 @@
     "offering-4": {
       "name": "MS Office Automation",
       "div1-title": "VBA MACRO Solutions",
-      "div1-text": "MS Office tools like MS Excel are highly popular and easy to use within a corporate environment. Our MS Office automation solutions help to get the maximum benefit from your Office applications by automating: repetitive tasks, dashboard or report creation, a collection of data from various sources, document creation, print and much more.",
+      "div1-text": "MS Office tools like MS Excel are highly popular and easy to use within a corporate environment. Our MS Office automation solutions help get the maximum benefit from your Office applications by automating: repetitive tasks, dashboard or report creation, a collection of data from various sources, document creation, print and much more.",
       "div2-title": "",
-      "div2-text": "Automation is done via Visual Basic for Application (sometimes called Macros) and such an Office tools can integrate with other Windows applications as well.",
+      "div2-text": "Automation is done via Visual Basic for Application (sometimes called Macros) and such Office tools can integrate with other Windows applications as well.",
       "div3-title": "",
       "div3-text": "We know that our clients love MACs, therefore we extended our support for MS Office on MAC OS.",
       "div4-title": "",
@@ -134,15 +154,15 @@
     "offering-6": {
       "name": "Data Architecture",
       "div1-title": "Data Bases (Information Warehouse / Data Mart / Data Lake)",
-      "div1-text": "Creation and maintenance of Relational or Multidimensional (aka data cubes) databases in pair with on top application layer which serves to extract data in the meanigful format for the requestion organization.",
+      "div1-text": "Creation and maintenance of Relational or Multidimensional (aka data cubes) databases in pair with on-top application layers which serve to extract data in a meaningful format.",
       "div2-title": "Practical Applications:",
       "div2-text": "Creation of data warehouse of revenue, cost & expense data capable of being queried in a form with flexibly structured dashboards.",
       "div3-title": "",
-      "div3-text": "Creation of debt tracking data base with the capability to query results in an appropriate format.",
+      "div3-text": "Creation of debt tracking databases with the capability to query results in an appropriate format.",
       "div4-title": "",
-      "div4-text": "All our applications are compatible with cognitive solutions which will provide organization with richer data, key drivers, and base for SMART decision making (predictive, behavior or sentiment modeling).",
+      "div4-text": "All our applications are compatible with cognitive solutions which will provide organizations with richer data, key drivers, and a base for SMART decision making (predictive, behavior or sentiment modeling).",
       "div5-title": "Data Mining",
-      "div5-text": "In many cases, data is not easily attainable to serve organization needs. Data needed for key decision making can be both structured or unstructured thus increasing the complexity of its extractions. Our experts can serve you required BIG DATA on demand using advanced extraction techniques. Contact us to learn more.",
+      "div5-text": "In many cases, data is not easily attainable to serve organization needs. Data needed for key decision-making can be both structured or unstructured thus increasing the complexity of its extractions. Our experts can serve you required BIG DATA on demand using advanced extraction techniques. Contact us to learn more.",
       "div6-title": "",
       "div6-text": "",
       "div7-title": "",
@@ -157,10 +177,10 @@
   },
   "big-data-analytics": {
     "description": {
-      "div1": "In midst of the digital age, Organizations are faced with ever increasing operational dynamics which demands effective and qualitative decision making. In practice, this is timely and complicated process urging the organizations to use expensive methods such as ''opinions'' or develop Data Science capability within its own mists.",
-      "div2": "Data Science approach in correlation with Big Data enables the organization to see the environment through exact data and understand near future with very high certainty power.",
-      "div3": "Data sets are most commonly analyzed as Predictions, Sentiment Analytics or Behaviour Analytics. Each of those capabilities is arming the organization with the ability to understand future on the empiric level and base its actions accordingly.",
-      "div4": "Building Data Science capabilities are the timely and costly process, which you can skip and get your key points today by using our BIG DATA Modeling on Demand expertise."
+      "div1": "Today, organizations are faced with ever increasing operational dynamics that demand effective and qualitative decision-making.  Often, organizations and management teams rely on opinions or past experience to direct how they move forward.",
+      "div2": "Organizations that embrace data science are able to quantify the main drivers of their business, reduce the likelihood of human error in decision making, and predict what will happen to their business in the near future.",
+      "div3": "Data sets are most commonly analyzed as Predictions, Sentiment Analytics or Behavior Analytics. Each capability enables the organization to understand future based of historical trends and likely future outcomes level and base its actions accordingly.",
+      "div4": "Building Data Science capabilities can be a timely and costly process.  Altum Data makes it simple to implement a big data approach in your business by using our BIG DATA Modeling on Demand expertise."
     },
     "description-note": "*Cognitive computing is the simulation of human thought processes in a computerized model.",
     "offering-1": {
@@ -186,5 +206,42 @@
       "div10-title": "",
       "div10-text": ""
     }
+  },
+  "bios": {
+    "don-sobeski": {
+      "name": "Don Sobeski",
+      "role": "Managing Partner",
+      "div1": "Don Sobeski is a Lean Six Sigma Black Belt and Instructor, who brings 40 years of experience from IBM where he worked as a Hardware Engineer, Software Developer, Instructor, LSS Black Belt and Business Performance Consultant in the retail, insurance, chemical and financial services industries.",
+      "div2": "For the past 9 years his focus has been on process excellence through Lean and Lean Six Sigma training and coaching that has enabled IBM business units to achieve significant savings and ROI.  He is a member of the American Society of Quality (ASQ), the Lean Enterprise Institute (LEI) and the Association for Talent Development (ATD)."
+    },
+    "david-hare": {
+      "name": "David Hare",
+      "role": "Managing Partner",
+      "div1": "David Hare is the co-founder and managing partner of the Path Forward to Business Transformation LLC.  Previously, David served as a Program Manager and Transformation Facilitator at International Business Machines (IBM). His 30+ years of service at IBM included roles in manufacturing, process engineering, HR management, and the facilitation of global process transformation change initiatives. David is an accredited organizational change facilitator, with subject matter expertise in business process and change management. In the past five years, David and his team have facilitated process transformations efforts valued at over $900 million dollars (USD).",
+      "div2": "In his spare time, David serves as a nationally certified interscholastic coach and devotes much of his time to developing youth leadership."
+    },
+    "barbara-reusser": {
+      "name": "Barbara Reusser",
+      "role": "Master Black Belt",
+      "div1": "Barbara S. Reusser has more than 30 years of consulting experience in change management, instructional design, and process improvement for business transformation. As a Master Black Belt, she has supported the successful implementation of Lean Six Sigma-based process improvement at a variety of companies through coaching projects, facilitation of champion workshops, and designing training materials to support successful global deployments. She has consulted with public and private sector clients in the areas of managerial and executive development, strategic change initiatives, and organizational realignments.",
+      "div2": "As a member of PricewaterhouseCoopers, she led business transformation projects with various Fortune 100 businesses. In addition, Barbara was previously an internal consultant with a large government agency, leading executive training and development and transformational change. She was also previously on the faculties at two universities. Barbara has published and presented internationally on the topics of instructional design and change management."
+    },
+    "richard-orth": {
+      "name":"Richard Orth",
+      "role": "Transformation Facilitator",
+      "div1": "Richard Orth is a Transformation Facilitator, having over 39 years’ experience with IBM as a change leader, facilitator, trainer, leadership coach and business analyst. He helps client organizations improve their capabilities in the areas of cultural transformation, leadership development, collaborative problem-solving and decision-making, and process facilitation.",
+      "div2": "Richard is an IBM certified IT Specialist and also a volunteer community mediator."
+    },
+    "luca-bencini": {
+      "name": "Luca Bencini",
+      "role": "Master Black Belt and Operations Excellence Consultant",
+      "div1": "Luca Bencini is an Operations Excellence Consultant with over 25 years’ experience in business strategy, process improvement and change management. As a practitioner and consultant delivering business results through continuous and breakthrough improvements.  He has worked in a number of industries such as electric utilities, healthcare, financial services, supply chain, IT, manufacturing (discrete and process) and government.  Additionally he has worked in functions like: marketing, finance, operations and sales.  He also led several operational excellence deployments and was heavily involved in the Deming Prize at Florida Power & Light.  Luca has worked and lived in the US, Latin America and Europe and is fluent in English, Spanish and Italian.",
+      "div2": "Luca is a graduate of the Massachusetts Institute of Technology with degrees in Chemical Engineering and Economics and has an MBA from Harvard."
+    },
+    "alan-henderson": {
+      "name": "Alan Henderson",
+      "role": "Busiest Person in the World",
+      "div1": "Alan is an accomplished business development director and sales strategist.  Having sold and developed business opportunities in Banking, Pharmaceutical, Aviation, and IT sectors, Alan has a wealth of experience in understanding what clients need and providing value to their organization.  Alan has experience in bringing start-ups sustainable profitability, SMEs increase their market share, and large corporations evolve their selling processes.  Within Altum Data, Alan acts as a consultant to help guide companies through the process of embracing lean, transformation, and cognitive solutions."
+     }
   }
 }

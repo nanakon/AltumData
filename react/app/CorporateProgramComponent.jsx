@@ -10,19 +10,18 @@ class CorporateProgramComponent extends React.Component {
 		super(props);
 		this.state = {
 		}
-	this.go_to_page = this.go_to_page.bind(this);
 	};
 
-	go_to_page(destination) {
-		this.props.go_to_page(destination);
-	};
-
-	render() {	
+	render() {
 	  	return (
-	  		<div className="page" id="team-page">
+	  		<div className="page" id="corporate-enablement-program-page">
 	  			<div style={{position:'relative'}}>
 	  				<div className="page-title">{language_pack["homepage-block-buttons"]["corporate-enablement-program"]}</div>
-	  				<div className="course-description-text">#Descriptory text of this course#</div>
+	  				<div className="course-description-text">
+	  					<div>{language_pack["corporate-enablement-program"]["description"]["div1-text"]}</div><br/>
+	  					<div>{language_pack["corporate-enablement-program"]["description"]["div2-text"]}</div><br/>
+	  					<div>{language_pack["corporate-enablement-program"]["description"]["div3-text"]}</div><br/>
+	  				</div>
 	  				<div className="offerings-buttons-wrapper">
 	  					<table id="offerings-buttons-table">
 	  						<tr>
@@ -60,7 +59,6 @@ class CorporateProgramComponent extends React.Component {
 	  						</tr>
 	  					</table>
 	  				</div>
-	  				<div style={{marginTop:'5%', color:'orange'}}>//There will be as many buttons as there are offerings obviously, the final arangement will depend on how many buttons there are</div>
 	  			</div>	
 	  		</div>
 	    );

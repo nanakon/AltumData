@@ -47,7 +47,7 @@ class SideMenuComponent extends React.Component {
 		    top: '90px'
 		  },
 		  bmBurgerBars: {
-		    background: '#afafaf'
+		    background: '#7044d6'
 		  },
 		  bmCrossButton: {
 		    height: '24px',
@@ -77,7 +77,7 @@ class SideMenuComponent extends React.Component {
 
 	  	return (
 	  		<div>
-	  		<Menu styles={styles} isOpen={this.state.side_menu_open} pageWrapId={"page-wrap"} outerContainerId={"outer_container"}>
+	  		<Menu id="menuComponent" styles={styles} isOpen={this.state.side_menu_open} pageWrapId={"page-wrap"} outerContainerId={"outer_container"}>
 	  			<div id="nav-wrapper">
 		  			<Link to="/" className="nav-link"><h4>{language_pack["nav-links"]["home"]}</h4></Link>
 		  			<Link to="about" className="nav-link">{language_pack["nav-links"]["about"]}</Link>
@@ -96,11 +96,12 @@ class SideMenuComponent extends React.Component {
 	  			<Route exact path="/" component={HomePageComponent}/>
 	  			<Route path="/about" component={AboutUsComponent}/>
 	  			<Route path="/expertises" component={ExpertisesComponent}/>
-	  			<Route path="/team" component={TeamComponent}/>
+	  			<Route exact path="/team" component={TeamComponent}/>
+	  			<Route path="/team/:person_name" component={BioComponent}/>
 	  			<Route path="/big_data" component={BigDataComponent}/>
 	  			<Route path="/corporate_program" component={CorporateProgramComponent}/>
 	  			<Route exact path="/cognitive_transformation" component={CognitiveTransformationComponent}/>
-	  			<Route path="/cognitive_transformation/:offering_id" component={OfferingsComponent}/>
+	  			<Route path="/cognitive_transformation/:offering_id" render={(props)=>(<OfferingsComponent {...props} course="it-cognitive-transformation-page"/>)}/>
 	  			<Route path="/bio" component={BioComponent}/>
 	  			<Route path="/dummy_offering" component={OfferingsComponent}/>
 	  		</main>

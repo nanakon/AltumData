@@ -23,7 +23,7 @@ class BlockButtonComponent extends React.Component {
 	render() {	
 	  	return (
 	  		<div className="block-button">
-	  				<Link to={this.props.destination}><Button className="homepage-button">{this.props.text}</Button></Link>
+	  			<Link to={this.props.destination}><Button className="homepage-button"><span className="homepage-button-label">{this.props.text}</span></Button></Link>
 	  		</div>
 	    );
   	}

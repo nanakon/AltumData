@@ -11,6 +11,8 @@ import {
   Link
 } from 'react-router-dom';
 
+import language_pack from './lang_packs/eng.json';
+
 class App extends React.Component {
 	constructor() {
 		super();
@@ -68,8 +70,14 @@ class App extends React.Component {
  		return (	
  			<Router>
 			<div id="outer_container">
+				<div id="bar-mobile">
+			  			<Link to="/" className="nav-link-mobile"><span className="nav-link-mobile-label">{language_pack["nav-links"]["home"]}</span></Link>
+			  			<Link to="about" className="nav-link-mobile"><span className="nav-link-mobile-label">{language_pack["nav-links"]["about"]}</span></Link>
+			  			<Link to="/expertises" className="nav-link-mobile"><span className="nav-link-mobile-label">{language_pack["nav-links"]["expertises"]}</span></Link>
+			  			<Link to="/team" className="nav-link-mobile"><span className="nav-link-mobile-label">{language_pack["nav-links"]["team"]}</span></Link>	
+				</div>
 				<div id="bar">
-					<Link to="/"><img id="logo-bar" src="/pics/logo_4.png"/></Link>
+					<Link to="/"><img id="logo-bar" src="/pics/logo_3.png"/></Link>
 				</div>
 				{side_menu}
 			</div>

@@ -35,6 +35,11 @@ app.get("/team", function(req,res) {
 	res.sendFile(path.resolve(appDir, "react", "index.html"));
 });
 
+app.get("/team/*", function(req,res) {
+	console.log("team page loaded");
+	res.sendFile(path.resolve(appDir, "react", "index.html"));
+});
+
 app.get("/big_data", function(req, res) {
 	console.log("big data page loaded");
 	res.sendFile(path.resolve(appDir, "react", "index.html"));
@@ -50,7 +55,7 @@ app.get("/cognitive_transformation", function(req,res) {
 	res.sendFile(path.resolve(appDir, "react", "index.html"));
 });
 
-app.get("/cognitive_transformation/offering", function(req,res) {
+app.get("/cognitive_transformation/*", function(req,res) {
 	console.log("cognitive transformation page loaded");
 	res.sendFile(path.resolve(appDir, "react", "index.html"));
 });

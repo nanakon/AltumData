@@ -19,7 +19,8 @@ class CognitiveTransformationComponent extends React.Component {
 
 	render() {	
 	  	return (
-	  		<div className="page" id="team-page">
+	  		<div className="page" style={{backgroundImage:'url(./pics/cogtransformation.jpg)', backgroundRepeat:'no-repeat', backgroundPosition:'left-top', backgroundSize:'cover'}}>
+	  			<div id="cognitive-transformation-content-wrapper">
 	  			<div style={{position:'relative'}}>
 	  				<div className="page-title">{language_pack["homepage-block-buttons"]["it-cognitive-transformation"]}</div>
 	  			</div>	
@@ -52,6 +53,7 @@ class CognitiveTransformationComponent extends React.Component {
 		  					</tr>
 	  					</table>
 	  				</div>
+	  			</div>
 
 	  		</div>
 	    );
