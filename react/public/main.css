@@ -108,6 +108,11 @@ body {
     left: 0%;
 }
 
+#homepage-background-image-div {
+		background-image:none;
+		background-color:none;
+}
+
 #page-wrap {
 	min-height: 100vh;
 }
@@ -127,6 +132,7 @@ body {
 
 #homepage-title {
 		padding-top: 12%;
+		margin-left: var(--sidebarWidth);
 }
 
 #homepage-button-wrapper {
@@ -154,7 +160,7 @@ body {
 	color:rgba(255,255,255,0.9);
 	background-color: rgba(0,0,0,0.5);
 	width: 100%;
-	min-height: 5%;
+	min-height: 60px;
 	text-align:center;
 	vertical-align: middle;
 	white-space: normal;
@@ -466,6 +472,11 @@ body {
 }
 
 @media only screen and (max-width: 1024px) {
+	#homepage-background-image-div {
+		background-image:none;
+		background-color:none;
+	}
+
 	#bar {
 		display:none;
 	}	
@@ -516,6 +527,7 @@ body {
 
 	#homepage-title {
 		padding-top: 14%;
+		margin-left:0;
 	}
 
 	#homepage-button-wrapper {
@@ -583,7 +595,7 @@ body {
 		left:0;
 		top:0;
 		width: 100%;
-		height: 50%;
+		height: 40%;
 		overflow: hidden;
 	}
 
@@ -593,6 +605,12 @@ body {
 		width: 100%;
 		background-color: #fff;
 		text-align:center;
+	}
+
+	#offerings-buttons-table td {
+		padding: 0px 5px 0px 5px;
+		width: 250px;
+
 	}
 
 	.button-link {
@@ -608,6 +626,10 @@ body {
 
 	.button-link:hover {
 		text-decoration: none;
+	}
+
+	#team-page-content-wrapper{
+		padding-top:30px;
 	}
 
 	.left-column-bio {
@@ -712,6 +734,13 @@ body {
 		color:grey;
 	}
 
+	#cognitive-transformation-content-wrapper {
+		padding-left: 0;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+
 	#global-warming-quote {
 		display:none;
 	}
@@ -726,5 +755,63 @@ body {
 
 	.bmBurgerBars {
 		display:none;
+	}
+}
+
+@media only screen and (max-width: 390px) {
+	.dark-tint {
+		padding-top:35%;
+	}
+
+	.button-link {
+		display:block;
+		clear:both;
+	}
+
+	#offerings-buttons-table td {
+		display:block;
+		clear:both;
+	}
+
+	#background-video {
+		display:none;
+	}
+
+	#homepage-background-image-div {
+		display:block;
+		position:absolute;
+		height:100%;
+		background-image: url("/pics/optimization.jpg");
+		background-repeat:no-repeat;
+		background-size:cover;
+		background-attachment: fixed;
+	}
+
+	.left-column {
+		height: 30%;
+	}
+}
+
+@media (max-width: 1024px) and (orientation: portrait) {
+	.left-column {
+		height:30%;
+	}
+}
+
+@media screen and (max-aspect-ratio:16/9) {
+	#background-video {
+		display:none;
+	}
+
+	#homepage-background-image-div {
+		display:block;
+		position:absolute;
+		height:100%;
+		width:100%;
+		background-image: url("/pics/optimization.jpg");
+		background-repeat:no-repeat;
+		background-size:cover;
+		background-attachment: fixed;
+		overflow:hidden;
 	}
 }

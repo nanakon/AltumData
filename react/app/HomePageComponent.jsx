@@ -20,10 +20,10 @@ class HomePageComponent extends React.Component {
 	  	return (
 	  		<div id="home-page">
 	  		<video id="background-video" width="100%" height="auto" loop autoPlay>
-			  <source src="/pics/sunset_skyscrapers.mp4" type="video/webm"/>
+			  <source src="/pics/sunset_skyscrapers.mp4" type="video/mp4"/>
 			Your browser does not support the video tag.
 			</video>
-
+			<div id="homepage-background-image-div">
 	  			<div className="dark-tint" id="home-page-overlay">
 	  			<div style={{position:'relative'}}>
 	  				<div className="page-title" id="homepage-title">"{language_pack["homepage-quote"]}"<br/><span style={{fontSize:'10px'}}> {language_pack["homepage-quote-author"]}</span></div>
@@ -34,6 +34,7 @@ class HomePageComponent extends React.Component {
 		  				<BlockButtonComponent text={language_pack["homepage-block-buttons"]["it-cognitive-transformation"]} onClick={this.go_to_page} destination="cognitive_transformation"/>
 	  				</div>
 	  			<div id="global-warming-quote">
+	  			</div>
 	  			</div>
 	  			</div>
 	  		</div>
