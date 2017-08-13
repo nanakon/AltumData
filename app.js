@@ -60,6 +60,11 @@ app.get("/cognitive_transformation/*", function(req,res) {
 	res.sendFile(path.resolve(appDir, "react", "index.html"));
 });
 
+app.get("/corporate_program/*", function(req,res) {
+	console.log("corporate_program");
+	res.sendFile(path.resolve(appDir, "react", "index.html"));
+});
+
 app.get("/dummy_offering", function(req,res) {
 	console.log("dummy offerind page loaded");
 	res.sendFile(path.resolve(appDir, "react", "index.html"));

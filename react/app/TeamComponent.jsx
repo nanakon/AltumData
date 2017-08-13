@@ -19,7 +19,8 @@ class TeamComponent extends React.Component {
 
 	render() {	
 	  	return (
-	  		<div className="page" id="team-page" style={{backgroundImage:'url("./pics/team.jpg")', backgroundRepeat:'no-repeat', backgroundPosition:'left-top', backgroundClip:'content-box', backgroundSize:'cover'}}>
+	  		<div className="page" id="team-page" style={{backgroundImage:'url("./pics/team.jpg")', backgroundRepeat:'no-repeat', backgroundPosition:'left-top', backgroundClip:'content-box', backgroundSize:'cover', backgroundAttachment: 'fixed'}}>
+	  		<div className="page-content">
 	  			<div id="team-page-content-wrapper">
 	  			<div style={{position:'relative'}}>
 	  				<div className="page-title">THE ALTUM DATA TEAM</div>
@@ -35,6 +36,7 @@ class TeamComponent extends React.Component {
 	  				</div>
 	  			</div>
 	  			</div>
+	  		</div>
 	  		</div>
 	    );
   	}

@@ -18,7 +18,8 @@ class BigDataComponent extends React.Component {
 
 	render() {	
 	  	return (
-	  		<div className={"page"} id="big-data-page" style={{backgroundImage:'url(./pics/data_architecture_2.jpg)', backgroundRepeat:'no-repeat', backgroundPosition:'left-top', backgroundSize:'cover'}}>
+	  		<div className={"page"} id="big-data-page" style={{backgroundImage:'url(./pics/data_architecture_2.jpg)', backgroundRepeat:'no-repeat', backgroundPosition:'left-top', backgroundSize:'cover', backgroundAttachment: 'fixed'}}>
+	  		<div className="page-content">
 	  			<div className="dark-tint-overlay"/>
 	  			<div style={{position:'relative'}}>
 	  				<div className="page-title">{language_pack["homepage-block-buttons"]["big-data-analytics"]}</div>
@@ -30,6 +31,7 @@ class BigDataComponent extends React.Component {
 		  			<div className="">{language_pack["big-data-analytics"]["description"]["div4"]}</div><br/>
 	  			</div>
 	  			<br/><img id="tiny-logo" src="./pics/logo_3.png"/>
+	  		</div>
 	  		</div>
 	    );
   	}

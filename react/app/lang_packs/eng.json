@@ -7,15 +7,18 @@
   },
   "homepage-block-buttons": {
     "corporate-enablement-program": "CORPORATE ENABLEMENT PROGRAM",
-    "big-data-analytics": "BIG DATA ANALYTICS",
-    "it-cognitive-transformation": "IT COGNITIVE TRANSFORMATION"
+    "big-data-analytics": "BIG DATA ANALYTICS          ",
+    "it-cognitive-transformation": "IT COGNITIVE TRANSFORMATION "
   },
-  "homepage-quote": "ANY FOOL CAN KNOW. THE POINT IS TO UNDERSTAND",
-  "homepage-quote-author": "- Albert Einstein",
+  "homepage-quote": "People. Process. Technology.",
+  "homepage-quote-author": "",
   "global-warming-quote": "Approximately 287 000 000 000 tonnes of ice melt in Antarctica every year due to global warming.",
   "about-us": {
     "title": "ABOUT ALTUM DATA",
-    "content": "Altum Data equips organizations with the tools, strategies, and culture necessary to sustain effective transformation. By leveraging over 200 years of experience in instructing and implementing Lean, Six Sigma, Kaizen, and Big Data solutions, Altum Data is well-equipped to empower both individuals and corporations to drive sustainable change and transform their business from within. Our team of experts have experience in, in what? Altum Data’s approach to employee and project-team led solutions along with leadership buy-in to cultural transformations allows organizations to develop real, sustainable change which has a direct impact on improving the bottom line."
+    "content": {
+      "div-1": "Altum Data equips organizations with the tools, strategies, and culture necessary to sustain effective transformation. By leveraging over 200 years of experience in instructing and implementing Lean, Six Sigma, Kaizen, and Big Data solutions, Altum Data is well-equipped to empower both individuals and corporations to drive sustainable change and transform their business from within. Our team of experts have experience in, in what?",
+      "div-2": "Altum Data’s approach to employee and project-team led solutions along with leadership buy-in to cultural transformations allows organizations to develop real, sustainable change which has a direct impact on improving the bottom line."
+    }
   },
   "expertises": {
     "title": "EXPERTISES",
@@ -27,15 +30,16 @@
 
   "corporate-enablement-program":{
     "description": {
-      "div1-text": "Lean Six Sigma is a comprehensive methodology that helps organizations improve value to their customers by reducing waste (Lean) and variation (Six Sigma) in an organization’s processes.  Applying Lean Six Sigma results in increased productivity through process efficiencies, increased revenue, decreased costs (e.g. inventory errors, product defects, overproduction) and innovative solutions for an organization.",
-      "div2-text": "Lean Six Sigma goes beyond the traditional manufacturing environment.  Today it is applied in many other industries such as healthcare, logistics, service, retail, and more.",
-      "div3-text": "Companies who have chosen to implement Lean Six Sigma throughout their enterprise, have conservatively impacted their bottom line with tangible results in the range of $500,000 to $5,000,000 (USD) annually."
+      "div1-text": "Lean Six Sigma is a comprehensive methodology that helps organizations improve processes by reducing waste (Lean) and variation (Six Sigma). Applying Lean Six Sigma results in increased productivity through process efficiencies, increased revenue, decreased costs and innovative solutions for an organization.",
+      "div2-text": "Lean Six Sigma goes beyond the traditional manufacturing enviroment and is applied in many other industries such as healthcare, logistics, service, retail, and IT.",
+      "div3-text": "Companies that have chosen to implement Lean Six Sigma throughout their enterprise can impact their bottom line with tangible results in the range of $500,000 to $5,000,000 (USD) annually."
     }
   },
 
   "it-cognitive-transformation-page": {
-    "description": "As the industrial revolution driven by invention of the machine, today business is more and more driving by artificial intelligence and advanced cognitive solutions.  Machine learning, cognitive IT, and adoptive robotics already have already found applications within communications, HR, manufacturing, and social and corporate IT systems enabling new levels of efficiency and production.",
+    "description": "As the industrial revolution was driven by invention of the machine, today business is more and more driven by artificial intelligence and advanced cognitive solutions. Machine learning, cognitive IT, and adoptive robotics have already found applications enabling new levels of efficiency and production within communications, HR, manufacturing, and social and corporate IT systems.",
     "description-note": "*Cognitive computing is the simulation of human thought processes in a computerized model.",
+    "description-note-2": "*VI refers to virtual intelligence",
     "offering-1": {
       "name": "Cognitive (VI) Chatbots",
       "div1-title": "VI Chatbots",
@@ -48,8 +52,8 @@
       "div4-text": "Chatbots are designed based on intents, entities and dialog flow. Intents are actions that users are intending to perform: e.g. get account balance, scheduled a doctor appointment.",
       "div5-title": "",
       "div5-text": "Entities are the specific pieces of information we want to extract from the user response: e.g. account number, doctor name. Dialog flow is the conversation logic.",
-      "div6-title": "What do we need",
-      "div6-text": "This sums up as following requirements for the creation of the VI chatbot:",
+      "div6-title": "What We Need",
+      "div6-text": "The following requirements are needed for the creation of a chatbot:",
       "div7-title": "",
       "div7-text": "- General purpose of chatbot",
       "div8-title": "",
@@ -67,11 +71,11 @@
       "div2-text": "Cognitive readers analyze text to extract meta-data from content such as concepts, entities, keywords, categories, sentiment, emotion, relations and semantic roles. Applications can combine multiple services such as Document conversion (scan, pdf, doc, HTML ..), visual recognition or natural language understanding.",
       "div3-title": "",
       "div3-text": "The goal of such applications is to extract data from unstructured texts or pictures and process it in parallel with other organization applications.",
-      "div4-title": "Practical applications:",
+      "div4-title": "Practical applications",
       "div4-text": "Reading contract PDFs (or other formats) in order to extract data for finance, HR, Procurement, Sales or other organizations and signify key drivers, feed related systems, or present recommendations.",
       "div5-title": "",
       "div5-text": "Example :Read applicant CV’s and feed the appropriate HR system. Read sales contracts and feed appropriate systems, along with understanding key drivers such as GP of the existing project.",
-      "div6-title": "What do we need",
+      "div6-title": "What We Need",
       "div6-text": "This sums up as following requirements for the creation of the VI chatbot:",
       "div7-title": "",
       "div7-text": "- General purpose of Cognitive reader",
@@ -132,7 +136,7 @@
       "name": "Workflow Tools",
       "div1-title": "VBA MACRO Solutions",
       "div1-text": "Web/Cloud based applications (desktop and mobile) focused on supporting Organization's internal processes by a collection of the inputs and delivering them to different segments of the organization.",
-      "div2-title": "Practical Applications:",
+      "div2-title": "Practical Applications",
       "div2-text": "HR hiring and leaving forms",
       "div3-title": "",
       "div3-text": "Hospital reception forms",
@@ -155,7 +159,7 @@
       "name": "Data Architecture",
       "div1-title": "Data Bases (Information Warehouse / Data Mart / Data Lake)",
       "div1-text": "Creation and maintenance of Relational or Multidimensional (aka data cubes) databases in pair with on-top application layers which serve to extract data in a meaningful format.",
-      "div2-title": "Practical Applications:",
+      "div2-title": "Practical Applications",
       "div2-text": "Creation of data warehouse of revenue, cost & expense data capable of being queried in a form with flexibly structured dashboards.",
       "div3-title": "",
       "div3-text": "Creation of debt tracking databases with the capability to query results in an appropriate format.",
@@ -195,7 +199,7 @@
       "div4-text": "Chatbots are designed based on intents, entities and dialog flow. Intents are actions that users are intending to perform: e.g. get account balance, scheduled a doctor appointment. ",
       "div5-title": "",
       "div5-text": "Entities are the specific pieces of information we want to extract from the user response: e.g. account number, doctor name. Dialog flow is the conversation logic.",
-      "div6-title": "What do we need",
+      "div6-title": "What We Need",
       "div6-text": "This sums up as following requirements for the creation of the VI chatbot:",
       "div7-title": "",
       "div7-text": "- General purpose of chatbot",
@@ -210,13 +214,13 @@
   "bios": {
     "don-sobeski": {
       "name": "Don Sobeski",
-      "role": "Managing Partner",
+      "role": "Key Facilitator (Black Belt)",
       "div1": "Don Sobeski is a Lean Six Sigma Black Belt and Instructor, who brings 40 years of experience from IBM where he worked as a Hardware Engineer, Software Developer, Instructor, LSS Black Belt and Business Performance Consultant in the retail, insurance, chemical and financial services industries.",
       "div2": "For the past 9 years his focus has been on process excellence through Lean and Lean Six Sigma training and coaching that has enabled IBM business units to achieve significant savings and ROI.  He is a member of the American Society of Quality (ASQ), the Lean Enterprise Institute (LEI) and the Association for Talent Development (ATD)."
     },
     "david-hare": {
       "name": "David Hare",
-      "role": "Managing Partner",
+      "role": "Key Facilitator",
       "div1": "David Hare is the co-founder and managing partner of the Path Forward to Business Transformation LLC.  Previously, David served as a Program Manager and Transformation Facilitator at International Business Machines (IBM). His 30+ years of service at IBM included roles in manufacturing, process engineering, HR management, and the facilitation of global process transformation change initiatives. David is an accredited organizational change facilitator, with subject matter expertise in business process and change management. In the past five years, David and his team have facilitated process transformations efforts valued at over $900 million dollars (USD).",
       "div2": "In his spare time, David serves as a nationally certified interscholastic coach and devotes much of his time to developing youth leadership."
     },
@@ -240,7 +244,7 @@
     },
     "alan-henderson": {
       "name": "Alan Henderson",
-      "role": "Busiest Person in the World",
+      "role": "Managing Partner",
       "div1": "Alan is an accomplished business development director and sales strategist.  Having sold and developed business opportunities in Banking, Pharmaceutical, Aviation, and IT sectors, Alan has a wealth of experience in understanding what clients need and providing value to their organization.  Alan has experience in bringing start-ups sustainable profitability, SMEs increase their market share, and large corporations evolve their selling processes.  Within Altum Data, Alan acts as a consultant to help guide companies through the process of embracing lean, transformation, and cognitive solutions."
      }
   }

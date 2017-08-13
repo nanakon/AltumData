@@ -12,7 +12,7 @@ class BioComponent extends React.Component {
 	render() {	
 	  	return (
 	  		<div className="page" id="aboutus-page">
-	  			<div style={{position:'relative'}}>
+	  			<div className="page-content" style={{position:'relative'}}>
 	  				<div className="left-column-bio">
 	  					<img id="profile-photo" src={"/pics/profile_photos/"+this.props.match.params.person_name+".jpg"}/>
 	  				</div>

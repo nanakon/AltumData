@@ -18,13 +18,18 @@ class AboutUsComponent extends React.Component {
 
 	render() {	
 	  	return (
-	  		<div className="page" id="aboutus-page">
+	  		<div className="page" id="aboutus-page" style={{backgroundImage:'url(./pics/about_2.jpg)', backgroundRepeat:'no-repeat', backgroundPosition:'left-top', backgroundClip:'content-box', backgroundSize:'cover'}}>
+	  		<div className="page-content">
+	  		<div className="dark-tint-overlay"/>
 	  			<div style={{position:'relative'}}>
 	  				<div className="page-title">{language_pack["about-us"]["title"]}</div>
 	  			</div>	
-	  			<div id="aboutus-content">
-	  				{language_pack["about-us"]["content"]}
+	  			<div className="course-description-text" id="aboutus-content">
+	  				<div>{language_pack["about-us"]["content"]["div-1"]}</div><br/>
+	  				<div>{language_pack["about-us"]["content"]["div-2"]}</div>
 	  			</div>
+	  			<br/><img id="tiny-logo" src="./pics/logo_3.png"/>
+	  		</div>
 	  		</div>
 	    );
   	}

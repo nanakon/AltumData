@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from 'muicss/lib/react/button';
 
 //PROPS
 //destination
@@ -25,7 +26,9 @@ class CustomButtonComponent extends React.Component {
 
 	render() {	
 	  	return (
-	  		<Link className="custom-link" to={{pathname:this.props.destination, offering_id:this.props.offering_id, course: this.props.course, picture: this.props.picture}} className="custom-link"><p className="button-link">{this.props.label}</p></Link>
+	  		<div className="block-button-2">
+	  			<Link to={{pathname:this.props.destination, offering_id:this.props.offering_id, course: this.props.course, picture: this.props.picture}}><Button className="homepage-button-2"><span className="homepage-button-label">{this.props.label}</span></Button></Link>
+	    	</div>
 	    );
   	}
 

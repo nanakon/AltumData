@@ -46,13 +46,23 @@ class OfferingsComponent extends React.Component {
 
 		//		<img id="offering-pic" src={"./pics/"+picture_map[this.props.match.params.offering_id]}/>
 	  	//		<img id="offering-pic-mobile" src={"./pics/landscape_"+picture_map[this.props.match.params.offering_id]}/>
-	  		
+	  	
+	  	var examples_section;
+
+	  	if (this.props.match.params.offering_id == "offering-3") {
+	  		examples_section = (
+	  			<div id="examples_section">
+		  			<h3 className="offering-description-title">Examples</h3>
+		  			<br/>
+		  			<OfferingExampleComponent course={this.props.course} offering_id={this.props.match.params.offering_id}/>
+	  			</div>
+	  		);
+	  	}
 
 		var background_image_path = "./pics/"+picture_map[this.props.match.params.offering_id]
-
 	  	return (
 	  		<div className="page" id="team-page">
-	  			<div style={{position:'relative'}}>
+	  			<div className="page-content" style={{position:'relative'}}>
 	  				<div className="left-column" style={{backgroundImage:'url('+background_image_path+')', backgroundRepeat:'no-repeat', backgroundPosition:'left-top', backgroundClip:'content-box', backgroundSize:'cover'}}>
 	  					<div className="page-title" id="offering-title">{language_pack[this.props.course][this.props.match.params.offering_id]["name"]}</div>
 	  				</div>
@@ -62,7 +72,8 @@ class OfferingsComponent extends React.Component {
 	  							{items_to_render}
 	  						</div>
 	  						<div className="examples-wrapper">
-	  							<OfferingExampleComponent course={this.props.course} offering_id={this.props.match.params.offering_id}/>
+	  						<br/>
+	  							{examples_section}
 	  						</div>
 	  					</div>
 	  					<br/><img id="tiny-logo" src="./pics/logo_3.png"/>

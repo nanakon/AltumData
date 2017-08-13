@@ -19,13 +19,16 @@ class CognitiveTransformationComponent extends React.Component {
 
 	render() {	
 	  	return (
-	  		<div className="page" style={{backgroundImage:'url(./pics/cogtransformation.jpg)', backgroundRepeat:'no-repeat', backgroundPosition:'left-top', backgroundSize:'cover'}}>
+	  		<div className="page" id="expertises-page" style={{backgroundImage:'url(./pics/cogtransformation.jpg)', backgroundRepeat:'no-repeat', backgroundPosition:'left-top', backgroundSize:'cover', backgroundAttachment: 'fixed'}}>
 	  			<div id="cognitive-transformation-content-wrapper">
 	  			<div style={{position:'relative'}}>
 	  				<div className="page-title">{language_pack["homepage-block-buttons"]["it-cognitive-transformation"]}</div>
 	  			</div>	
 	  			<div className="course-description-text">{language_pack["it-cognitive-transformation-page"]["description"]}</div><br/>
-	  			<div className="course-description-text-note">{language_pack["it-cognitive-transformation-page"]["description-note"]}</div>
+	  			<div className="course-description-text-note">
+	  				{language_pack["it-cognitive-transformation-page"]["description-note"]}<br/>
+	  				{language_pack["it-cognitive-transformation-page"]["description-note-2"]}
+	  			</div>
 	  			
 	  			<div className="offerings-buttons-wrapper">
 	  					<table id="offerings-buttons-table">

@@ -14,8 +14,8 @@ class CorporateProgramComponent extends React.Component {
 
 	render() {
 	  	return (
-	  		<div className="page" id="corporate-enablement-program-page">
-	  			<div style={{position:'relative'}}>
+	  		<div className="page dark-tint-overlay overflow-scroll" id="corporate-enablement-program-wrapper" style={{backgroundImage:'url(./pics/six_sigma.jpg)', backgroundRepeat:'no-repeat', backgroundPosition:'left-top', backgroundClip:'content-box', backgroundSize:'cover'}}>
+	  			<div id="corporate-enablement-program-content" style={{position:'relative'}}>
 	  				<div className="page-title">{language_pack["homepage-block-buttons"]["corporate-enablement-program"]}</div>
 	  				<div className="course-description-text">
 	  					<div>{language_pack["corporate-enablement-program"]["description"]["div1-text"]}</div><br/>
@@ -26,37 +26,26 @@ class CorporateProgramComponent extends React.Component {
 	  					<table id="offerings-buttons-table">
 	  						<tr>
 		  						<td>
-					  				<CustomButtonComponent go_to_page={this.props.go_to_page} destination="dummy_offering" label="#OFFERING1 NAME#"/>
+					  				<CustomButtonComponent destination="/corporate_program/lean_six_sigma" course="corporate-enablement-program" offering_id="offering-1" label="Lean Six Sigma"/>
 					  			</td>
 					  			<td>
-					  				<CustomButtonComponent go_to_page={this.props.go_to_page} destination="dummy_offering" label="#OFFERING2 NAME#"/>
+					  				<CustomButtonComponent destination="/corporate_program/lean_training" course="corporate-enablement-program" offering_id="offering-2" label="Lean Training"/>
 					  			</td>
 					  			<td>
-					  				<CustomButtonComponent go_to_page={this.props.go_to_page} destination="dummy_offering" label="#OFFERING3 NAME#"/>
+					  				<CustomButtonComponent destination="/corporate_program/strategy_and_change" course="corporate-enablement-program" offering_id="offering-3" label="Strategy & Change"/>
 			  					</td>
 		  					</tr>
 		  					<tr>
 								<td>
-			  						<CustomButtonComponent go_to_page={this.props.go_to_page} destination="dummy_offering" label="#OFFERING4 NAME#"/>
+			  						<CustomButtonComponent destination="/corporate_program/building_high_performing_teams" course="corporate-enablement-program" offering_id="offering-4" label="Building High Performing Teams"/>
 					  			</td>
 					  			<td>
-					  				<CustomButtonComponent go_to_page={this.props.go_to_page} destination="dummy_offering" label="#OFFERING5 NAME#"/>
+					  				<CustomButtonComponent destination="/corporate_program/agile" course="corporate-enablement-program" offering_id="offering-5" label="Agile"/>
 					  			</td>
 					  			<td>
-					  				<CustomButtonComponent go_to_page={this.props.go_to_page} destination="dummy_offering" label="#OFFERING6 NAME#"/>
+					  				<CustomButtonComponent destination="/corporate_program/specialty_workshops" course="corporate-enablement-program" offering_id="offering-6" label="Specialty Workshops"/>
 			  					</td>
 		  					</tr>
-		  					<tr>
-		  						<td>
-			  						<CustomButtonComponent go_to_page={this.props.go_to_page} destination="dummy_offering" label="#OFFERING7 NAME#"/>
-					  			</td>
-					  			<td>
-					  				<CustomButtonComponent go_to_page={this.props.go_to_page} destination="dummy_offering" label="#OFFERING8 NAME#"/>
-					  			</td>
-					  			<td>
-					  				<CustomButtonComponent go_to_page={this.props.go_to_page} destination="dummy_offering" label="#OFFERING9 NAME#"/>
-		  						</td>
-	  						</tr>
 	  					</table>
 	  				</div>
 	  			</div>	
