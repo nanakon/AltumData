@@ -24556,19 +24556,27 @@
 	
 	var _UnderConstruction2 = _interopRequireDefault(_UnderConstruction);
 	
-	var _CognitiveTransformationComponent = __webpack_require__(/*! ./CognitiveTransformationComponent.jsx */ 296);
+	var _CorporateProgramAgileComponent = __webpack_require__(/*! ./CorporateProgramAgileComponent.jsx */ 296);
+	
+	var _CorporateProgramAgileComponent2 = _interopRequireDefault(_CorporateProgramAgileComponent);
+	
+	var _CorporateProgramSpecialtyWorkshopsComponent = __webpack_require__(/*! ./CorporateProgramSpecialtyWorkshopsComponent.jsx */ 297);
+	
+	var _CorporateProgramSpecialtyWorkshopsComponent2 = _interopRequireDefault(_CorporateProgramSpecialtyWorkshopsComponent);
+	
+	var _CognitiveTransformationComponent = __webpack_require__(/*! ./CognitiveTransformationComponent.jsx */ 300);
 	
 	var _CognitiveTransformationComponent2 = _interopRequireDefault(_CognitiveTransformationComponent);
 	
-	var _OfferingsComponent = __webpack_require__(/*! ./OfferingsComponent.jsx */ 297);
+	var _OfferingsComponent = __webpack_require__(/*! ./OfferingsComponent.jsx */ 301);
 	
 	var _OfferingsComponent2 = _interopRequireDefault(_OfferingsComponent);
 	
-	var _BioComponent = __webpack_require__(/*! ./BioComponent.jsx */ 350);
+	var _BioComponent = __webpack_require__(/*! ./BioComponent.jsx */ 354);
 	
 	var _BioComponent2 = _interopRequireDefault(_BioComponent);
 	
-	var _reactBurgerMenu = __webpack_require__(/*! react-burger-menu */ 351);
+	var _reactBurgerMenu = __webpack_require__(/*! react-burger-menu */ 355);
 	
 	var _reactRouterDom = __webpack_require__(/*! react-router-dom */ 218);
 	
@@ -24732,8 +24740,8 @@
 						_react2.default.createElement(_reactRouterDom.Route, { path: '/corporate_program/lean_training', component: _UnderConstruction2.default }),
 						_react2.default.createElement(_reactRouterDom.Route, { path: '/corporate_program/strategy_and_change', component: _UnderConstruction2.default }),
 						_react2.default.createElement(_reactRouterDom.Route, { path: '/corporate_program/building_high_performing_teams', component: _UnderConstruction2.default }),
-						_react2.default.createElement(_reactRouterDom.Route, { path: '/corporate_program/agile', component: _UnderConstruction2.default }),
-						_react2.default.createElement(_reactRouterDom.Route, { path: '/corporate_program/specialty_workshop', component: _UnderConstruction2.default }),
+						_react2.default.createElement(_reactRouterDom.Route, { path: '/corporate_program/agile', component: _CorporateProgramAgileComponent2.default }),
+						_react2.default.createElement(_reactRouterDom.Route, { path: '/corporate_program/specialty_workshops', component: _CorporateProgramSpecialtyWorkshopsComponent2.default }),
 						_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/cognitive_transformation', component: _CognitiveTransformationComponent2.default }),
 						_react2.default.createElement(_reactRouterDom.Route, { path: '/cognitive_transformation/:offering_id', render: function render(props) {
 								return _react2.default.createElement(_OfferingsComponent2.default, _extends({}, props, { course: 'it-cognitive-transformation-page' }));
@@ -29633,7 +29641,7 @@
 
 	"use strict";
 	
-	module.exports = { "nav-links": { "home": "HOME", "about": "ABOUT US", "expertises": "EXPERTISES", "team": "TEAM" }, "homepage-block-buttons": { "corporate-enablement-program": "CORPORATE ENABLEMENT PROGRAM", "big-data-analytics": "BIG DATA ANALYTICS          ", "it-cognitive-transformation": "IT COGNITIVE TRANSFORMATION " }, "homepage-quote": "People. Process. Technology.", "homepage-quote-author": "", "global-warming-quote": "Approximately 287 000 000 000 tonnes of ice melt in Antarctica every year due to global warming.", "about-us": { "title": "ABOUT ALTUM DATA", "content": { "div-1": "Altum Data equips organizations with the tools, strategies, and culture necessary to sustain effective transformation. By leveraging over 200 years of experience in instructing and implementing Lean, Six Sigma, Kaizen, and Big Data solutions, Altum Data is well-equipped to empower both individuals and corporations to drive sustainable change and transform their business from within. Our team of experts have experience in, in what?", "div-2": "Altum Data’s approach to employee and project-team led solutions along with leadership buy-in to cultural transformations allows organizations to develop real, sustainable change which has a direct impact on improving the bottom line." } }, "expertises": { "title": "EXPERTISES", "content": { "div1-title": "Our Approach", "div1-text": "" } }, "corporate-enablement-program": { "description": { "div1-text": "Lean Six Sigma is a comprehensive methodology that helps organizations improve processes by reducing waste (Lean) and variation (Six Sigma). Applying Lean Six Sigma results in increased productivity through process efficiencies, increased revenue, decreased costs and innovative solutions for an organization.", "div2-text": "Lean Six Sigma goes beyond the traditional manufacturing enviroment and is applied in many other industries such as healthcare, logistics, service, retail, and IT.", "div3-text": "Companies that have chosen to implement Lean Six Sigma throughout their enterprise can impact their bottom line with tangible results in the range of $500,000 to $5,000,000 (USD) annually." } }, "it-cognitive-transformation-page": { "description": "As the industrial revolution was driven by invention of the machine, today business is more and more driven by artificial intelligence and advanced cognitive solutions. Machine learning, cognitive IT, and adoptive robotics have already found applications enabling new levels of efficiency and production within communications, HR, manufacturing, and social and corporate IT systems.", "description-note": "*Cognitive computing is the simulation of human thought processes in a computerized model.", "description-note-2": "*VI refers to virtual intelligence", "offering-1": { "name": "Cognitive (VI) Chatbots", "div1-title": "VI Chatbots", "div1-text": "The main mission of a chatbot is to understand what the user is saying through natural language processing and collect enough information to take appropriate actions, or simply answer their questions.", "div2-title": "", "div2-text": "Custom-made applications can be integrated in order to control interface with the user. Once the chatbot collects enough information from the users, it delivers knowledge to the application which then executes respective actions. The action could simply be looking up an answer from a database, pay bills, answering insurance claims, or something more complicated which involves physical action such as turning on/off the light.", "div3-title": "", "div3-text": "Our chatbot technology is based on Watson Conversation service hosted on IBM’s bluemix platform, on top of which we develop related applications.", "div4-title": "Practical Applications", "div4-text": "Chatbots are designed based on intents, entities and dialog flow. Intents are actions that users are intending to perform: e.g. get account balance, scheduled a doctor appointment.", "div5-title": "", "div5-text": "Entities are the specific pieces of information we want to extract from the user response: e.g. account number, doctor name. Dialog flow is the conversation logic.", "div6-title": "What We Need", "div6-text": "The following requirements are needed for the creation of a chatbot:", "div7-title": "", "div7-text": "- General purpose of chatbot", "div8-title": "", "div8-text": "- Examples of current user stories and conversations (as many as possible)", "div9-title": "", "div9-text": "- Bluemix Watson Conversation credentials (or we will handle this for you)", "div10-title": "", "div10-text": "" }, "offering-2": { "name": "Smart Readers", "div1-title": "Cognitive Smart Readers", "div1-text": "Smart readers are integrated cognitive systems capable of reading and processing thousands of documents in various formats (eg. PDF, JPG…) by using artificial intelligence.  The acquired data can serve as input or output in-line with the organization's policies.", "div2-title": "", "div2-text": "Cognitive readers analyze text to extract meta-data from content such as concepts, entities, keywords, categories, sentiment, emotion, relations and semantic roles. Applications can combine multiple services such as Document conversion (scan, pdf, doc, HTML ..), visual recognition or natural language understanding.", "div3-title": "", "div3-text": "The goal of such applications is to extract data from unstructured texts or pictures and process it in parallel with other organization applications.", "div4-title": "Practical applications", "div4-text": "Reading contract PDFs (or other formats) in order to extract data for finance, HR, Procurement, Sales or other organizations and signify key drivers, feed related systems, or present recommendations.", "div5-title": "", "div5-text": "Example :Read applicant CV’s and feed the appropriate HR system. Read sales contracts and feed appropriate systems, along with understanding key drivers such as GP of the existing project.", "div6-title": "What We Need", "div6-text": "This sums up as following requirements for the creation of the VI chatbot:", "div7-title": "", "div7-text": "- General purpose of Cognitive reader", "div8-title": "", "div8-text": "- Examples of inputs (documents) and information which should be extracted (as many as possible) ", "div9-title": "", "div9-text": "- Bluemix Service credentials (or we will handle this for you)", "div10-title": "", "div10-text": "" }, "offering-3": { "name": "VI Business Process Optimization", "div1-title": "VI Lean Processes", "div1-text": "Our Business Process optimization solutions are based on advanced analytical methods to help organizations make better decisions.", "div2-title": "", "div2-text": "Optimization applications are often concerned with determining the option which will drive maximum(profit, performance or yield) or minimum (loss, risk or cost) related to real-world objectives or business cases. So far these optimization methods require 3rd party software to be installed on user’s machine what makes integration into existing application quite difficult. Our Business Process optimization solutions focus on the implementation of Linear programming / Nonlinear programming into existing Organization's workflow applications (Web, Mobile) and calculate the optimal solution in real time (based on API).", "div3-title": "", "div3-text": "", "div4-title": "", "div4-text": "", "div5-title": "", "div5-text": "", "div6-title": "", "div6-text": "", "div7-title": "", "div7-text": "", "div8-title": "", "div8-text": "", "div9-title": "", "div9-text": "", "div10-title": "", "div10-text": "" }, "offering-4": { "name": "MS Office Automation", "div1-title": "VBA MACRO Solutions", "div1-text": "MS Office tools like MS Excel are highly popular and easy to use within a corporate environment. Our MS Office automation solutions help get the maximum benefit from your Office applications by automating: repetitive tasks, dashboard or report creation, a collection of data from various sources, document creation, print and much more.", "div2-title": "", "div2-text": "Automation is done via Visual Basic for Application (sometimes called Macros) and such Office tools can integrate with other Windows applications as well.", "div3-title": "", "div3-text": "We know that our clients love MACs, therefore we extended our support for MS Office on MAC OS.", "div4-title": "", "div4-text": "", "div5-title": "", "div5-text": "", "div6-title": "", "div6-text": "", "div7-title": "", "div7-text": "", "div8-title": "", "div8-text": "", "div9-title": "", "div9-text": "", "div10-title": "", "div10-text": "" }, "offering-5": { "name": "Workflow Tools", "div1-title": "VBA MACRO Solutions", "div1-text": "Web/Cloud based applications (desktop and mobile) focused on supporting Organization's internal processes by a collection of the inputs and delivering them to different segments of the organization.", "div2-title": "Practical Applications", "div2-text": "HR hiring and leaving forms", "div3-title": "", "div3-text": "Hospital reception forms", "div4-title": "", "div4-text": "Request forms with approval chain (Budget approvals, vacation, expense reimbursement.. )", "div5-title": "", "div5-text": "Workflow tools between two or more departments Internal/external surveys", "div6-title": "", "div6-text": "", "div7-title": "", "div7-text": "", "div8-title": "", "div8-text": "", "div9-title": "", "div9-text": "", "div10-title": "", "div10-text": "" }, "offering-6": { "name": "Data Architecture", "div1-title": "Data Bases (Information Warehouse / Data Mart / Data Lake)", "div1-text": "Creation and maintenance of Relational or Multidimensional (aka data cubes) databases in pair with on-top application layers which serve to extract data in a meaningful format.", "div2-title": "Practical Applications", "div2-text": "Creation of data warehouse of revenue, cost & expense data capable of being queried in a form with flexibly structured dashboards.", "div3-title": "", "div3-text": "Creation of debt tracking databases with the capability to query results in an appropriate format.", "div4-title": "", "div4-text": "All our applications are compatible with cognitive solutions which will provide organizations with richer data, key drivers, and a base for SMART decision making (predictive, behavior or sentiment modeling).", "div5-title": "Data Mining", "div5-text": "In many cases, data is not easily attainable to serve organization needs. Data needed for key decision-making can be both structured or unstructured thus increasing the complexity of its extractions. Our experts can serve you required BIG DATA on demand using advanced extraction techniques. Contact us to learn more.", "div6-title": "", "div6-text": "", "div7-title": "", "div7-text": "", "div8-title": "", "div8-text": "", "div9-title": "", "div9-text": "", "div10-title": "", "div10-text": "" } }, "big-data-analytics": { "description": { "div1": "Today, organizations are faced with ever increasing operational dynamics that demand effective and qualitative decision-making.  Often, organizations and management teams rely on opinions or past experience to direct how they move forward.", "div2": "Organizations that embrace data science are able to quantify the main drivers of their business, reduce the likelihood of human error in decision making, and predict what will happen to their business in the near future.", "div3": "Data sets are most commonly analyzed as Predictions, Sentiment Analytics or Behavior Analytics. Each capability enables the organization to understand future based of historical trends and likely future outcomes level and base its actions accordingly.", "div4": "Building Data Science capabilities can be a timely and costly process.  Altum Data makes it simple to implement a big data approach in your business by using our BIG DATA Modeling on Demand expertise." }, "description-note": "*Cognitive computing is the simulation of human thought processes in a computerized model.", "offering-1": { "name": "Cognitive (VI) Chatbots", "div1-title": "VI Chatbots", "div1-text": "The main mission of chatbots is to understand what the user is saying through natural language processing and collect enough information to take appropriate action or simply answer their questions.", "div2-title": "", "div2-text": "In addition to the chatbot, custom made application is integrated in order to control interface with the user. Once the chatbot collects enough information from the users, it delivers such knowledge to the application which then executes respective actions. The action could simply be looking up an answer from a database, pay the bill or it could be more complicated involving a physical action such as turning on/off the light.", "div3-title": "", "div3-text": "Technology is based on Watson Conversation service hosted on IBM bluemix platform on top of which we develop related applications.", "div4-title": "Practical Applications", "div4-text": "Chatbots are designed based on intents, entities and dialog flow. Intents are actions that users are intending to perform: e.g. get account balance, scheduled a doctor appointment. ", "div5-title": "", "div5-text": "Entities are the specific pieces of information we want to extract from the user response: e.g. account number, doctor name. Dialog flow is the conversation logic.", "div6-title": "What We Need", "div6-text": "This sums up as following requirements for the creation of the VI chatbot:", "div7-title": "", "div7-text": "- General purpose of chatbot", "div8-title": "", "div8-text": "- Examples of current user stories and conversations (as many as possible)", "div9-title": "", "div9-text": "- Bluemix Watson Conversation credentials (or we will handle this for you)", "div10-title": "", "div10-text": "" } }, "bios": { "don-sobeski": { "name": "Don Sobeski", "role": "Key Facilitator (Black Belt)", "div1": "Don Sobeski is a Lean Six Sigma Black Belt and Instructor, who brings 40 years of experience from IBM where he worked as a Hardware Engineer, Software Developer, Instructor, LSS Black Belt and Business Performance Consultant in the retail, insurance, chemical and financial services industries.", "div2": "For the past 9 years his focus has been on process excellence through Lean and Lean Six Sigma training and coaching that has enabled IBM business units to achieve significant savings and ROI.  He is a member of the American Society of Quality (ASQ), the Lean Enterprise Institute (LEI) and the Association for Talent Development (ATD)." }, "david-hare": { "name": "David Hare", "role": "Key Facilitator", "div1": "David Hare is the co-founder and managing partner of the Path Forward to Business Transformation LLC.  Previously, David served as a Program Manager and Transformation Facilitator at International Business Machines (IBM). His 30+ years of service at IBM included roles in manufacturing, process engineering, HR management, and the facilitation of global process transformation change initiatives. David is an accredited organizational change facilitator, with subject matter expertise in business process and change management. In the past five years, David and his team have facilitated process transformations efforts valued at over $900 million dollars (USD).", "div2": "In his spare time, David serves as a nationally certified interscholastic coach and devotes much of his time to developing youth leadership." }, "barbara-reusser": { "name": "Barbara Reusser", "role": "Master Black Belt", "div1": "Barbara S. Reusser has more than 30 years of consulting experience in change management, instructional design, and process improvement for business transformation. As a Master Black Belt, she has supported the successful implementation of Lean Six Sigma-based process improvement at a variety of companies through coaching projects, facilitation of champion workshops, and designing training materials to support successful global deployments. She has consulted with public and private sector clients in the areas of managerial and executive development, strategic change initiatives, and organizational realignments.", "div2": "As a member of PricewaterhouseCoopers, she led business transformation projects with various Fortune 100 businesses. In addition, Barbara was previously an internal consultant with a large government agency, leading executive training and development and transformational change. She was also previously on the faculties at two universities. Barbara has published and presented internationally on the topics of instructional design and change management." }, "richard-orth": { "name": "Richard Orth", "role": "Transformation Facilitator", "div1": "Richard Orth is a Transformation Facilitator, having over 39 years’ experience with IBM as a change leader, facilitator, trainer, leadership coach and business analyst. He helps client organizations improve their capabilities in the areas of cultural transformation, leadership development, collaborative problem-solving and decision-making, and process facilitation.", "div2": "Richard is an IBM certified IT Specialist and also a volunteer community mediator." }, "luca-bencini": { "name": "Luca Bencini", "role": "Master Black Belt and Operations Excellence Consultant", "div1": "Luca Bencini is an Operations Excellence Consultant with over 25 years’ experience in business strategy, process improvement and change management. As a practitioner and consultant delivering business results through continuous and breakthrough improvements.  He has worked in a number of industries such as electric utilities, healthcare, financial services, supply chain, IT, manufacturing (discrete and process) and government.  Additionally he has worked in functions like: marketing, finance, operations and sales.  He also led several operational excellence deployments and was heavily involved in the Deming Prize at Florida Power & Light.  Luca has worked and lived in the US, Latin America and Europe and is fluent in English, Spanish and Italian.", "div2": "Luca is a graduate of the Massachusetts Institute of Technology with degrees in Chemical Engineering and Economics and has an MBA from Harvard." }, "alan-henderson": { "name": "Alan Henderson", "role": "Managing Partner", "div1": "Alan is an accomplished business development director and sales strategist.  Having sold and developed business opportunities in Banking, Pharmaceutical, Aviation, and IT sectors, Alan has a wealth of experience in understanding what clients need and providing value to their organization.  Alan has experience in bringing start-ups sustainable profitability, SMEs increase their market share, and large corporations evolve their selling processes.  Within Altum Data, Alan acts as a consultant to help guide companies through the process of embracing lean, transformation, and cognitive solutions." } } };
+	module.exports = { "nav-links": { "home": "HOME", "about": "ABOUT US", "expertises": "EXPERTISES", "team": "TEAM" }, "homepage-block-buttons": { "corporate-enablement-program": "CORPORATE ENABLEMENT PROGRAM", "big-data-analytics": "BIG DATA ANALYTICS          ", "it-cognitive-transformation": "IT COGNITIVE TRANSFORMATION " }, "homepage-quote": "People. Process. Technology.", "homepage-quote-author": "", "global-warming-quote": "Approximately 287 000 000 000 tonnes of ice melt in Antarctica every year due to global warming.", "about-us": { "title": "ABOUT ALTUM DATA", "content": { "div-1": "Altum Data equips organizations with the tools, strategies, and culture necessary to sustain effective transformation. By leveraging over 200 years of experience in instructing and implementing Lean, Six Sigma, Kaizen, and Big Data solutions, Altum Data is well-equipped to empower both individuals and corporations to drive sustainable change and transform their business from within. Our team of experts have experience in all fields of process management and automation", "div-2": "Altum Data’s approach to employee and project-team led solutions along with leadership buy-in to cultural transformations allows organizations to develop real, sustainable change which has a direct impact on improving the bottom line." } }, "expertises": { "title": "EXPERTISES", "content": { "div1-title": "Our Approach", "div1-text": "" } }, "corporate-enablement-program": { "description": { "div1-text": "Lean Six Sigma is a comprehensive methodology that helps organizations improve processes by reducing waste (Lean) and variation (Six Sigma). Applying Lean Six Sigma results in increased productivity through process efficiencies, increased revenue, decreased costs and innovative solutions for an organization.", "div2-text": "Lean Six Sigma goes beyond the traditional manufacturing enviroment and is applied in many other industries such as healthcare, logistics, service, retail, and IT.", "div3-text": "Companies that have chosen to implement Lean Six Sigma throughout their enterprise can impact their bottom line with tangible results in the range of $500,000 to $5,000,000 (USD) annually." } }, "it-cognitive-transformation-page": { "description": "As the industrial revolution was driven by invention of the machine, today business is more and more driven by artificial intelligence and advanced cognitive solutions. Machine learning, cognitive IT, and adoptive robotics have already found applications enabling new levels of efficiency and production within communications, HR, manufacturing, and social and corporate IT systems.", "description-note": "*Cognitive computing is the simulation of human thought processes in a computerized model.", "description-note-2": "*VI refers to virtual intelligence", "offering-1": { "name": "Cognitive (VI) Chatbots", "div1-title": "VI Chatbots", "div1-text": "The main mission of a chatbot is to understand what the user is saying through natural language processing and collect enough information to take appropriate actions, or simply answer their questions.", "div2-title": "", "div2-text": "Custom-made applications can be integrated in order to control interface with the user. Once the chatbot collects enough information from the users, it delivers knowledge to the application which then executes respective actions. The action could simply be looking up an answer from a database, pay bills, answering insurance claims, or something more complicated which involves physical action such as turning on/off the light.", "div3-title": "", "div3-text": "Our chatbot technology is based on Watson Conversation service hosted on IBM’s bluemix platform, on top of which we develop related applications.", "div4-title": "Practical Applications", "div4-text": "Chatbots are designed based on intents, entities and dialog flow. Intents are actions that users are intending to perform: e.g. get account balance, scheduled a doctor appointment.", "div5-title": "", "div5-text": "Entities are the specific pieces of information we want to extract from the user response: e.g. account number, doctor name. Dialog flow is the conversation logic.", "div6-title": "What We Need", "div6-text": "The following requirements are needed for the creation of a chatbot:", "div7-title": "", "div7-text": "- General purpose of chatbot", "div8-title": "", "div8-text": "- Examples of current user stories and conversations (as many as possible)", "div9-title": "", "div9-text": "- Bluemix Watson Conversation credentials (or we will handle this for you)", "div10-title": "", "div10-text": "" }, "offering-2": { "name": "Smart Readers", "div1-title": "Cognitive Smart Readers", "div1-text": "Smart readers are integrated cognitive systems capable of reading and processing thousands of documents in various formats (eg. PDF, JPG…) by using artificial intelligence.  The acquired data can serve as input or output in-line with the organization's policies.", "div2-title": "", "div2-text": "Cognitive readers analyze text to extract meta-data from content such as concepts, entities, keywords, categories, sentiment, emotion, relations and semantic roles. Applications can combine multiple services such as Document conversion (scan, pdf, doc, HTML ..), visual recognition or natural language understanding.", "div3-title": "", "div3-text": "The goal of such applications is to extract data from unstructured texts or pictures and process it in parallel with other organization applications.", "div4-title": "Practical applications", "div4-text": "Reading contract PDFs (or other formats) in order to extract data for finance, HR, Procurement, Sales or other organizations and signify key drivers, feed related systems, or present recommendations.", "div5-title": "", "div5-text": "Example :Read applicant CV’s and feed the appropriate HR system. Read sales contracts and feed appropriate systems, along with understanding key drivers such as GP of the existing project.", "div6-title": "What We Need", "div6-text": "This sums up as following requirements for the creation of the VI chatbot:", "div7-title": "", "div7-text": "- General purpose of Cognitive reader", "div8-title": "", "div8-text": "- Examples of inputs (documents) and information which should be extracted (as many as possible) ", "div9-title": "", "div9-text": "- Bluemix Service credentials (or we will handle this for you)", "div10-title": "", "div10-text": "" }, "offering-3": { "name": "VI Business Process Optimization", "div1-title": "VI Lean Processes", "div1-text": "Our Business Process optimization solutions are based on advanced analytical methods to help organizations make better decisions.", "div2-title": "", "div2-text": "Optimization applications are often concerned with determining the option which will drive maximum(profit, performance or yield) or minimum (loss, risk or cost) related to real-world objectives or business cases. So far these optimization methods require 3rd party software to be installed on user’s machine what makes integration into existing application quite difficult. Our Business Process optimization solutions focus on the implementation of Linear programming / Nonlinear programming into existing Organization's workflow applications (Web, Mobile) and calculate the optimal solution in real time (based on API).", "div3-title": "", "div3-text": "", "div4-title": "", "div4-text": "", "div5-title": "", "div5-text": "", "div6-title": "", "div6-text": "", "div7-title": "", "div7-text": "", "div8-title": "", "div8-text": "", "div9-title": "", "div9-text": "", "div10-title": "", "div10-text": "" }, "offering-4": { "name": "MS Office Automation", "div1-title": "VBA MACRO Solutions", "div1-text": "MS Office tools like MS Excel are highly popular and easy to use within a corporate environment. Our MS Office automation solutions help get the maximum benefit from your Office applications by automating: repetitive tasks, dashboard or report creation, a collection of data from various sources, document creation, print and much more.", "div2-title": "", "div2-text": "Automation is done via Visual Basic for Application (sometimes called Macros) and such Office tools can integrate with other Windows applications as well.", "div3-title": "", "div3-text": "We know that our clients love MACs, therefore we extended our support for MS Office on MAC OS.", "div4-title": "", "div4-text": "", "div5-title": "", "div5-text": "", "div6-title": "", "div6-text": "", "div7-title": "", "div7-text": "", "div8-title": "", "div8-text": "", "div9-title": "", "div9-text": "", "div10-title": "", "div10-text": "" }, "offering-5": { "name": "Workflow Tools", "div1-title": "VBA MACRO Solutions", "div1-text": "Web/Cloud based applications (desktop and mobile) focused on supporting Organization's internal processes by a collection of the inputs and delivering them to different segments of the organization.", "div2-title": "Practical Applications", "div2-text": "HR hiring and leaving forms", "div3-title": "", "div3-text": "Hospital reception forms", "div4-title": "", "div4-text": "Request forms with approval chain (Budget approvals, vacation, expense reimbursement.. )", "div5-title": "", "div5-text": "Workflow tools between two or more departments Internal/external surveys", "div6-title": "", "div6-text": "", "div7-title": "", "div7-text": "", "div8-title": "", "div8-text": "", "div9-title": "", "div9-text": "", "div10-title": "", "div10-text": "" }, "offering-6": { "name": "Data Architecture", "div1-title": "Data Bases (Information Warehouse / Data Mart / Data Lake)", "div1-text": "Creation and maintenance of Relational or Multidimensional (aka data cubes) databases in pair with on-top application layers which serve to extract data in a meaningful format.", "div2-title": "Practical Applications", "div2-text": "Creation of data warehouse of revenue, cost & expense data capable of being queried in a form with flexibly structured dashboards.", "div3-title": "", "div3-text": "Creation of debt tracking databases with the capability to query results in an appropriate format.", "div4-title": "", "div4-text": "All our applications are compatible with cognitive solutions which will provide organizations with richer data, key drivers, and a base for SMART decision making (predictive, behavior or sentiment modeling).", "div5-title": "Data Mining", "div5-text": "In many cases, data is not easily attainable to serve organization needs. Data needed for key decision-making can be both structured or unstructured thus increasing the complexity of its extractions. Our experts can serve you required BIG DATA on demand using advanced extraction techniques. Contact us to learn more.", "div6-title": "", "div6-text": "", "div7-title": "", "div7-text": "", "div8-title": "", "div8-text": "", "div9-title": "", "div9-text": "", "div10-title": "", "div10-text": "" } }, "big-data-analytics": { "description": { "div1": "Today, organizations are faced with ever increasing operational dynamics that demand effective and qualitative decision-making.  Often, organizations and management teams rely on opinions or past experience to direct how they move forward.", "div2": "Organizations that embrace data science are able to quantify the main drivers of their business, reduce the likelihood of human error in decision making, and predict what will happen to their business in the near future.", "div3": "Data sets are most commonly analyzed as Predictions, Sentiment Analytics or Behavior Analytics. Each capability enables the organization to understand future based of historical trends and likely future outcomes level and base its actions accordingly.", "div4": "Building Data Science capabilities can be a timely and costly process.  Altum Data makes it simple to implement a big data approach in your business by using our BIG DATA Modeling on Demand expertise." }, "description-note": "*Cognitive computing is the simulation of human thought processes in a computerized model.", "offering-1": { "name": "Cognitive (VI) Chatbots", "div1-title": "VI Chatbots", "div1-text": "The main mission of chatbots is to understand what the user is saying through natural language processing and collect enough information to take appropriate action or simply answer their questions.", "div2-title": "", "div2-text": "In addition to the chatbot, custom made application is integrated in order to control interface with the user. Once the chatbot collects enough information from the users, it delivers such knowledge to the application which then executes respective actions. The action could simply be looking up an answer from a database, pay the bill or it could be more complicated involving a physical action such as turning on/off the light.", "div3-title": "", "div3-text": "Technology is based on Watson Conversation service hosted on IBM bluemix platform on top of which we develop related applications.", "div4-title": "Practical Applications", "div4-text": "Chatbots are designed based on intents, entities and dialog flow. Intents are actions that users are intending to perform: e.g. get account balance, scheduled a doctor appointment. ", "div5-title": "", "div5-text": "Entities are the specific pieces of information we want to extract from the user response: e.g. account number, doctor name. Dialog flow is the conversation logic.", "div6-title": "What We Need", "div6-text": "This sums up as following requirements for the creation of the VI chatbot:", "div7-title": "", "div7-text": "- General purpose of chatbot", "div8-title": "", "div8-text": "- Examples of current user stories and conversations (as many as possible)", "div9-title": "", "div9-text": "- Bluemix Watson Conversation credentials (or we will handle this for you)", "div10-title": "", "div10-text": "" } }, "bios": { "don-sobeski": { "name": "Don Sobeski", "role": "Key Facilitator (Black Belt)", "div1": "Don Sobeski is a Lean Six Sigma Black Belt and Instructor, who brings 40 years of experience from IBM where he worked as a Hardware Engineer, Software Developer, Instructor, LSS Black Belt and Business Performance Consultant in the retail, insurance, chemical and financial services industries.", "div2": "For the past 9 years his focus has been on process excellence through Lean and Lean Six Sigma training and coaching that has enabled IBM business units to achieve significant savings and ROI.  He is a member of the American Society of Quality (ASQ), the Lean Enterprise Institute (LEI) and the Association for Talent Development (ATD)." }, "david-hare": { "name": "David Hare", "role": "Key Facilitator", "div1": "David Hare is the co-founder and managing partner of the Path Forward to Business Transformation LLC.  Previously, David served as a Program Manager and Transformation Facilitator at International Business Machines (IBM). His 30+ years of service at IBM included roles in manufacturing, process engineering, HR management, and the facilitation of global process transformation change initiatives. David is an accredited organizational change facilitator, with subject matter expertise in business process and change management. In the past five years, David and his team have facilitated process transformations efforts valued at over $900 million dollars (USD).", "div2": "In his spare time, David serves as a nationally certified interscholastic coach and devotes much of his time to developing youth leadership." }, "barbara-reusser": { "name": "Barbara Reusser", "role": "Master Black Belt", "div1": "Barbara S. Reusser has more than 30 years of consulting experience in change management, instructional design, and process improvement for business transformation. As a Master Black Belt, she has supported the successful implementation of Lean Six Sigma-based process improvement at a variety of companies through coaching projects, facilitation of champion workshops, and designing training materials to support successful global deployments. She has consulted with public and private sector clients in the areas of managerial and executive development, strategic change initiatives, and organizational realignments.", "div2": "As a member of PricewaterhouseCoopers, she led business transformation projects with various Fortune 100 businesses. In addition, Barbara was previously an internal consultant with a large government agency, leading executive training and development and transformational change. She was also previously on the faculties at two universities. Barbara has published and presented internationally on the topics of instructional design and change management." }, "richard-orth": { "name": "Richard Orth", "role": "Transformation Facilitator", "div1": "Richard Orth is a Transformation Facilitator, having over 39 years’ experience with IBM as a change leader, facilitator, trainer, leadership coach and business analyst. He helps client organizations improve their capabilities in the areas of cultural transformation, leadership development, collaborative problem-solving and decision-making, and process facilitation.", "div2": "Richard is an IBM certified IT Specialist and also a volunteer community mediator." }, "luca-bencini": { "name": "Luca Bencini", "role": "Master Black Belt and Operations Excellence Consultant", "div1": "Luca Bencini is an Operations Excellence Consultant with over 25 years’ experience in business strategy, process improvement and change management. As a practitioner and consultant delivering business results through continuous and breakthrough improvements.  He has worked in a number of industries such as electric utilities, healthcare, financial services, supply chain, IT, manufacturing (discrete and process) and government.  Additionally he has worked in functions like: marketing, finance, operations and sales.  He also led several operational excellence deployments and was heavily involved in the Deming Prize at Florida Power & Light.  Luca has worked and lived in the US, Latin America and Europe and is fluent in English, Spanish and Italian.", "div2": "Luca is a graduate of the Massachusetts Institute of Technology with degrees in Chemical Engineering and Economics and has an MBA from Harvard." }, "alan-henderson": { "name": "Alan Henderson", "role": "Managing Partner", "div1": "Alan is an accomplished business development director and sales strategist.  Having sold and developed business opportunities in Banking, Pharmaceutical, Aviation, and IT sectors, Alan has a wealth of experience in understanding what clients need and providing value to their organization.  Alan has experience in bringing start-ups sustainable profitability, SMEs increase their market share, and large corporations evolve their selling processes.  Within Altum Data, Alan acts as a consultant to help guide companies through the process of embracing lean, transformation, and cognitive solutions." } } };
 
 /***/ }),
 /* 259 */
@@ -29791,16 +29799,10 @@
 			var _this = _possibleConstructorReturn(this, (AboutUsComponent.__proto__ || Object.getPrototypeOf(AboutUsComponent)).call(this, props));
 	
 			_this.state = {};
-			_this.go_to_page = _this.go_to_page.bind(_this);
 			return _this;
 		}
 	
 		_createClass(AboutUsComponent, [{
-			key: 'go_to_page',
-			value: function go_to_page(destination) {
-				this.props.go_to_page(destination);
-			}
-		}, {
 			key: 'render',
 			value: function render() {
 				return _react2.default.createElement(
@@ -30495,31 +30497,31 @@
 	
 	var _DummyComponent2 = _interopRequireDefault(_DummyComponent);
 	
-	var _YellowBeltStandardComponent = __webpack_require__(/*! ./lss_offerings/YellowBeltStandardComponent.jsx */ 289);
+	var _YellowBeltStandardComponent = __webpack_require__(/*! ./offering_texts/YellowBeltStandardComponent.jsx */ 289);
 	
 	var _YellowBeltStandardComponent2 = _interopRequireDefault(_YellowBeltStandardComponent);
 	
-	var _YellowBeltVirtualComponent = __webpack_require__(/*! ./lss_offerings/YellowBeltVirtualComponent.jsx */ 290);
+	var _YellowBeltVirtualComponent = __webpack_require__(/*! ./offering_texts/YellowBeltVirtualComponent.jsx */ 290);
 	
 	var _YellowBeltVirtualComponent2 = _interopRequireDefault(_YellowBeltVirtualComponent);
 	
-	var _GreenBeltStandardComponent = __webpack_require__(/*! ./lss_offerings/GreenBeltStandardComponent.jsx */ 291);
+	var _GreenBeltStandardComponent = __webpack_require__(/*! ./offering_texts/GreenBeltStandardComponent.jsx */ 291);
 	
 	var _GreenBeltStandardComponent2 = _interopRequireDefault(_GreenBeltStandardComponent);
 	
-	var _GreenBeltVirtualComponent = __webpack_require__(/*! ./lss_offerings/GreenBeltVirtualComponent.jsx */ 292);
+	var _GreenBeltVirtualComponent = __webpack_require__(/*! ./offering_texts/GreenBeltVirtualComponent.jsx */ 292);
 	
 	var _GreenBeltVirtualComponent2 = _interopRequireDefault(_GreenBeltVirtualComponent);
 	
-	var _BlackBeltStandardComponent = __webpack_require__(/*! ./lss_offerings/BlackBeltStandardComponent.jsx */ 293);
+	var _BlackBeltStandardComponent = __webpack_require__(/*! ./offering_texts/BlackBeltStandardComponent.jsx */ 293);
 	
 	var _BlackBeltStandardComponent2 = _interopRequireDefault(_BlackBeltStandardComponent);
 	
-	var _BlackBeltVirtualComponent = __webpack_require__(/*! ./lss_offerings/BlackBeltVirtualComponent.jsx */ 294);
+	var _BlackBeltVirtualComponent = __webpack_require__(/*! ./offering_texts/BlackBeltVirtualComponent.jsx */ 294);
 	
 	var _BlackBeltVirtualComponent2 = _interopRequireDefault(_BlackBeltVirtualComponent);
 	
-	var _LSSHomeComponent = __webpack_require__(/*! ./lss_offerings/LSSHomeComponent.jsx */ 295);
+	var _LSSHomeComponent = __webpack_require__(/*! ./offering_texts/LSSHomeComponent.jsx */ 295);
 	
 	var _LSSHomeComponent2 = _interopRequireDefault(_LSSHomeComponent);
 	
@@ -33313,9 +33315,9 @@
 
 /***/ }),
 /* 289 */
-/*!*****************************************************************!*\
-  !*** ./react/app/lss_offerings/YellowBeltStandardComponent.jsx ***!
-  \*****************************************************************/
+/*!******************************************************************!*\
+  !*** ./react/app/offering_texts/YellowBeltStandardComponent.jsx ***!
+  \******************************************************************/
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -33647,9 +33649,9 @@
 
 /***/ }),
 /* 290 */
-/*!****************************************************************!*\
-  !*** ./react/app/lss_offerings/YellowBeltVirtualComponent.jsx ***!
-  \****************************************************************/
+/*!*****************************************************************!*\
+  !*** ./react/app/offering_texts/YellowBeltVirtualComponent.jsx ***!
+  \*****************************************************************/
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -33814,9 +33816,9 @@
 
 /***/ }),
 /* 291 */
-/*!****************************************************************!*\
-  !*** ./react/app/lss_offerings/GreenBeltStandardComponent.jsx ***!
-  \****************************************************************/
+/*!*****************************************************************!*\
+  !*** ./react/app/offering_texts/GreenBeltStandardComponent.jsx ***!
+  \*****************************************************************/
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -34452,9 +34454,9 @@
 
 /***/ }),
 /* 292 */
-/*!***************************************************************!*\
-  !*** ./react/app/lss_offerings/GreenBeltVirtualComponent.jsx ***!
-  \***************************************************************/
+/*!****************************************************************!*\
+  !*** ./react/app/offering_texts/GreenBeltVirtualComponent.jsx ***!
+  \****************************************************************/
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -34619,9 +34621,9 @@
 
 /***/ }),
 /* 293 */
-/*!****************************************************************!*\
-  !*** ./react/app/lss_offerings/BlackBeltStandardComponent.jsx ***!
-  \****************************************************************/
+/*!*****************************************************************!*\
+  !*** ./react/app/offering_texts/BlackBeltStandardComponent.jsx ***!
+  \*****************************************************************/
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -35503,9 +35505,9 @@
 
 /***/ }),
 /* 294 */
-/*!***************************************************************!*\
-  !*** ./react/app/lss_offerings/BlackBeltVirtualComponent.jsx ***!
-  \***************************************************************/
+/*!****************************************************************!*\
+  !*** ./react/app/offering_texts/BlackBeltVirtualComponent.jsx ***!
+  \****************************************************************/
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -35679,9 +35681,9 @@
 
 /***/ }),
 /* 295 */
-/*!******************************************************!*\
-  !*** ./react/app/lss_offerings/LSSHomeComponent.jsx ***!
-  \******************************************************/
+/*!*******************************************************!*\
+  !*** ./react/app/offering_texts/LSSHomeComponent.jsx ***!
+  \*******************************************************/
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -35767,6 +35769,933 @@
 
 /***/ }),
 /* 296 */
+/*!******************************************************!*\
+  !*** ./react/app/CorporateProgramAgileComponent.jsx ***!
+  \******************************************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactSlick = __webpack_require__(/*! react-slick */ 266);
+	
+	var _reactSlick2 = _interopRequireDefault(_reactSlick);
+	
+	var _UnderConstruction = __webpack_require__(/*! ./UnderConstruction.jsx */ 287);
+	
+	var _UnderConstruction2 = _interopRequireDefault(_UnderConstruction);
+	
+	var _reactRouterDom = __webpack_require__(/*! react-router-dom */ 218);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var CorporateProgramAgileComponent = function (_React$Component) {
+		_inherits(CorporateProgramAgileComponent, _React$Component);
+	
+		function CorporateProgramAgileComponent(props) {
+			_classCallCheck(this, CorporateProgramAgileComponent);
+	
+			var _this = _possibleConstructorReturn(this, (CorporateProgramAgileComponent.__proto__ || Object.getPrototypeOf(CorporateProgramAgileComponent)).call(this, props));
+	
+			_this.state = {};
+			return _this;
+		}
+	
+		_createClass(CorporateProgramAgileComponent, [{
+			key: 'render',
+			value: function render() {
+				return _react2.default.createElement(
+					'div',
+					{ className: 'page', id: 'LSSpage' },
+					_react2.default.createElement(
+						'div',
+						{ className: 'page-content', style: { position: 'relative' } },
+						_react2.default.createElement(
+							'div',
+							{ className: 'left-column dark-tint-overlay', id: 'corporate-left-column', style: { backgroundImage: 'url(./pics/six_sigma.jpg)', backgroundRepeat: 'no-repeat', backgroundPosition: 'left-top', backgroundClip: 'content-box', backgroundSize: 'cover' } },
+							_react2.default.createElement(
+								'div',
+								{ className: 'page-title', id: 'offering-title' },
+								'Agile Training'
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'right-column', id: 'corporate-right-column' },
+							_react2.default.createElement(
+								'div',
+								{ className: 'right-column-content', id: 'corporate-right-column-content' },
+								_react2.default.createElement(
+									'div',
+									{ className: 'lss-right-column-wrapper' },
+									_react2.default.createElement(
+										'div',
+										{ className: 'right-column-content' },
+										_react2.default.createElement(
+											'div',
+											{ className: 'course-description' },
+											_react2.default.createElement(
+												'h3',
+												{ className: 'offering-description-title' },
+												'Agile Fundamentals'
+											),
+											_react2.default.createElement('br', null),
+											_react2.default.createElement(
+												'h3',
+												{ className: 'offering-description-div' },
+												'Agile has been one of the big buzzwords of the IT development industry for the last 10 years. But exactly what ',
+												_react2.default.createElement(
+													'span',
+													{ className: 'italic' },
+													'is'
+												),
+												' agile development?  Put simply, agile development is a different way of managing IT development teams and projects.'
+											),
+											_react2.default.createElement(
+												'h3',
+												{ className: 'offering-description-div' },
+												'Agile is a time boxed, iterative approach that builds products or services incrementally from the start of the project, instead of trying to deliver it all at once near the end.  It works by breaking projects down into smaller sizes of user functionality, prioritizing them, and then continuously delivering them in short one to four-week cycles.'
+											),
+											_react2.default.createElement(
+												'h3',
+												{ className: 'offering-description-div' },
+												'The focus of this 2-day hands-on workshop is to help individuals better relate to how the core Agile practices can be applied on any type of project and within their day-to-day jobs through a case study learning simulation.'
+											),
+											_react2.default.createElement(
+												'h3',
+												{ className: 'offering-description-div' },
+												'Individuals will apply Agile practices like writing effective User Stories, Relative Estimation, Backlog Grooming, Sprint Planning, Sprint Reviews, Burndown Charts, Feedback Gathering, Retrospectives, Course Correction and other core practices during this workshop.'
+											),
+											_react2.default.createElement('br', null),
+											_react2.default.createElement(
+												'h3',
+												{ className: 'offering-description-title' },
+												'Who Should Attend'
+											),
+											_react2.default.createElement(
+												'h3',
+												{ className: 'offering-description-div' },
+												'Business Analysts, Business Leaders, Managers, Developers, Operations, Project Managers, Team Leads, and anyone else interested in learning the basics of Agile values, principles, and terminology through simulation activities.'
+											),
+											_react2.default.createElement(
+												'h3',
+												{ className: 'offering-description-div' },
+												'Our virtual classes are interactive, giving students the chance to ask questions throughout the course and participate in team-based exercises.'
+											),
+											_react2.default.createElement('br', null),
+											_react2.default.createElement(
+												'h3',
+												{ className: 'offering-description-title text-align-left pad-left-right-column' },
+												'Course Duration:'
+											),
+											_react2.default.createElement(
+												'h3',
+												{ className: 'offering-description-div' },
+												'2 Days'
+											),
+											_react2.default.createElement(
+												'h3',
+												{ className: 'offering-description-title text-align-left pad-left-right-column' },
+												'Course Pre-requisites:'
+											),
+											_react2.default.createElement(
+												'h3',
+												{ className: 'offering-description-div' },
+												'There are no prerequisites to take this course.'
+											),
+											_react2.default.createElement('br', null),
+											_react2.default.createElement(
+												'h3',
+												{ className: 'offering-description-title text-align-left pad-left-right-column' },
+												'Our course will cover the following topics:'
+											),
+											_react2.default.createElement(
+												'h3',
+												{ className: 'offering-description-div' },
+												_react2.default.createElement(
+													'ul',
+													null,
+													_react2.default.createElement(
+														'li',
+														null,
+														'Introduction to Agile development'
+													),
+													_react2.default.createElement(
+														'li',
+														null,
+														'Agile Principles'
+													),
+													_react2.default.createElement(
+														'li',
+														null,
+														'Difference between traditional waterfall approach and agile'
+													),
+													_react2.default.createElement(
+														'li',
+														null,
+														'Overview of the Scrum Methodology'
+													),
+													_react2.default.createElement(
+														'li',
+														null,
+														'Roles and Responsibilities of Agile teams'
+													),
+													_react2.default.createElement(
+														'li',
+														null,
+														'Identifying project goals (user stories)'
+													),
+													_react2.default.createElement(
+														'li',
+														null,
+														'Planning the Sprint'
+													),
+													_react2.default.createElement(
+														'li',
+														null,
+														'Daily Stand-ups'
+													),
+													_react2.default.createElement(
+														'li',
+														null,
+														'Creating and updating the burn down chart'
+													),
+													_react2.default.createElement(
+														'li',
+														null,
+														'Conducting the Sprint Review and Sprint Retrospective'
+													),
+													_react2.default.createElement(
+														'li',
+														null,
+														'Product and Sprint Release'
+													)
+												)
+											),
+											_react2.default.createElement(
+												'h3',
+												{ className: 'offering-description-title text-align-left pad-left-right-column' },
+												'Upon completion of this course you should be able to:'
+											),
+											_react2.default.createElement(
+												'h3',
+												{ className: 'offering-description-div' },
+												_react2.default.createElement(
+													'ul',
+													null,
+													_react2.default.createElement(
+														'li',
+														null,
+														'Understand scrum fundamentals- roles, process, artifacts and scrum meetings'
+													),
+													_react2.default.createElement(
+														'li',
+														null,
+														'Perform project initiation in order to identify the agile project goals'
+													),
+													_react2.default.createElement(
+														'li',
+														null,
+														'Prioritize epics and user stories using the initial product backlog'
+													),
+													_react2.default.createElement(
+														'li',
+														null,
+														'Gather requirements and sprint planning to identify the user stories, write the user stories, estimate using story points, create and estimate the sprint backlog to plan the sprint'
+													)
+												)
+											),
+											_react2.default.createElement('br', null)
+										)
+									)
+								)
+							),
+							_react2.default.createElement('br', null),
+							_react2.default.createElement('img', { id: 'tiny-logo', src: './pics/logo_3.png' })
+						)
+					)
+				);
+			}
+		}]);
+	
+		return CorporateProgramAgileComponent;
+	}(_react2.default.Component);
+	
+	exports.default = CorporateProgramAgileComponent;
+
+/***/ }),
+/* 297 */
+/*!*******************************************************************!*\
+  !*** ./react/app/CorporateProgramSpecialtyWorkshopsComponent.jsx ***!
+  \*******************************************************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactSlick = __webpack_require__(/*! react-slick */ 266);
+	
+	var _reactSlick2 = _interopRequireDefault(_reactSlick);
+	
+	var _RootCauseAnalysisComponent = __webpack_require__(/*! ./offering_texts/RootCauseAnalysisComponent.jsx */ 298);
+	
+	var _RootCauseAnalysisComponent2 = _interopRequireDefault(_RootCauseAnalysisComponent);
+	
+	var _ValueStreamMappingComponent = __webpack_require__(/*! ./offering_texts/ValueStreamMappingComponent.jsx */ 299);
+	
+	var _ValueStreamMappingComponent2 = _interopRequireDefault(_ValueStreamMappingComponent);
+	
+	var _reactRouterDom = __webpack_require__(/*! react-router-dom */ 218);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var CoroporateProgramSpecialtyWorkshopsComponent = function (_React$Component) {
+		_inherits(CoroporateProgramSpecialtyWorkshopsComponent, _React$Component);
+	
+		function CoroporateProgramSpecialtyWorkshopsComponent(props) {
+			_classCallCheck(this, CoroporateProgramSpecialtyWorkshopsComponent);
+	
+			var _this = _possibleConstructorReturn(this, (CoroporateProgramSpecialtyWorkshopsComponent.__proto__ || Object.getPrototypeOf(CoroporateProgramSpecialtyWorkshopsComponent)).call(this, props));
+	
+			_this.state = {
+				selected_course: "root_cause_analysis"
+			};
+			return _this;
+		}
+	
+		_createClass(CoroporateProgramSpecialtyWorkshopsComponent, [{
+			key: 'render',
+			value: function render() {
+	
+				var current_path = "/corporate_program/specialty_workshops";
+	
+				var activeLink = { textDecoration: 'none', color: 'rgba(255,255,255,1)' };
+	
+				var settings = {
+					dots: true,
+					infinite: true,
+					prevArrow: true,
+					speed: 500,
+					slidesToShow: 1,
+					slidesToScroll: 1
+				};
+	
+				return _react2.default.createElement(
+					'div',
+					{ className: 'page', id: 'LSSpage' },
+					_react2.default.createElement(
+						'div',
+						{ className: 'page-content', style: { position: 'relative' } },
+						_react2.default.createElement(
+							'div',
+							{ className: 'left-column dark-tint-overlay', id: 'corporate-left-column', style: { backgroundImage: 'url(./pics/six_sigma.jpg)', backgroundRepeat: 'no-repeat', backgroundPosition: 'left-top', backgroundClip: 'content-box', backgroundSize: 'cover' } },
+							_react2.default.createElement(
+								'div',
+								{ className: 'page-title', id: 'offering-title' },
+								'Specialty Workshops'
+							),
+							_react2.default.createElement(
+								'div',
+								{ className: 'none', id: 'offering-list-left-column' },
+								_react2.default.createElement(
+									'div',
+									{ className: 'anti-scroll' },
+									_react2.default.createElement(
+										'div',
+										{ id: 'corporate-left-column-list-div' },
+										_react2.default.createElement(
+											'h2',
+											{ className: 'course-sub-offering-title', id: 'root_cause_analysis' },
+											_react2.default.createElement(
+												_reactRouterDom.NavLink,
+												{ className: 'course-sub-offering-title', activeStyle: activeLink, to: { pathname: current_path + "/root_cause_analysis" } },
+												'Root Cause Analysis'
+											)
+										),
+										_react2.default.createElement(
+											'h2',
+											{ className: 'course-sub-offering-title', id: 'value_stream_mapping' },
+											_react2.default.createElement(
+												_reactRouterDom.NavLink,
+												{ className: 'course-sub-offering-title', activeStyle: activeLink, to: { pathname: current_path + "/value_stream_mapping" } },
+												'Value Stream Mapping'
+											)
+										)
+									)
+								),
+								_react2.default.createElement(
+									'div',
+									{ id: 'corporate-left-column-list-carousel' },
+									_react2.default.createElement(
+										_reactSlick2.default,
+										{ settings: settings },
+										_react2.default.createElement(
+											'div',
+											null,
+											_react2.default.createElement(
+												'h2',
+												{ className: 'course-sub-offering-title', id: 'root_cause_analysis' },
+												_react2.default.createElement(
+													_reactRouterDom.NavLink,
+													{ className: 'course-sub-offering-title', activeStyle: activeLink, to: { pathname: current_path + "/root_cause_analysis" } },
+													'Root Cause Analysis'
+												)
+											)
+										),
+										_react2.default.createElement(
+											'div',
+											null,
+											_react2.default.createElement(
+												'h2',
+												{ className: 'course-sub-offering-title', id: 'value_stream_mapping' },
+												_react2.default.createElement(
+													_reactRouterDom.NavLink,
+													{ className: 'course-sub-offering-title', activeStyle: activeLink, to: { pathname: current_path + "/value_stream_mapping" } },
+													'Value Stream Mapping'
+												)
+											)
+										)
+									)
+								)
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'right-column', id: 'corporate-right-column' },
+							_react2.default.createElement(
+								'div',
+								{ className: 'right-column-content', id: 'corporate-right-column-content' },
+								_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/corporate_program/specialty_workshops', component: _RootCauseAnalysisComponent2.default }),
+								_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/corporate_program/specialty_workshops/root_cause_analysis', component: _RootCauseAnalysisComponent2.default }),
+								_react2.default.createElement(_reactRouterDom.Route, { path: '/corporate_program/specialty_workshops/value_stream_mapping', component: _ValueStreamMappingComponent2.default })
+							),
+							_react2.default.createElement('br', null),
+							_react2.default.createElement('img', { id: 'tiny-logo', src: './pics/logo_3.png' })
+						)
+					)
+				);
+			}
+		}]);
+	
+		return CoroporateProgramSpecialtyWorkshopsComponent;
+	}(_react2.default.Component);
+	
+	exports.default = CoroporateProgramSpecialtyWorkshopsComponent;
+
+/***/ }),
+/* 298 */
+/*!*****************************************************************!*\
+  !*** ./react/app/offering_texts/RootCauseAnalysisComponent.jsx ***!
+  \*****************************************************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var RootCauseAnalysisComponent = function (_React$Component) {
+	  _inherits(RootCauseAnalysisComponent, _React$Component);
+	
+	  function RootCauseAnalysisComponent(props) {
+	    _classCallCheck(this, RootCauseAnalysisComponent);
+	
+	    var _this = _possibleConstructorReturn(this, (RootCauseAnalysisComponent.__proto__ || Object.getPrototypeOf(RootCauseAnalysisComponent)).call(this, props));
+	
+	    _this.state = {};
+	    return _this;
+	  }
+	
+	  _createClass(RootCauseAnalysisComponent, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "lss-right-column-wrapper" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "right-column-content" },
+	          _react2.default.createElement(
+	            "div",
+	            { className: "course-description" },
+	            _react2.default.createElement(
+	              "h3",
+	              { className: "offering-description-title" },
+	              "Root Cause Analysis"
+	            ),
+	            _react2.default.createElement("br", null),
+	            _react2.default.createElement(
+	              "h3",
+	              { className: "offering-description-div" },
+	              _react2.default.createElement(
+	                "span",
+	                { className: "italic" },
+	                "\u201CTreat the cause not the symptom.\u201D "
+	              ),
+	              "To identify and address the true cause of a problem, Root Cause Analysis (RCA) is fundamental to permanently fixing a problem and preventing it from occurring again, which can save your company time, money, and resources."
+	            ),
+	            _react2.default.createElement(
+	              "h3",
+	              { className: "offering-description-div" },
+	              "This workshop will provide attendees with an in-depth understanding of the different tools and techniques to analyze the process, define the problem, identify the cause(s) of the problem, select the optimal solution, and evaluate the improvement."
+	            ),
+	            _react2.default.createElement("br", null),
+	            _react2.default.createElement(
+	              "h3",
+	              { className: "offering-description-title" },
+	              "Who Should Attend"
+	            ),
+	            _react2.default.createElement(
+	              "h3",
+	              { className: "offering-description-div" },
+	              "Quality managers, plant managers, process owners, operations supervisors, plant engineers, manufacturing and company auditors, safety managers, anyone who wants to improve his/her ability to solve recurring problems."
+	            ),
+	            _react2.default.createElement("br", null),
+	            _react2.default.createElement(
+	              "h3",
+	              { className: "offering-description-title text-align-left pad-left-right-column" },
+	              "Workshop Duration:"
+	            ),
+	            _react2.default.createElement(
+	              "h3",
+	              { className: "offering-description-div" },
+	              "2 Days"
+	            ),
+	            _react2.default.createElement(
+	              "h3",
+	              { className: "offering-description-title text-align-left pad-left-right-column" },
+	              "Pre-requisites:"
+	            ),
+	            _react2.default.createElement(
+	              "h3",
+	              { className: "offering-description-div" },
+	              "There are no prerequisites to attend this workshop."
+	            ),
+	            _react2.default.createElement("br", null),
+	            _react2.default.createElement(
+	              "h3",
+	              { className: "offering-description-title text-align-left pad-left-right-column" },
+	              "Our Root Cause Analysis workshop will cover the following topics:"
+	            ),
+	            _react2.default.createElement(
+	              "h3",
+	              { className: "offering-description-div" },
+	              _react2.default.createElement(
+	                "ul",
+	                null,
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "Why most problem-solving models don\u2019t get to the root cause, and a solution"
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "How to ensure that the right problem is being worked on"
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "Tools for priority setting"
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "Developing a clear and sufficient problem statement"
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "Creating a SIPOC diagram to scope the effort and define interrelationships"
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "Using flowcharts to drill down into the right part of the process"
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "Identifying possible causes"
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "Options for selecting or eliminating causes (nominal group techniques)"
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "Using Logic trees as a cause and effect diagram"
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "Population versus sampling; options for sampling"
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "Check sheets, graphs, and tables for discrete data collection"
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "Surveys, interviews, and field observation for opinions or less precise data"
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "Tools for discrete data analysis (run charts, histograms, pareto diagram)"
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "Tools for softer type data (affinity diagram)"
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "Identifying and selecting appropriate solutions"
+	                )
+	              )
+	            ),
+	            _react2.default.createElement("br", null),
+	            _react2.default.createElement(
+	              "h3",
+	              { className: "offering-description-title text-align-left pad-left-right-column" },
+	              "Upon completion of this workshop you should be able to:"
+	            ),
+	            _react2.default.createElement(
+	              "h3",
+	              { className: "offering-description-div" },
+	              _react2.default.createElement(
+	                "ul",
+	                null,
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "Use the team approach to identify the right problem and solution."
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "Distinguish root cause from symptom."
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "Enhance problem-solving effectiveness by providing a model for in-depth analysis of problem situations."
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "Clarify the difference between analytical and creative thinking, and when each is most useful."
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "Promote the ability to provide problem-solving support in your organization."
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "Expand your knowledge of tools that are available for analysis of problem situations."
+	                )
+	              )
+	            ),
+	            _react2.default.createElement("br", null)
+	          )
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return RootCauseAnalysisComponent;
+	}(_react2.default.Component);
+	
+	exports.default = RootCauseAnalysisComponent;
+
+/***/ }),
+/* 299 */
+/*!******************************************************************!*\
+  !*** ./react/app/offering_texts/ValueStreamMappingComponent.jsx ***!
+  \******************************************************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var YellowBeltStandardComponent = function (_React$Component) {
+	  _inherits(YellowBeltStandardComponent, _React$Component);
+	
+	  function YellowBeltStandardComponent(props) {
+	    _classCallCheck(this, YellowBeltStandardComponent);
+	
+	    var _this = _possibleConstructorReturn(this, (YellowBeltStandardComponent.__proto__ || Object.getPrototypeOf(YellowBeltStandardComponent)).call(this, props));
+	
+	    _this.state = {};
+	    return _this;
+	  }
+	
+	  _createClass(YellowBeltStandardComponent, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "lss-right-column-wrapper" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "right-column-content" },
+	          _react2.default.createElement(
+	            "div",
+	            { className: "course-description" },
+	            _react2.default.createElement(
+	              "h3",
+	              { className: "offering-description-title" },
+	              "Value Stream Mapping (VSM)"
+	            ),
+	            _react2.default.createElement("br", null),
+	            _react2.default.createElement(
+	              "h3",
+	              { className: "offering-description-div" },
+	              "Value stream mapping is a lean-management technique used to document, analyze and improve the flow of materials and information required to produce a product or service for a customer, as it makes its way through the value stream."
+	            ),
+	            _react2.default.createElement(
+	              "h3",
+	              { className: "offering-description-div" },
+	              "By analyzing the current state of a process, a VSM can help you identify and reduce waste and reduce cycle time because of the insight you gain into both the decision-making flow and process flow."
+	            ),
+	            _react2.default.createElement(
+	              "h3",
+	              { className: "offering-description-div" },
+	              "Value stream mapping:",
+	              _react2.default.createElement(
+	                "ul",
+	                null,
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "Gathers and displays a broader range of information than a typical process map."
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "Is used at a broader level, i.e. from receiving of raw material to delivery of finished goods."
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "Is used to identify future projects, subprojects, and/or kaizen events."
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "h3",
+	              { className: "offering-description-div" },
+	              "In this workshop, you will learn how to prepare for a VSM event, create a current state map and develop a future state map."
+	            ),
+	            _react2.default.createElement("br", null),
+	            _react2.default.createElement(
+	              "h3",
+	              { className: "offering-description-title" },
+	              "Who Should Attend"
+	            ),
+	            _react2.default.createElement(
+	              "h3",
+	              { className: "offering-description-div" },
+	              "This one-day instructor-led Value Stream Mapping workshop is designed for those who are new to quality and process improvement and work in office and support functions, manufacturing, or service."
+	            ),
+	            _react2.default.createElement("br", null),
+	            _react2.default.createElement(
+	              "h3",
+	              { className: "offering-description-title text-align-left pad-left-right-column" },
+	              "Workshop Duration:"
+	            ),
+	            _react2.default.createElement(
+	              "h3",
+	              { className: "offering-description-div" },
+	              "1 Day"
+	            ),
+	            _react2.default.createElement(
+	              "h3",
+	              { className: "offering-description-title text-align-left pad-left-right-column" },
+	              "Pre-requisites:"
+	            ),
+	            _react2.default.createElement(
+	              "h3",
+	              { className: "offering-description-div" },
+	              "There are no prerequisites to attend this workshop."
+	            ),
+	            _react2.default.createElement("br", null),
+	            _react2.default.createElement(
+	              "h3",
+	              { className: "offering-description-title text-align-left pad-left-right-column" },
+	              "Our Value Stream Mapping workshop will cover the following topics:"
+	            ),
+	            _react2.default.createElement(
+	              "h3",
+	              { className: "offering-description-div" },
+	              _react2.default.createElement(
+	                "ul",
+	                null,
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "Fundamentals of Value Stream Mapping"
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "Process Family"
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "How to prepare for and develop a Current State Map"
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "Creating a Future State Map"
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "Develop a plan and prioritize projects"
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "Tips and Tricks to make your VSM better"
+	                )
+	              )
+	            ),
+	            _react2.default.createElement("br", null),
+	            _react2.default.createElement(
+	              "h3",
+	              { className: "offering-description-title text-align-left pad-left-right-column" },
+	              "Upon completion of this workshop you should be able to:"
+	            ),
+	            _react2.default.createElement(
+	              "h3",
+	              { className: "offering-description-div" },
+	              _react2.default.createElement(
+	                "ul",
+	                null,
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "Define value stream "
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "Learn the basics of value stream mapping"
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "Describe a current state and future state value stream map and their purpose"
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "Identify commonly used symbols"
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "Create a current state value stream map"
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "Create a future state value stream map"
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "Describe how metrics are collected and represented"
+	                )
+	              )
+	            ),
+	            _react2.default.createElement("br", null)
+	          )
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return YellowBeltStandardComponent;
+	}(_react2.default.Component);
+	
+	exports.default = YellowBeltStandardComponent;
+
+/***/ }),
+/* 300 */
 /*!********************************************************!*\
   !*** ./react/app/CognitiveTransformationComponent.jsx ***!
   \********************************************************/
@@ -35910,7 +36839,7 @@
 	exports.default = CognitiveTransformationComponent;
 
 /***/ }),
-/* 297 */
+/* 301 */
 /*!******************************************!*\
   !*** ./react/app/OfferingsComponent.jsx ***!
   \******************************************/
@@ -35932,7 +36861,7 @@
 	
 	var _BlockButtonComponent2 = _interopRequireDefault(_BlockButtonComponent);
 	
-	var _OfferingExampleComponent = __webpack_require__(/*! ./OfferingExampleComponent.jsx */ 298);
+	var _OfferingExampleComponent = __webpack_require__(/*! ./OfferingExampleComponent.jsx */ 302);
 	
 	var _OfferingExampleComponent2 = _interopRequireDefault(_OfferingExampleComponent);
 	
@@ -36070,7 +36999,7 @@
 	exports.default = OfferingsComponent;
 
 /***/ }),
-/* 298 */
+/* 302 */
 /*!************************************************!*\
   !*** ./react/app/OfferingExampleComponent.jsx ***!
   \************************************************/
@@ -36092,7 +37021,7 @@
 	
 	var _eng2 = _interopRequireDefault(_eng);
 	
-	var _ToggleShowHideComponent = __webpack_require__(/*! ./ToggleShowHideComponent.jsx */ 299);
+	var _ToggleShowHideComponent = __webpack_require__(/*! ./ToggleShowHideComponent.jsx */ 303);
 	
 	var _ToggleShowHideComponent2 = _interopRequireDefault(_ToggleShowHideComponent);
 	
@@ -36242,7 +37171,7 @@
 	exports.default = OfferingExampleComponent;
 
 /***/ }),
-/* 299 */
+/* 303 */
 /*!***********************************************!*\
   !*** ./react/app/ToggleShowHideComponent.jsx ***!
   \***********************************************/
@@ -36260,7 +37189,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactSvgButtons = __webpack_require__(/*! react-svg-buttons */ 300);
+	var _reactSvgButtons = __webpack_require__(/*! react-svg-buttons */ 304);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -36322,7 +37251,7 @@
 	exports.default = ToggleShowHideComponent;
 
 /***/ }),
-/* 300 */
+/* 304 */
 /*!******************************************!*\
   !*** ./~/react-svg-buttons/lib/index.js ***!
   \******************************************/
@@ -36334,7 +37263,7 @@
 	  value: true
 	});
 	
-	var _MorphIcon = __webpack_require__(/*! ./components/MorphIcon */ 301);
+	var _MorphIcon = __webpack_require__(/*! ./components/MorphIcon */ 305);
 	
 	Object.defineProperty(exports, 'MorphIcon', {
 	  enumerable: true,
@@ -36343,7 +37272,7 @@
 	  }
 	});
 	
-	var _CloseButton = __webpack_require__(/*! ./components/buttons/CloseButton */ 345);
+	var _CloseButton = __webpack_require__(/*! ./components/buttons/CloseButton */ 349);
 	
 	Object.defineProperty(exports, 'CloseButton', {
 	  enumerable: true,
@@ -36352,7 +37281,7 @@
 	  }
 	});
 	
-	var _PlusButton = __webpack_require__(/*! ./components/buttons/PlusButton */ 347);
+	var _PlusButton = __webpack_require__(/*! ./components/buttons/PlusButton */ 351);
 	
 	Object.defineProperty(exports, 'PlusButton', {
 	  enumerable: true,
@@ -36361,7 +37290,7 @@
 	  }
 	});
 	
-	var _NavButton = __webpack_require__(/*! ./components/buttons/NavButton */ 348);
+	var _NavButton = __webpack_require__(/*! ./components/buttons/NavButton */ 352);
 	
 	Object.defineProperty(exports, 'NavButton', {
 	  enumerable: true,
@@ -36370,7 +37299,7 @@
 	  }
 	});
 	
-	var _PlayButton = __webpack_require__(/*! ./components/buttons/PlayButton */ 349);
+	var _PlayButton = __webpack_require__(/*! ./components/buttons/PlayButton */ 353);
 	
 	Object.defineProperty(exports, 'PlayButton', {
 	  enumerable: true,
@@ -36379,7 +37308,7 @@
 	  }
 	});
 	
-	var _HoverMorphIcon = __webpack_require__(/*! ./components/HoverMorphIcon */ 346);
+	var _HoverMorphIcon = __webpack_require__(/*! ./components/HoverMorphIcon */ 350);
 	
 	Object.defineProperty(exports, 'HoverMorphIcon', {
 	  enumerable: true,
@@ -36388,7 +37317,7 @@
 	  }
 	});
 	
-	var _iconTypes = __webpack_require__(/*! ./icon-types */ 320);
+	var _iconTypes = __webpack_require__(/*! ./icon-types */ 324);
 	
 	Object.defineProperty(exports, 'iconTypes', {
 	  enumerable: true,
@@ -36400,7 +37329,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
-/* 301 */
+/* 305 */
 /*!*********************************************************!*\
   !*** ./~/react-svg-buttons/lib/components/MorphIcon.js ***!
   \*********************************************************/
@@ -36422,19 +37351,19 @@
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _reactMotion = __webpack_require__(/*! react-motion */ 302);
+	var _reactMotion = __webpack_require__(/*! react-motion */ 306);
 	
-	var _pathHelper = __webpack_require__(/*! ../lib/pathHelper */ 317);
+	var _pathHelper = __webpack_require__(/*! ../lib/pathHelper */ 321);
 	
-	var _clamp = __webpack_require__(/*! ../lib/clamp */ 318);
+	var _clamp = __webpack_require__(/*! ../lib/clamp */ 322);
 	
 	var _clamp2 = _interopRequireDefault(_clamp);
 	
-	var _omit = __webpack_require__(/*! ../lib/omit */ 319);
+	var _omit = __webpack_require__(/*! ../lib/omit */ 323);
 	
 	var _omit2 = _interopRequireDefault(_omit);
 	
-	var _iconTypes = __webpack_require__(/*! ../icon-types */ 320);
+	var _iconTypes = __webpack_require__(/*! ../icon-types */ 324);
 	
 	var _iconTypes2 = _interopRequireDefault(_iconTypes);
 	
@@ -36734,7 +37663,7 @@
 	exports.default = MorphIcon;
 
 /***/ }),
-/* 302 */
+/* 306 */
 /*!********************************************!*\
   !*** ./~/react-motion/lib/react-motion.js ***!
   \********************************************/
@@ -36746,38 +37675,38 @@
 	
 	function _interopRequire(obj) { return obj && obj.__esModule ? obj['default'] : obj; }
 	
-	var _Motion = __webpack_require__(/*! ./Motion */ 303);
+	var _Motion = __webpack_require__(/*! ./Motion */ 307);
 	
 	exports.Motion = _interopRequire(_Motion);
 	
-	var _StaggeredMotion = __webpack_require__(/*! ./StaggeredMotion */ 311);
+	var _StaggeredMotion = __webpack_require__(/*! ./StaggeredMotion */ 315);
 	
 	exports.StaggeredMotion = _interopRequire(_StaggeredMotion);
 	
-	var _TransitionMotion = __webpack_require__(/*! ./TransitionMotion */ 312);
+	var _TransitionMotion = __webpack_require__(/*! ./TransitionMotion */ 316);
 	
 	exports.TransitionMotion = _interopRequire(_TransitionMotion);
 	
-	var _spring = __webpack_require__(/*! ./spring */ 314);
+	var _spring = __webpack_require__(/*! ./spring */ 318);
 	
 	exports.spring = _interopRequire(_spring);
 	
-	var _presets = __webpack_require__(/*! ./presets */ 315);
+	var _presets = __webpack_require__(/*! ./presets */ 319);
 	
 	exports.presets = _interopRequire(_presets);
 	
-	var _stripStyle = __webpack_require__(/*! ./stripStyle */ 305);
+	var _stripStyle = __webpack_require__(/*! ./stripStyle */ 309);
 	
 	exports.stripStyle = _interopRequire(_stripStyle);
 	
 	// deprecated, dummy warning function
 	
-	var _reorderKeys = __webpack_require__(/*! ./reorderKeys */ 316);
+	var _reorderKeys = __webpack_require__(/*! ./reorderKeys */ 320);
 	
 	exports.reorderKeys = _interopRequire(_reorderKeys);
 
 /***/ }),
-/* 303 */
+/* 307 */
 /*!**************************************!*\
   !*** ./~/react-motion/lib/Motion.js ***!
   \**************************************/
@@ -36797,27 +37726,27 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	var _mapToZero = __webpack_require__(/*! ./mapToZero */ 304);
+	var _mapToZero = __webpack_require__(/*! ./mapToZero */ 308);
 	
 	var _mapToZero2 = _interopRequireDefault(_mapToZero);
 	
-	var _stripStyle = __webpack_require__(/*! ./stripStyle */ 305);
+	var _stripStyle = __webpack_require__(/*! ./stripStyle */ 309);
 	
 	var _stripStyle2 = _interopRequireDefault(_stripStyle);
 	
-	var _stepper3 = __webpack_require__(/*! ./stepper */ 306);
+	var _stepper3 = __webpack_require__(/*! ./stepper */ 310);
 	
 	var _stepper4 = _interopRequireDefault(_stepper3);
 	
-	var _performanceNow = __webpack_require__(/*! performance-now */ 307);
+	var _performanceNow = __webpack_require__(/*! performance-now */ 311);
 	
 	var _performanceNow2 = _interopRequireDefault(_performanceNow);
 	
-	var _raf = __webpack_require__(/*! raf */ 308);
+	var _raf = __webpack_require__(/*! raf */ 312);
 	
 	var _raf2 = _interopRequireDefault(_raf);
 	
-	var _shouldStopAnimation = __webpack_require__(/*! ./shouldStopAnimation */ 310);
+	var _shouldStopAnimation = __webpack_require__(/*! ./shouldStopAnimation */ 314);
 	
 	var _shouldStopAnimation2 = _interopRequireDefault(_shouldStopAnimation);
 	
@@ -37052,7 +37981,7 @@
 	// config)
 
 /***/ }),
-/* 304 */
+/* 308 */
 /*!*****************************************!*\
   !*** ./~/react-motion/lib/mapToZero.js ***!
   \*****************************************/
@@ -37079,7 +38008,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 305 */
+/* 309 */
 /*!******************************************!*\
   !*** ./~/react-motion/lib/stripStyle.js ***!
   \******************************************/
@@ -37108,7 +38037,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 306 */
+/* 310 */
 /*!***************************************!*\
   !*** ./~/react-motion/lib/stepper.js ***!
   \***************************************/
@@ -37159,7 +38088,7 @@
 	// array reference around.
 
 /***/ }),
-/* 307 */
+/* 311 */
 /*!**************************************************!*\
   !*** ./~/performance-now/lib/performance-now.js ***!
   \**************************************************/
@@ -37201,13 +38130,13 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../process/browser.js */ 3)))
 
 /***/ }),
-/* 308 */
+/* 312 */
 /*!************************!*\
   !*** ./~/raf/index.js ***!
   \************************/
 /***/ (function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(global) {var now = __webpack_require__(/*! performance-now */ 309)
+	/* WEBPACK VAR INJECTION */(function(global) {var now = __webpack_require__(/*! performance-now */ 313)
 	  , root = typeof window === 'undefined' ? global : window
 	  , vendors = ['moz', 'webkit']
 	  , suffix = 'AnimationFrame'
@@ -37283,7 +38212,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ }),
-/* 309 */
+/* 313 */
 /*!********************************************************!*\
   !*** ./~/raf/~/performance-now/lib/performance-now.js ***!
   \********************************************************/
@@ -37329,7 +38258,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../../../process/browser.js */ 3)))
 
 /***/ }),
-/* 310 */
+/* 314 */
 /*!***************************************************!*\
   !*** ./~/react-motion/lib/shouldStopAnimation.js ***!
   \***************************************************/
@@ -37368,7 +38297,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 311 */
+/* 315 */
 /*!***********************************************!*\
   !*** ./~/react-motion/lib/StaggeredMotion.js ***!
   \***********************************************/
@@ -37388,27 +38317,27 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	var _mapToZero = __webpack_require__(/*! ./mapToZero */ 304);
+	var _mapToZero = __webpack_require__(/*! ./mapToZero */ 308);
 	
 	var _mapToZero2 = _interopRequireDefault(_mapToZero);
 	
-	var _stripStyle = __webpack_require__(/*! ./stripStyle */ 305);
+	var _stripStyle = __webpack_require__(/*! ./stripStyle */ 309);
 	
 	var _stripStyle2 = _interopRequireDefault(_stripStyle);
 	
-	var _stepper3 = __webpack_require__(/*! ./stepper */ 306);
+	var _stepper3 = __webpack_require__(/*! ./stepper */ 310);
 	
 	var _stepper4 = _interopRequireDefault(_stepper3);
 	
-	var _performanceNow = __webpack_require__(/*! performance-now */ 307);
+	var _performanceNow = __webpack_require__(/*! performance-now */ 311);
 	
 	var _performanceNow2 = _interopRequireDefault(_performanceNow);
 	
-	var _raf = __webpack_require__(/*! raf */ 308);
+	var _raf = __webpack_require__(/*! raf */ 312);
 	
 	var _raf2 = _interopRequireDefault(_raf);
 	
-	var _shouldStopAnimation = __webpack_require__(/*! ./shouldStopAnimation */ 310);
+	var _shouldStopAnimation = __webpack_require__(/*! ./shouldStopAnimation */ 314);
 	
 	var _shouldStopAnimation2 = _interopRequireDefault(_shouldStopAnimation);
 	
@@ -37664,7 +38593,7 @@
 	// config)
 
 /***/ }),
-/* 312 */
+/* 316 */
 /*!************************************************!*\
   !*** ./~/react-motion/lib/TransitionMotion.js ***!
   \************************************************/
@@ -37684,31 +38613,31 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	var _mapToZero = __webpack_require__(/*! ./mapToZero */ 304);
+	var _mapToZero = __webpack_require__(/*! ./mapToZero */ 308);
 	
 	var _mapToZero2 = _interopRequireDefault(_mapToZero);
 	
-	var _stripStyle = __webpack_require__(/*! ./stripStyle */ 305);
+	var _stripStyle = __webpack_require__(/*! ./stripStyle */ 309);
 	
 	var _stripStyle2 = _interopRequireDefault(_stripStyle);
 	
-	var _stepper3 = __webpack_require__(/*! ./stepper */ 306);
+	var _stepper3 = __webpack_require__(/*! ./stepper */ 310);
 	
 	var _stepper4 = _interopRequireDefault(_stepper3);
 	
-	var _mergeDiff = __webpack_require__(/*! ./mergeDiff */ 313);
+	var _mergeDiff = __webpack_require__(/*! ./mergeDiff */ 317);
 	
 	var _mergeDiff2 = _interopRequireDefault(_mergeDiff);
 	
-	var _performanceNow = __webpack_require__(/*! performance-now */ 307);
+	var _performanceNow = __webpack_require__(/*! performance-now */ 311);
 	
 	var _performanceNow2 = _interopRequireDefault(_performanceNow);
 	
-	var _raf = __webpack_require__(/*! raf */ 308);
+	var _raf = __webpack_require__(/*! raf */ 312);
 	
 	var _raf2 = _interopRequireDefault(_raf);
 	
-	var _shouldStopAnimation = __webpack_require__(/*! ./shouldStopAnimation */ 310);
+	var _shouldStopAnimation = __webpack_require__(/*! ./shouldStopAnimation */ 314);
 	
 	var _shouldStopAnimation2 = _interopRequireDefault(_shouldStopAnimation);
 	
@@ -38194,7 +39123,7 @@
 	// In reality currentStyle should be 400
 
 /***/ }),
-/* 313 */
+/* 317 */
 /*!*****************************************!*\
   !*** ./~/react-motion/lib/mergeDiff.js ***!
   \*****************************************/
@@ -38310,7 +39239,7 @@
 	// to loop through and find a key's index each time), but I no longer care
 
 /***/ }),
-/* 314 */
+/* 318 */
 /*!**************************************!*\
   !*** ./~/react-motion/lib/spring.js ***!
   \**************************************/
@@ -38326,7 +39255,7 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var _presets = __webpack_require__(/*! ./presets */ 315);
+	var _presets = __webpack_require__(/*! ./presets */ 319);
 	
 	var _presets2 = _interopRequireDefault(_presets);
 	
@@ -38341,7 +39270,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 315 */
+/* 319 */
 /*!***************************************!*\
   !*** ./~/react-motion/lib/presets.js ***!
   \***************************************/
@@ -38359,7 +39288,7 @@
 	module.exports = exports["default"];
 
 /***/ }),
-/* 316 */
+/* 320 */
 /*!*******************************************!*\
   !*** ./~/react-motion/lib/reorderKeys.js ***!
   \*******************************************/
@@ -38385,7 +39314,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../process/browser.js */ 3)))
 
 /***/ }),
-/* 317 */
+/* 321 */
 /*!***************************************************!*\
   !*** ./~/react-svg-buttons/lib/lib/pathHelper.js ***!
   \***************************************************/
@@ -38407,7 +39336,7 @@
 	}
 
 /***/ }),
-/* 318 */
+/* 322 */
 /*!**********************************************!*\
   !*** ./~/react-svg-buttons/lib/lib/clamp.js ***!
   \**********************************************/
@@ -38424,7 +39353,7 @@
 	}
 
 /***/ }),
-/* 319 */
+/* 323 */
 /*!*********************************************!*\
   !*** ./~/react-svg-buttons/lib/lib/omit.js ***!
   \*********************************************/
@@ -38448,7 +39377,7 @@
 	}
 
 /***/ }),
-/* 320 */
+/* 324 */
 /*!*****************************************************!*\
   !*** ./~/react-svg-buttons/lib/icon-types/index.js ***!
   \*****************************************************/
@@ -38460,99 +39389,99 @@
 	    value: true
 	});
 	
-	var _arrowDown = __webpack_require__(/*! ./arrow-down */ 321);
+	var _arrowDown = __webpack_require__(/*! ./arrow-down */ 325);
 	
 	var _arrowDown2 = _interopRequireDefault(_arrowDown);
 	
-	var _arrowLeft = __webpack_require__(/*! ./arrow-left */ 322);
+	var _arrowLeft = __webpack_require__(/*! ./arrow-left */ 326);
 	
 	var _arrowLeft2 = _interopRequireDefault(_arrowLeft);
 	
-	var _arrowRight = __webpack_require__(/*! ./arrow-right */ 323);
+	var _arrowRight = __webpack_require__(/*! ./arrow-right */ 327);
 	
 	var _arrowRight2 = _interopRequireDefault(_arrowRight);
 	
-	var _arrowUp = __webpack_require__(/*! ./arrow-up */ 324);
+	var _arrowUp = __webpack_require__(/*! ./arrow-up */ 328);
 	
 	var _arrowUp2 = _interopRequireDefault(_arrowUp);
 	
-	var _ban = __webpack_require__(/*! ./ban */ 325);
+	var _ban = __webpack_require__(/*! ./ban */ 329);
 	
 	var _ban2 = _interopRequireDefault(_ban);
 	
-	var _bars = __webpack_require__(/*! ./bars */ 326);
+	var _bars = __webpack_require__(/*! ./bars */ 330);
 	
 	var _bars2 = _interopRequireDefault(_bars);
 	
-	var _check = __webpack_require__(/*! ./check */ 327);
+	var _check = __webpack_require__(/*! ./check */ 331);
 	
 	var _check2 = _interopRequireDefault(_check);
 	
-	var _cross = __webpack_require__(/*! ./cross */ 328);
+	var _cross = __webpack_require__(/*! ./cross */ 332);
 	
 	var _cross2 = _interopRequireDefault(_cross);
 	
-	var _crossSparks = __webpack_require__(/*! ./cross-sparks */ 329);
+	var _crossSparks = __webpack_require__(/*! ./cross-sparks */ 333);
 	
 	var _crossSparks2 = _interopRequireDefault(_crossSparks);
 	
-	var _code = __webpack_require__(/*! ./code */ 330);
+	var _code = __webpack_require__(/*! ./code */ 334);
 	
 	var _code2 = _interopRequireDefault(_code);
 	
-	var _ffwd = __webpack_require__(/*! ./ffwd */ 331);
+	var _ffwd = __webpack_require__(/*! ./ffwd */ 335);
 	
 	var _ffwd2 = _interopRequireDefault(_ffwd);
 	
-	var _fwd = __webpack_require__(/*! ./fwd */ 332);
+	var _fwd = __webpack_require__(/*! ./fwd */ 336);
 	
 	var _fwd2 = _interopRequireDefault(_fwd);
 	
-	var _hashtag = __webpack_require__(/*! ./hashtag */ 333);
+	var _hashtag = __webpack_require__(/*! ./hashtag */ 337);
 	
 	var _hashtag2 = _interopRequireDefault(_hashtag);
 	
-	var _home = __webpack_require__(/*! ./home */ 334);
+	var _home = __webpack_require__(/*! ./home */ 338);
 	
 	var _home2 = _interopRequireDefault(_home);
 	
-	var _inbox = __webpack_require__(/*! ./inbox */ 335);
+	var _inbox = __webpack_require__(/*! ./inbox */ 339);
 	
 	var _inbox2 = _interopRequireDefault(_inbox);
 	
-	var _plus = __webpack_require__(/*! ./plus */ 336);
+	var _plus = __webpack_require__(/*! ./plus */ 340);
 	
 	var _plus2 = _interopRequireDefault(_plus);
 	
-	var _plusSparks = __webpack_require__(/*! ./plus-sparks */ 337);
+	var _plusSparks = __webpack_require__(/*! ./plus-sparks */ 341);
 	
 	var _plusSparks2 = _interopRequireDefault(_plusSparks);
 	
-	var _thunderbolt = __webpack_require__(/*! ./thunderbolt */ 338);
+	var _thunderbolt = __webpack_require__(/*! ./thunderbolt */ 342);
 	
 	var _thunderbolt2 = _interopRequireDefault(_thunderbolt);
 	
-	var _play = __webpack_require__(/*! ./play */ 339);
+	var _play = __webpack_require__(/*! ./play */ 343);
 	
 	var _play2 = _interopRequireDefault(_play);
 	
-	var _playSparks = __webpack_require__(/*! ./play-sparks */ 340);
+	var _playSparks = __webpack_require__(/*! ./play-sparks */ 344);
 	
 	var _playSparks2 = _interopRequireDefault(_playSparks);
 	
-	var _playCircle = __webpack_require__(/*! ./play-circle */ 341);
+	var _playCircle = __webpack_require__(/*! ./play-circle */ 345);
 	
 	var _playCircle2 = _interopRequireDefault(_playCircle);
 	
-	var _pause = __webpack_require__(/*! ./pause */ 342);
+	var _pause = __webpack_require__(/*! ./pause */ 346);
 	
 	var _pause2 = _interopRequireDefault(_pause);
 	
-	var _pauseSparks = __webpack_require__(/*! ./pause-sparks */ 343);
+	var _pauseSparks = __webpack_require__(/*! ./pause-sparks */ 347);
 	
 	var _pauseSparks2 = _interopRequireDefault(_pauseSparks);
 	
-	var _pauseCircle = __webpack_require__(/*! ./pause-circle */ 344);
+	var _pauseCircle = __webpack_require__(/*! ./pause-circle */ 348);
 	
 	var _pauseCircle2 = _interopRequireDefault(_pauseCircle);
 	
@@ -38586,7 +39515,7 @@
 	};
 
 /***/ }),
-/* 321 */
+/* 325 */
 /*!**********************************************************!*\
   !*** ./~/react-svg-buttons/lib/icon-types/arrow-down.js ***!
   \**********************************************************/
@@ -38666,7 +39595,7 @@
 	};
 
 /***/ }),
-/* 322 */
+/* 326 */
 /*!**********************************************************!*\
   !*** ./~/react-svg-buttons/lib/icon-types/arrow-left.js ***!
   \**********************************************************/
@@ -38746,7 +39675,7 @@
 	};
 
 /***/ }),
-/* 323 */
+/* 327 */
 /*!***********************************************************!*\
   !*** ./~/react-svg-buttons/lib/icon-types/arrow-right.js ***!
   \***********************************************************/
@@ -38826,7 +39755,7 @@
 	};
 
 /***/ }),
-/* 324 */
+/* 328 */
 /*!********************************************************!*\
   !*** ./~/react-svg-buttons/lib/icon-types/arrow-up.js ***!
   \********************************************************/
@@ -38906,7 +39835,7 @@
 	};
 
 /***/ }),
-/* 325 */
+/* 329 */
 /*!***************************************************!*\
   !*** ./~/react-svg-buttons/lib/icon-types/ban.js ***!
   \***************************************************/
@@ -38986,7 +39915,7 @@
 	};
 
 /***/ }),
-/* 326 */
+/* 330 */
 /*!****************************************************!*\
   !*** ./~/react-svg-buttons/lib/icon-types/bars.js ***!
   \****************************************************/
@@ -39066,7 +39995,7 @@
 	};
 
 /***/ }),
-/* 327 */
+/* 331 */
 /*!*****************************************************!*\
   !*** ./~/react-svg-buttons/lib/icon-types/check.js ***!
   \*****************************************************/
@@ -39146,7 +40075,7 @@
 	};
 
 /***/ }),
-/* 328 */
+/* 332 */
 /*!*****************************************************!*\
   !*** ./~/react-svg-buttons/lib/icon-types/cross.js ***!
   \*****************************************************/
@@ -39226,7 +40155,7 @@
 	};
 
 /***/ }),
-/* 329 */
+/* 333 */
 /*!************************************************************!*\
   !*** ./~/react-svg-buttons/lib/icon-types/cross-sparks.js ***!
   \************************************************************/
@@ -39306,7 +40235,7 @@
 	};
 
 /***/ }),
-/* 330 */
+/* 334 */
 /*!****************************************************!*\
   !*** ./~/react-svg-buttons/lib/icon-types/code.js ***!
   \****************************************************/
@@ -39386,7 +40315,7 @@
 	};
 
 /***/ }),
-/* 331 */
+/* 335 */
 /*!****************************************************!*\
   !*** ./~/react-svg-buttons/lib/icon-types/ffwd.js ***!
   \****************************************************/
@@ -39466,7 +40395,7 @@
 	};
 
 /***/ }),
-/* 332 */
+/* 336 */
 /*!***************************************************!*\
   !*** ./~/react-svg-buttons/lib/icon-types/fwd.js ***!
   \***************************************************/
@@ -39546,7 +40475,7 @@
 	};
 
 /***/ }),
-/* 333 */
+/* 337 */
 /*!*******************************************************!*\
   !*** ./~/react-svg-buttons/lib/icon-types/hashtag.js ***!
   \*******************************************************/
@@ -39626,7 +40555,7 @@
 	};
 
 /***/ }),
-/* 334 */
+/* 338 */
 /*!****************************************************!*\
   !*** ./~/react-svg-buttons/lib/icon-types/home.js ***!
   \****************************************************/
@@ -39706,7 +40635,7 @@
 	};
 
 /***/ }),
-/* 335 */
+/* 339 */
 /*!*****************************************************!*\
   !*** ./~/react-svg-buttons/lib/icon-types/inbox.js ***!
   \*****************************************************/
@@ -39786,7 +40715,7 @@
 	};
 
 /***/ }),
-/* 336 */
+/* 340 */
 /*!****************************************************!*\
   !*** ./~/react-svg-buttons/lib/icon-types/plus.js ***!
   \****************************************************/
@@ -39866,7 +40795,7 @@
 	};
 
 /***/ }),
-/* 337 */
+/* 341 */
 /*!***********************************************************!*\
   !*** ./~/react-svg-buttons/lib/icon-types/plus-sparks.js ***!
   \***********************************************************/
@@ -39946,7 +40875,7 @@
 	};
 
 /***/ }),
-/* 338 */
+/* 342 */
 /*!***********************************************************!*\
   !*** ./~/react-svg-buttons/lib/icon-types/thunderbolt.js ***!
   \***********************************************************/
@@ -40026,7 +40955,7 @@
 	};
 
 /***/ }),
-/* 339 */
+/* 343 */
 /*!****************************************************!*\
   !*** ./~/react-svg-buttons/lib/icon-types/play.js ***!
   \****************************************************/
@@ -40106,7 +41035,7 @@
 	};
 
 /***/ }),
-/* 340 */
+/* 344 */
 /*!***********************************************************!*\
   !*** ./~/react-svg-buttons/lib/icon-types/play-sparks.js ***!
   \***********************************************************/
@@ -40186,7 +41115,7 @@
 	};
 
 /***/ }),
-/* 341 */
+/* 345 */
 /*!***********************************************************!*\
   !*** ./~/react-svg-buttons/lib/icon-types/play-circle.js ***!
   \***********************************************************/
@@ -40266,7 +41195,7 @@
 	};
 
 /***/ }),
-/* 342 */
+/* 346 */
 /*!*****************************************************!*\
   !*** ./~/react-svg-buttons/lib/icon-types/pause.js ***!
   \*****************************************************/
@@ -40346,7 +41275,7 @@
 	};
 
 /***/ }),
-/* 343 */
+/* 347 */
 /*!************************************************************!*\
   !*** ./~/react-svg-buttons/lib/icon-types/pause-sparks.js ***!
   \************************************************************/
@@ -40426,7 +41355,7 @@
 	};
 
 /***/ }),
-/* 344 */
+/* 348 */
 /*!************************************************************!*\
   !*** ./~/react-svg-buttons/lib/icon-types/pause-circle.js ***!
   \************************************************************/
@@ -40506,7 +41435,7 @@
 	};
 
 /***/ }),
-/* 345 */
+/* 349 */
 /*!*******************************************************************!*\
   !*** ./~/react-svg-buttons/lib/components/buttons/CloseButton.js ***!
   \*******************************************************************/
@@ -40524,7 +41453,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _HoverMorphIcon = __webpack_require__(/*! ../HoverMorphIcon */ 346);
+	var _HoverMorphIcon = __webpack_require__(/*! ../HoverMorphIcon */ 350);
 	
 	var _HoverMorphIcon2 = _interopRequireDefault(_HoverMorphIcon);
 	
@@ -40537,7 +41466,7 @@
 	exports.default = CloseButton;
 
 /***/ }),
-/* 346 */
+/* 350 */
 /*!**************************************************************!*\
   !*** ./~/react-svg-buttons/lib/components/HoverMorphIcon.js ***!
   \**************************************************************/
@@ -40561,7 +41490,7 @@
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _MorphIcon = __webpack_require__(/*! ./MorphIcon */ 301);
+	var _MorphIcon = __webpack_require__(/*! ./MorphIcon */ 305);
 	
 	var _MorphIcon2 = _interopRequireDefault(_MorphIcon);
 	
@@ -40619,7 +41548,7 @@
 	exports.default = HoverMorphIcon;
 
 /***/ }),
-/* 347 */
+/* 351 */
 /*!******************************************************************!*\
   !*** ./~/react-svg-buttons/lib/components/buttons/PlusButton.js ***!
   \******************************************************************/
@@ -40637,7 +41566,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _HoverMorphIcon = __webpack_require__(/*! ../HoverMorphIcon */ 346);
+	var _HoverMorphIcon = __webpack_require__(/*! ../HoverMorphIcon */ 350);
 	
 	var _HoverMorphIcon2 = _interopRequireDefault(_HoverMorphIcon);
 	
@@ -40650,7 +41579,7 @@
 	exports.default = PlusButton;
 
 /***/ }),
-/* 348 */
+/* 352 */
 /*!*****************************************************************!*\
   !*** ./~/react-svg-buttons/lib/components/buttons/NavButton.js ***!
   \*****************************************************************/
@@ -40674,11 +41603,11 @@
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _MorphIcon = __webpack_require__(/*! ../MorphIcon */ 301);
+	var _MorphIcon = __webpack_require__(/*! ../MorphIcon */ 305);
 	
 	var _MorphIcon2 = _interopRequireDefault(_MorphIcon);
 	
-	var _omit = __webpack_require__(/*! ../../lib/omit */ 319);
+	var _omit = __webpack_require__(/*! ../../lib/omit */ 323);
 	
 	var _omit2 = _interopRequireDefault(_omit);
 	
@@ -40771,7 +41700,7 @@
 	exports.default = NavButton;
 
 /***/ }),
-/* 349 */
+/* 353 */
 /*!******************************************************************!*\
   !*** ./~/react-svg-buttons/lib/components/buttons/PlayButton.js ***!
   \******************************************************************/
@@ -40795,11 +41724,11 @@
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _MorphIcon = __webpack_require__(/*! ../MorphIcon */ 301);
+	var _MorphIcon = __webpack_require__(/*! ../MorphIcon */ 305);
 	
 	var _MorphIcon2 = _interopRequireDefault(_MorphIcon);
 	
-	var _omit = __webpack_require__(/*! ../../lib/omit */ 319);
+	var _omit = __webpack_require__(/*! ../../lib/omit */ 323);
 	
 	var _omit2 = _interopRequireDefault(_omit);
 	
@@ -40879,7 +41808,7 @@
 	exports.default = PlayButton;
 
 /***/ }),
-/* 350 */
+/* 354 */
 /*!************************************!*\
   !*** ./react/app/BioComponent.jsx ***!
   \************************************/
@@ -40980,7 +41909,7 @@
 	exports.default = BioComponent;
 
 /***/ }),
-/* 351 */
+/* 355 */
 /*!***********************************************!*\
   !*** ./~/react-burger-menu/lib/BurgerMenu.js ***!
   \***********************************************/
@@ -40992,20 +41921,20 @@
 	  value: true
 	});
 	exports['default'] = {
-	  slide: __webpack_require__(/*! ./menus/slide */ 352),
-	  stack: __webpack_require__(/*! ./menus/stack */ 357),
-	  elastic: __webpack_require__(/*! ./menus/elastic */ 358),
-	  bubble: __webpack_require__(/*! ./menus/bubble */ 362),
-	  push: __webpack_require__(/*! ./menus/push */ 363),
-	  pushRotate: __webpack_require__(/*! ./menus/pushRotate */ 364),
-	  scaleDown: __webpack_require__(/*! ./menus/scaleDown */ 365),
-	  scaleRotate: __webpack_require__(/*! ./menus/scaleRotate */ 366),
-	  fallDown: __webpack_require__(/*! ./menus/fallDown */ 367)
+	  slide: __webpack_require__(/*! ./menus/slide */ 356),
+	  stack: __webpack_require__(/*! ./menus/stack */ 361),
+	  elastic: __webpack_require__(/*! ./menus/elastic */ 362),
+	  bubble: __webpack_require__(/*! ./menus/bubble */ 366),
+	  push: __webpack_require__(/*! ./menus/push */ 367),
+	  pushRotate: __webpack_require__(/*! ./menus/pushRotate */ 368),
+	  scaleDown: __webpack_require__(/*! ./menus/scaleDown */ 369),
+	  scaleRotate: __webpack_require__(/*! ./menus/scaleRotate */ 370),
+	  fallDown: __webpack_require__(/*! ./menus/fallDown */ 371)
 	};
 	module.exports = exports['default'];
 
 /***/ }),
-/* 352 */
+/* 356 */
 /*!************************************************!*\
   !*** ./~/react-burger-menu/lib/menus/slide.js ***!
   \************************************************/
@@ -41019,7 +41948,7 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var _menuFactory = __webpack_require__(/*! ../menuFactory */ 353);
+	var _menuFactory = __webpack_require__(/*! ../menuFactory */ 357);
 	
 	var _menuFactory2 = _interopRequireDefault(_menuFactory);
 	
@@ -41029,7 +41958,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 353 */
+/* 357 */
 /*!************************************************!*\
   !*** ./~/react-burger-menu/lib/menuFactory.js ***!
   \************************************************/
@@ -41065,15 +41994,15 @@
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _baseStyles = __webpack_require__(/*! ./baseStyles */ 354);
+	var _baseStyles = __webpack_require__(/*! ./baseStyles */ 358);
 	
 	var _baseStyles2 = _interopRequireDefault(_baseStyles);
 	
-	var _BurgerIcon = __webpack_require__(/*! ./BurgerIcon */ 355);
+	var _BurgerIcon = __webpack_require__(/*! ./BurgerIcon */ 359);
 	
 	var _BurgerIcon2 = _interopRequireDefault(_BurgerIcon);
 	
-	var _CrossIcon = __webpack_require__(/*! ./CrossIcon */ 356);
+	var _CrossIcon = __webpack_require__(/*! ./CrossIcon */ 360);
 	
 	var _CrossIcon2 = _interopRequireDefault(_CrossIcon);
 	
@@ -41391,7 +42320,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 354 */
+/* 358 */
 /*!***********************************************!*\
   !*** ./~/react-burger-menu/lib/baseStyles.js ***!
   \***********************************************/
@@ -41464,7 +42393,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 355 */
+/* 359 */
 /*!***********************************************!*\
   !*** ./~/react-burger-menu/lib/BurgerIcon.js ***!
   \***********************************************/
@@ -41603,7 +42532,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 356 */
+/* 360 */
 /*!**********************************************!*\
   !*** ./~/react-burger-menu/lib/CrossIcon.js ***!
   \**********************************************/
@@ -41736,7 +42665,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 357 */
+/* 361 */
 /*!************************************************!*\
   !*** ./~/react-burger-menu/lib/menus/stack.js ***!
   \************************************************/
@@ -41750,7 +42679,7 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var _menuFactory = __webpack_require__(/*! ../menuFactory */ 353);
+	var _menuFactory = __webpack_require__(/*! ../menuFactory */ 357);
 	
 	var _menuFactory2 = _interopRequireDefault(_menuFactory);
 	
@@ -41783,7 +42712,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 358 */
+/* 362 */
 /*!**************************************************!*\
   !*** ./~/react-burger-menu/lib/menus/elastic.js ***!
   \**************************************************/
@@ -41797,11 +42726,11 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var _snapsvgImporter = __webpack_require__(/*! ../snapsvgImporter */ 359);
+	var _snapsvgImporter = __webpack_require__(/*! ../snapsvgImporter */ 363);
 	
 	var _snapsvgImporter2 = _interopRequireDefault(_snapsvgImporter);
 	
-	var _menuFactory = __webpack_require__(/*! ../menuFactory */ 353);
+	var _menuFactory = __webpack_require__(/*! ../menuFactory */ 357);
 	
 	var _menuFactory2 = _interopRequireDefault(_menuFactory);
 	
@@ -41886,7 +42815,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 359 */
+/* 363 */
 /*!****************************************************!*\
   !*** ./~/react-burger-menu/lib/snapsvgImporter.js ***!
   \****************************************************/
@@ -41901,7 +42830,7 @@
 	exports['default'] = function () {
 	  var Snap = undefined;
 	  try {
-	    Snap = __webpack_require__(/*! snapsvg-cjs */ 360);
+	    Snap = __webpack_require__(/*! snapsvg-cjs */ 364);
 	  } finally {
 	    return Snap;
 	  }
@@ -41910,13 +42839,13 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 360 */
+/* 364 */
 /*!********************************************!*\
   !*** ./~/snapsvg-cjs/dist/snap.svg-cjs.js ***!
   \********************************************/
 /***/ (function(module, exports, __webpack_require__) {
 
-	window.eve = __webpack_require__(/*! eve */ 361)
+	window.eve = __webpack_require__(/*! eve */ 365)
 	
 	// Copyright (c) 2013 Adobe Systems Incorporated. All rights reserved.
 	//
@@ -49651,7 +50580,7 @@
 
 
 /***/ }),
-/* 361 */
+/* 365 */
 /*!**********************!*\
   !*** ./~/eve/eve.js ***!
   \**********************/
@@ -50063,7 +50992,7 @@
 
 
 /***/ }),
-/* 362 */
+/* 366 */
 /*!*************************************************!*\
   !*** ./~/react-burger-menu/lib/menus/bubble.js ***!
   \*************************************************/
@@ -50077,11 +51006,11 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var _snapsvgImporter = __webpack_require__(/*! ../snapsvgImporter */ 359);
+	var _snapsvgImporter = __webpack_require__(/*! ../snapsvgImporter */ 363);
 	
 	var _snapsvgImporter2 = _interopRequireDefault(_snapsvgImporter);
 	
-	var _menuFactory = __webpack_require__(/*! ../menuFactory */ 353);
+	var _menuFactory = __webpack_require__(/*! ../menuFactory */ 357);
 	
 	var _menuFactory2 = _interopRequireDefault(_menuFactory);
 	
@@ -50182,7 +51111,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 363 */
+/* 367 */
 /*!***********************************************!*\
   !*** ./~/react-burger-menu/lib/menus/push.js ***!
   \***********************************************/
@@ -50196,7 +51125,7 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var _menuFactory = __webpack_require__(/*! ../menuFactory */ 353);
+	var _menuFactory = __webpack_require__(/*! ../menuFactory */ 357);
 	
 	var _menuFactory2 = _interopRequireDefault(_menuFactory);
 	
@@ -50224,7 +51153,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 364 */
+/* 368 */
 /*!*****************************************************!*\
   !*** ./~/react-burger-menu/lib/menus/pushRotate.js ***!
   \*****************************************************/
@@ -50238,7 +51167,7 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var _menuFactory = __webpack_require__(/*! ../menuFactory */ 353);
+	var _menuFactory = __webpack_require__(/*! ../menuFactory */ 357);
 	
 	var _menuFactory2 = _interopRequireDefault(_menuFactory);
 	
@@ -50269,7 +51198,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 365 */
+/* 369 */
 /*!****************************************************!*\
   !*** ./~/react-burger-menu/lib/menus/scaleDown.js ***!
   \****************************************************/
@@ -50283,7 +51212,7 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var _menuFactory = __webpack_require__(/*! ../menuFactory */ 353);
+	var _menuFactory = __webpack_require__(/*! ../menuFactory */ 357);
 	
 	var _menuFactory2 = _interopRequireDefault(_menuFactory);
 	
@@ -50313,7 +51242,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 366 */
+/* 370 */
 /*!******************************************************!*\
   !*** ./~/react-burger-menu/lib/menus/scaleRotate.js ***!
   \******************************************************/
@@ -50327,7 +51256,7 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var _menuFactory = __webpack_require__(/*! ../menuFactory */ 353);
+	var _menuFactory = __webpack_require__(/*! ../menuFactory */ 357);
 	
 	var _menuFactory2 = _interopRequireDefault(_menuFactory);
 	
@@ -50358,7 +51287,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 367 */
+/* 371 */
 /*!***************************************************!*\
   !*** ./~/react-burger-menu/lib/menus/fallDown.js ***!
   \***************************************************/
@@ -50372,7 +51301,7 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var _menuFactory = __webpack_require__(/*! ../menuFactory */ 353);
+	var _menuFactory = __webpack_require__(/*! ../menuFactory */ 357);
 	
 	var _menuFactory2 = _interopRequireDefault(_menuFactory);
 	

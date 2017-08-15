@@ -435,6 +435,7 @@ body {
 	font-weight: bolder;
 	font-size: 2em;
 	width:90%;
+	color: rgba(0,0,0,0.6);
 }
 
 .clickable-offering-description-title {
@@ -1117,7 +1118,6 @@ body {
 	}
 
 	.left-column {
-		height: 30%;
 	}
 
 	#corporate-enablement-program-content {
@@ -1173,7 +1173,6 @@ body {
 
 @media (max-width: 1024px) and (orientation: portrait) {
 	.left-column {
-		height:30%;
 	}
 }
 

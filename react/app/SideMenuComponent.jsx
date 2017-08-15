@@ -10,8 +10,8 @@ import CorporateProgramLSSComponent from './CorporateProgramLSSComponent.jsx';
 import CorporateProgramLeanComponent from './UnderConstruction.jsx';
 import CorporateProgramStrategyChangeComponent from './UnderConstruction.jsx';
 import CorporateProgramHighPerformingTeamsComponent from './UnderConstruction.jsx';
-import CorporateProgramAgileComponent from './UnderConstruction.jsx';
-import CorporateProgramSpecialtyWorkshopsComponent from './UnderConstruction.jsx';
+import CorporateProgramAgileComponent from './CorporateProgramAgileComponent.jsx';
+import CorporateProgramSpecialtyWorkshopsComponent from './CorporateProgramSpecialtyWorkshopsComponent.jsx';
 import CognitiveTransformationComponent from './CognitiveTransformationComponent.jsx';
 import OfferingsComponent from './OfferingsComponent.jsx';
 import BioComponent from './BioComponent.jsx';
@@ -121,7 +121,7 @@ class SideMenuComponent extends React.Component {
 	  			<Route path="/corporate_program/strategy_and_change" component={CorporateProgramStrategyChangeComponent}/>
 	  			<Route path="/corporate_program/building_high_performing_teams" component={CorporateProgramHighPerformingTeamsComponent}/>
 	  			<Route path="/corporate_program/agile" component={CorporateProgramAgileComponent}/>
-	  			<Route path="/corporate_program/specialty_workshop" component={CorporateProgramSpecialtyWorkshopsComponent}/>
+	  			<Route path="/corporate_program/specialty_workshops" component={CorporateProgramSpecialtyWorkshopsComponent}/>
 	  			
 	  			<Route exact path="/cognitive_transformation" component={CognitiveTransformationComponent}/>
 	  			<Route path="/cognitive_transformation/:offering_id" render={(props)=>(<OfferingsComponent {...props} course="it-cognitive-transformation-page"/>)}/>

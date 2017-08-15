@@ -4,13 +4,13 @@ import Slider from 'react-slick';
 
 import UnderConstruction from './UnderConstruction.jsx';
 import DummyComponent from './DummyComponent.jsx';
-import YellowBeltStandardComponent from './lss_offerings/YellowBeltStandardComponent.jsx';
-import YellowBeltVirtualComponent from './lss_offerings/YellowBeltVirtualComponent.jsx';
-import GreenBeltStandardComponent from './lss_offerings/GreenBeltStandardComponent.jsx';
-import GreenBeltVirtualComponent from './lss_offerings/GreenBeltVirtualComponent.jsx';
-import BlackBeltStandardComponent from './lss_offerings/BlackBeltStandardComponent.jsx';
-import BlackBeltVirtualComponent from './lss_offerings/BlackBeltVirtualComponent.jsx';
-import LSSHomeComponent from './lss_offerings/LSSHomeComponent.jsx';
+import YellowBeltStandardComponent from './offering_texts/YellowBeltStandardComponent.jsx';
+import YellowBeltVirtualComponent from './offering_texts/YellowBeltVirtualComponent.jsx';
+import GreenBeltStandardComponent from './offering_texts/GreenBeltStandardComponent.jsx';
+import GreenBeltVirtualComponent from './offering_texts/GreenBeltVirtualComponent.jsx';
+import BlackBeltStandardComponent from './offering_texts/BlackBeltStandardComponent.jsx';
+import BlackBeltVirtualComponent from './offering_texts/BlackBeltVirtualComponent.jsx';
+import LSSHomeComponent from './offering_texts/LSSHomeComponent.jsx';
 
 import {
   BrowserRouter as Router,

@@ -9,11 +9,6 @@ class AboutUsComponent extends React.Component {
 		super(props);
 		this.state = {
 		}
-	this.go_to_page = this.go_to_page.bind(this);
-	};
-
-	go_to_page(destination) {
-		this.props.go_to_page(destination);
 	};
 
 	render() {	
