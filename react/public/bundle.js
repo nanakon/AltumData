@@ -42427,7 +42427,7 @@
 					_react2.default.createElement(
 						'div',
 						{ className: 'page-content', style: { position: 'relative' } },
-						_react2.default.createElement('div', { className: 'left-column-bio', style: { backgroundImage: 'url(' + pic_url + ')', backgroundRepeat: 'no-repeat', backgroundPosition: 'left-top', backgroundClip: 'content-box', backgroundSize: 'cover' } }),
+						_react2.default.createElement('div', { className: 'left-column-bio', style: { backgroundImage: 'url(' + pic_url + ')', backgroundRepeat: 'no-repeat', backgroundPosition: 'top-center', backgroundClip: 'content-box', backgroundSize: 'cover' } }),
 						_react2.default.createElement(
 							'div',
 							{ className: 'right-column-bio' },
