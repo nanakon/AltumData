@@ -7,7 +7,7 @@ import ExpertisesComponent from './ExpertisesComponent.jsx';
 import TeamComponent from './TeamComponent.jsx';
 import CorporateProgramComponent from './CorporateProgramComponent.jsx';
 import CorporateProgramLSSComponent from './CorporateProgramLSSComponent.jsx';
-import CorporateProgramLeanComponent from './UnderConstruction.jsx';
+import CorporateProgramLeanComponent from './CorporateProgramLeanComponent.jsx';
 import CorporateProgramStrategyChangeComponent from './UnderConstruction.jsx';
 import CorporateProgramHighPerformingTeamsComponent from './UnderConstruction.jsx';
 import CorporateProgramAgileComponent from './CorporateProgramAgileComponent.jsx';
@@ -30,6 +30,7 @@ class SideMenuComponent extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
+			domain: "altum_data",
 			side_menu_open: false
 		}
 		this.onToggle = this.onToggle.bind(this);
@@ -37,6 +38,7 @@ class SideMenuComponent extends React.Component {
 
 	componentDidMount() {
 		this.setState({side_menu_open: false});
+		console.log(Router);
 	};
 
 	onToggle(which_column) {
@@ -89,6 +91,11 @@ class SideMenuComponent extends React.Component {
 		  }
 		};	
 
+		var contact_email = {
+			'altum_data': "info@altumdata.com",
+			'path_forward_team': "info@pathforwardteam.com"
+		}
+
 	  	return (
 	  		<div>
 	  		<Menu id="menuComponent" styles={styles} isOpen={this.state.side_menu_open} pageWrapId={"page-wrap"} outerContainerId={"outer_container"}>
@@ -101,8 +108,13 @@ class SideMenuComponent extends React.Component {
 	  			<div id="legal-in-sidebar">
 	  				<div id="legal-in-sidebar-absolute">
 	  					<img id="legal-logo" src="/pics/altumdata_small.png"/><br/>
-	  					info@altumdata.com<br/>
-	  					+421 904 164 197<br/>
+	  					{contact_email[this.state.domain]}<br/>
+	  					+421 904 164 197<br/><br/>
+	  					Pennsylvania,
+	  					Atlanta,<br/>
+	  					Florida,
+	  					New York,
+	  					Bratislava
 	  				</div>
 	  			</div>
 	  		</Menu>

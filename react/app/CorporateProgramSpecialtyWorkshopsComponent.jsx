@@ -4,6 +4,7 @@ import Slider from 'react-slick';
 
 import RootCauseAnalysisComponent from './offering_texts/RootCauseAnalysisComponent.jsx';
 import ValueStreamMappingComponent from './offering_texts/ValueStreamMappingComponent.jsx';
+import BackButtonLogoComponent from './BackButtonLogoComponent.jsx';
 
 import {
   BrowserRouter as Router,
@@ -65,7 +66,8 @@ class CoroporateProgramSpecialtyWorkshopsComponent extends React.Component {
 	  						<Route exact path="/corporate_program/specialty_workshops/root_cause_analysis" component={RootCauseAnalysisComponent}/>
 	  						<Route path="/corporate_program/specialty_workshops/value_stream_mapping" component={ValueStreamMappingComponent}/>
 	  					</div>
-	  					<br/><img id="tiny-logo" src="./pics/logo_3.png"/>
+	  					<br/>
+	  					<BackButtonLogoComponent history={this.props.history}/>
 	  				</div>
 	  			</div>	
 	  		</div>

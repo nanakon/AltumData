@@ -1,6 +1,7 @@
 :root {
 	--mainColor: #1c1c1c;
 	--mainFontAux: 'Aldrich';
+	--mainFont1: 'Basic';
 	--mainFont: Arial, Helvetica, sans-serif;
 	--mainFont2: "futura-pt", sans-serif;
 	--sidebarWidth: 100px;
@@ -656,13 +657,17 @@ body {
 
 .bio-content {
 	width:98%;
-	padding-top:35%;
+	padding-top:30%;
 }
 
 #tiny-logo {
 	width:50px;
 	height:auto;
 	z-index:100000;
+}
+
+.back-button:hover {
+	cursor:pointer;
 }
 
 #bar-mobile {
@@ -922,7 +927,7 @@ body {
 		margin-left: 0%;
 		width: 100%;
 		min-height: 0%;
-		height: 200px;
+		height: 470px;
 		overflow:hidden;
 	}
 

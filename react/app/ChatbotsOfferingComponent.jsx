@@ -61,7 +61,8 @@ class OfferingsComponent extends React.Component {
 	  							<OfferingExampleComponent course={this.props.course} offering_id={this.props.match.params.offering_id}/>
 	  						</div>
 	  					</div>
-	  					<br/><img id="tiny-logo" src="./pics/logo_3.png"/>
+	  					<br/>
+	  					<BackButtonLogoComponent history={this.props.history}/>
 	  				</div>
 	  			</div>	
 	  		</div>

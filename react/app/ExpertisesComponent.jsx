@@ -1,6 +1,7 @@
 import React from 'react';
 
 import BlockButtonComponent from './BlockButtonComponent.jsx';
+import BackButtonLogoComponent from './BackButtonLogoComponent.jsx';
 
 
 class ExpertisesComponent extends React.Component {
@@ -57,6 +58,7 @@ class ExpertisesComponent extends React.Component {
 							<li>Certify / qualify participants in Lean, Lean Six Sigma, Agile and Change Management disciplines</li>
 						</ul><br/>
 	  				</h3>
+	  				<BackButtonLogoComponent history={this.props.history}/>
 	  			</div>	
 	  		</div>
 	    );

@@ -10,11 +10,12 @@ class BioComponent extends React.Component {
 	};
 
 	render() {	
+		var pic_url = "/pics/profile_photos/"+this.props.match.params.person_name+".jpg";
+		//<img id="profile-photo" src={"/pics/profile_photos/"+this.props.match.params.person_name+".jpg"}/>
 	  	return (
 	  		<div className="page" id="aboutus-page">
 	  			<div className="page-content" style={{position:'relative'}}>
-	  				<div className="left-column-bio">
-	  					<img id="profile-photo" src={"/pics/profile_photos/"+this.props.match.params.person_name+".jpg"}/>
+	  				<div className="left-column-bio" style={{backgroundImage:'url('+pic_url+')', backgroundRepeat:'no-repeat', backgroundPosition:'left-top', backgroundClip:'content-box', backgroundSize:'cover'}}>
 	  				</div>
 	  				<div className="right-column-bio">
 	  					<div className="right-column-content">

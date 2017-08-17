@@ -1,6 +1,7 @@
 import React from 'react';
 
 import BlockButtonComponent from './BlockButtonComponent.jsx';
+import BackButtonLogoComponent from './BackButtonLogoComponent.jsx';
 
 import language_pack from './lang_packs/eng.json';
 
@@ -30,7 +31,8 @@ class BigDataComponent extends React.Component {
 		  			<div className="">{language_pack["big-data-analytics"]["description"]["div3"]}</div><br/>
 		  			<div className="">{language_pack["big-data-analytics"]["description"]["div4"]}</div><br/>
 	  			</div>
-	  			<br/><img id="tiny-logo" src="./pics/logo_3.png"/>
+	  			<br/>
+	  			<BackButtonLogoComponent history={this.props.history}/>
 	  		</div>
 	  		</div>
 	    );

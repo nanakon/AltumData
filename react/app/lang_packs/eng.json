@@ -30,9 +30,10 @@
 
   "corporate-enablement-program":{
     "description": {
-      "div1-text": "Lean Six Sigma is a comprehensive methodology that helps organizations improve processes by reducing waste (Lean) and variation (Six Sigma). Applying Lean Six Sigma results in increased productivity through process efficiencies, increased revenue, decreased costs and innovative solutions for an organization.",
-      "div2-text": "Lean Six Sigma goes beyond the traditional manufacturing enviroment and is applied in many other industries such as healthcare, logistics, service, retail, and IT.",
-      "div3-text": "Companies that have chosen to implement Lean Six Sigma throughout their enterprise can impact their bottom line with tangible results in the range of $500,000 to $5,000,000 (USD) annually."
+      "div1-text": "Influencing business transformation in today’s workforce requires a balanced approach that includes, process, technology.",
+      "div2-text": "The Altum Data Team takes a holistic approach to facilitate and sustain organizational transformation. Our team collaborates with stakeholders at all levels to develop competencies aligned with two key indicators of organizational success: Employee Engagement and Process Excellence. The more an organization improves these leading indicators, the greater their business success, as measured by the lagging indicators of Client Value and Financial Results.",
+      "div3-text": "As transformation facilitators, we focus on long-term solutions rather than quick fixes. We develop internal capabilities transferring our knowledge and skill into your company. We develop leadership that will guide the future of your organization’s success. We facilitate rather than act as consultant. The outcome is a culture of performance supported by work class process excellence and technology solutions.",
+      "div4-text": "Our approach has enabled us to achieve $1.5 billion in client-verified savings and an average client return-on-investment of 109% from 2011 to 2016."
     }
   },
 
@@ -246,6 +247,12 @@
       "name": "Alan Henderson",
       "role": "Managing Partner",
       "div1": "Alan is an accomplished business development director and sales strategist.  Having sold and developed business opportunities in Banking, Pharmaceutical, Aviation, and IT sectors, Alan has a wealth of experience in understanding what clients need and providing value to their organization.  Alan has experience in bringing start-ups sustainable profitability, SMEs increase their market share, and large corporations evolve their selling processes.  Within Altum Data, Alan acts as a consultant to help guide companies through the process of embracing lean, transformation, and cognitive solutions."
-     }
+     },
+    "slobodan-radenkovic": {
+      "name": "Slobodan Radenković",
+      "role": "Managing Partner",
+      "div1": "Slobodan Radenkovic is Lean Six Sigma Certified Black Belt with more than 7 years of practitioner experience, out of which 4 years as Europe Finance Transformation Leader, focused on driving process excellence and practical application of Cognitive Apps within IBM Europe Finance Community. Research and Development efforts invested in to Cognitive @ Finance tools resulted in Global application on massive scale, driving multimillion value to IBM in terms of productivity, quality of service or enabling new capabilities. Key capability deriving from the effort is transforming the respective departments to move from reactive business operation state to proactive model based on SMART data systems.",
+      "div2": "Slobodan’s skills set includes change management, Lean Six Sigma practical application and facilitation, Agile Coaching, Strategic use of Data Science and business application of Cognitive capabilities.  "
+    }
   }
 }

@@ -2,6 +2,7 @@ import React from 'react';
 
 import BlockButtonComponent from './BlockButtonComponent.jsx';
 import OfferingExampleComponent from './OfferingExampleComponent.jsx';
+import BackButtonLogoComponent from './BackButtonLogoComponent.jsx';
 
 import language_pack from './lang_packs/eng.json';
 
@@ -76,7 +77,8 @@ class OfferingsComponent extends React.Component {
 	  							{examples_section}
 	  						</div>
 	  					</div>
-	  					<br/><img id="tiny-logo" src="./pics/logo_3.png"/>
+	  					<br/>
+	  					<BackButtonLogoComponent history={this.props.history}/>
 	  				</div>
 	  			</div>	
 	  		</div>

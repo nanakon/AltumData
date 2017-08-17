@@ -15,15 +15,6 @@ class LSSHomeComponent extends React.Component {
 	  					<h3 className="offering-description-title">
   							Lean Six Sigma Education Offerings
   						</h3><br/>
-  						<h3 className="offering-description-div">
-  							Lean Six Sigma is a comprehensive methodology that helps organizations improve processes by reducing waste (Lean) and variation (Six Sigma). Applying Lean Six Sigma results in increased productivity through process efficiencies, increased revenue, decreased costs and innovative solutions for an organization.
-  						</h3>
-  						<h3 className="offering-description-div">
-  							Lean Six Sigma goes beyond the traditional manufacturing environment and is applied in many other industries such as healthcare, logistics, service, retail, and IT.
-  						</h3>
-  						<h3 className="offering-description-div">
-  							Companies that have chosen to implement Lean Six Sigma throughout their enterprise can impact their bottom line with tangible results in the range of $500,000 to $5,000,000 (USD) annually.
-  						</h3>
 	  					<h3 className="offering-description-div">
 	  						We provide Lean Six Sigma training for yellow belt, green belt, and black belt certifications.  All of our Lean Six Sigma courses follow the DMAIC (Define, Measure, Analyze, Improve, Control) methodology. Instruction includes all of the different tools, techniques and concepts related to Lean and Six Sigma.
   						</h3>

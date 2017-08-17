@@ -21,6 +21,7 @@ class CorporateProgramComponent extends React.Component {
 	  					<div>{language_pack["corporate-enablement-program"]["description"]["div1-text"]}</div><br/>
 	  					<div>{language_pack["corporate-enablement-program"]["description"]["div2-text"]}</div><br/>
 	  					<div>{language_pack["corporate-enablement-program"]["description"]["div3-text"]}</div><br/>
+	  					<div>{language_pack["corporate-enablement-program"]["description"]["div4-text"]}</div><br/>
 	  				</div>
 	  				<div className="offerings-buttons-wrapper">
 	  					<table id="offerings-buttons-table">

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import BlockButtonComponent from './BlockButtonComponent.jsx';
+import BackButtonLogoComponent from './BackButtonLogoComponent.jsx';
 
 import language_pack from './lang_packs/eng.json';
 
@@ -23,7 +24,8 @@ class AboutUsComponent extends React.Component {
 	  				<div>{language_pack["about-us"]["content"]["div-1"]}</div><br/>
 	  				<div>{language_pack["about-us"]["content"]["div-2"]}</div>
 	  			</div>
-	  			<br/><img id="tiny-logo" src="./pics/logo_3.png"/>
+	  			<br/>
+	  			<BackButtonLogoComponent history={this.props.history}/>
 	  		</div>
 	  		</div>
 	    );

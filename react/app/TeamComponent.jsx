@@ -29,10 +29,11 @@ class TeamComponent extends React.Component {
 	  				<div id="team-page-content-sub-wrapper">
 		  				<Link className="custom-link" to={{pathname:"/team/don-sobeski" , person_name:"don-sobeski"}} className="name-link">Don Sobeski</Link><span className="person-role"> - {language_pack["bios"]["don-sobeski"]["role"]}</span>
 		  				<Link className="custom-link" to={{pathname:"/team/david-hare", person_name:"david-hare"}} className="name-link">David Hare</Link><span className="person-role"> - {language_pack["bios"]["david-hare"]["role"]}</span>
+		  				<Link className="custom-link" to={{pathname:"/team/alan-henderson", person_name:"alan-henderson"}} className="name-link">Alan Henderson</Link><span className="person-role"> - {language_pack["bios"]["alan-henderson"]["role"]}</span>
+		  				<Link className="custom-link" to={{pathname:"/team/slobodan-radenkovic", person_name:"slobodan-radenkovic"}} className="name-link">Slobodan Radenković</Link><span className="person-role"> - {language_pack["bios"]["slobodan-radenkovic"]["role"]}</span>
 		  				<Link className="custom-link" to={{pathname:"/team/richard-orth", person_name:"richard-orth"}} className="name-link">Richard Orth</Link><span className="person-role"> - {language_pack["bios"]["richard-orth"]["role"]}</span>
 		  				<Link className="custom-link" to={{pathname:"/team/barbara-reusser", person_name:"barbara-reusser"}} className="name-link">Barbara Reusser</Link><span className="person-role"> - {language_pack["bios"]["barbara-reusser"]["role"]}</span>
 		  				<Link className="custom-link" to={{pathname:"/team/luca-bencini", person_name:"luca-bencini"}} className="name-link">Luca Bencini</Link><span className="person-role"> - {language_pack["bios"]["luca-bencini"]["role"]}</span>
-		  				<Link className="custom-link" to={{pathname:"/team/alan-henderson", person_name:"alan-henderson"}} className="name-link">Alan Henderson</Link><span className="person-role"> - {language_pack["bios"]["alan-henderson"]["role"]}</span>
 	  				</div>
 	  			</div>
 	  			</div>

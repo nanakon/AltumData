@@ -11,6 +11,7 @@ import GreenBeltVirtualComponent from './offering_texts/GreenBeltVirtualComponen
 import BlackBeltStandardComponent from './offering_texts/BlackBeltStandardComponent.jsx';
 import BlackBeltVirtualComponent from './offering_texts/BlackBeltVirtualComponent.jsx';
 import LSSHomeComponent from './offering_texts/LSSHomeComponent.jsx';
+import BackButtonLogoComponent from './BackButtonLogoComponent.jsx';
 
 import {
   BrowserRouter as Router,
@@ -92,7 +93,8 @@ class CorporateProgramLSSComponent extends React.Component {
 	  						<Route path="/corporate_program/lean_six_sigma/black_belt_standard" component={BlackBeltStandardComponent}/>
 	  						<Route path="/corporate_program/lean_six_sigma/black_belt_virtual" component={BlackBeltVirtualComponent}/>
 	  					</div>
-	  					<br/><img id="tiny-logo" src="./pics/logo_3.png"/>
+	  					<br/>
+	  					<BackButtonLogoComponent history={this.props.history}/>
 	  				</div>
 	  			</div>	
 	  		</div>
